@@ -11,10 +11,6 @@ One run, one report: every file a site publishes at its root and under
 npx well-known-audit yourdomain.com
 ```
 
-<sup>Not on npm yet — the `npx` form works from the first published
-release. Until then: `git clone`, `npm ci && npm run build`, then
-`node dist/src/main.js`.</sup>
-
 No runtime dependencies, no API key, no account. TypeScript, Node's own test
 runner, 106 tests.
 
