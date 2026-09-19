@@ -98,7 +98,8 @@ function parseCsvResults(csv: string): DomainResult[] {
   const results: DomainResult[] = [];
   for (const line of csv.split(/\r?\n/).slice(1)) {
     if (!line.trim()) continue;
-    const [domain, outcome, blockers, warnings, security, expires, expired, days, present] = line.split(",");
+    const [domain, outcome, blockers, warnings, security, expires, expired, days, present, readable] =
+      line.split(",");
     if (!domain || outcome !== "checked") {
       if (domain) results.push({ domain, outcome: "unreachable" });
       continue;
@@ -114,6 +115,10 @@ function parseCsvResults(csv: string): DomainResult[] {
           ? undefined
           : {
               found: security === "yes",
+              // A CSV from before this column existed cannot tell a readable
+              // file from an HTML shell, so it keeps its old meaning rather
+              // than inventing a stricter one after the fact.
+              parsed: readable === undefined || readable === "" ? security === "yes" : readable === "yes",
               hasExpires: expires === "yes",
               expired: expired === "yes",
               daysLeft: days ? Number(days) : undefined,

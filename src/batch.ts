@@ -30,6 +30,12 @@ export interface DomainResult {
   present?: string[];
   securityTxt?: {
     found: boolean;
+    /**
+     * Did the served file read as a security.txt at all? A site that answers
+     * its HTML home page at /security.txt has served something, but nothing
+     * about it belongs in a rate about security.txt files.
+     */
+    parsed: boolean;
     hasExpires: boolean;
     expired: boolean;
     daysLeft?: number;
@@ -123,7 +129,7 @@ function securityTxtSummary(
     && !has("security-txt-expires-unparseable");
 
   const days = /expired (\d+) day/.exec(target.findings.find((f) => f.id === "security-txt-expired")?.title ?? "");
-  return { found, hasExpires, expired, daysLeft: days ? -Number(days[1]) : undefined };
+  return { found, parsed, hasExpires, expired, daysLeft: days ? -Number(days[1]) : undefined };
 }
 
 /**
@@ -215,6 +221,9 @@ const CSV_COLUMNS = [
   "security_txt_expired",
   "days_left",
   "files_present",
+  // Appended last on purpose: a CSV written before this column existed still
+  // parses, and a reader that does not know the column simply ignores it.
+  "security_txt_readable",
 ] as const;
 
 function csvCell(value: unknown): string {
@@ -238,6 +247,7 @@ export function toCsvRow(result: DomainResult): string {
     security?.found ? (security.expired ? "yes" : "no") : "",
     security?.daysLeft ?? "",
     result.present?.join(" ") ?? "",
+    security?.found ? (security.parsed ? "yes" : "no") : "",
   ]
     .map(csvCell)
     .join(",");
@@ -271,6 +281,8 @@ export interface Summary {
     withoutExpires: number;
     expired: number;
     valid: number;
+    /** Served something at the path, but it does not read as a security.txt. */
+    unreadable: number;
   };
   filePresence: Record<string, number>;
 }
@@ -281,7 +293,7 @@ export function summarise(results: DomainResult[]): Summary {
   let unreachable = 0;
   let withBlockers = 0;
   let answerAnything = 0;
-  const securityTxt = { published: 0, withoutExpires: 0, expired: 0, valid: 0 };
+  const securityTxt = { published: 0, withoutExpires: 0, expired: 0, valid: 0, unreadable: 0 };
 
   for (const result of results) {
     if (result.outcome === "unreachable") {
@@ -295,6 +307,13 @@ export function summarise(results: DomainResult[]): Summary {
 
     const security = result.securityTxt;
     if (!security?.found) continue;
+    // Served but unreadable is its own outcome. Putting it in `published`
+    // would inflate every rate under it, and putting it in `withoutExpires`
+    // would report a missing field in a document that is not a security.txt.
+    if (!security.parsed) {
+      securityTxt.unreadable += 1;
+      continue;
+    }
     securityTxt.published += 1;
     if (!security.hasExpires) securityTxt.withoutExpires += 1;
     else if (security.expired) securityTxt.expired += 1;
@@ -322,6 +341,9 @@ export function renderSummary(summary: Summary): string {
   const s = summary.securityTxt;
   lines.push(`Of the ${summary.checked} that answered:`);
   lines.push(`  publish a security.txt        ${s.published}  (${percent(s.published, summary.checked)})`);
+  if (s.unreadable > 0) {
+    lines.push(`  served one that is not one    ${s.unreadable}  (not counted in any rate below)`);
+  }
   lines.push(`  at least one blocker          ${summary.withBlockers}  (${percent(summary.withBlockers, summary.checked)})`);
   lines.push("");
 

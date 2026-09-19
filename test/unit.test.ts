@@ -991,14 +991,14 @@ describe("auditing a list of sites", () => {
   it("counts an unreachable site apart from a site with nothing published", () => {
     const results: DomainResult[] = [
       { domain: "a", outcome: "checked", blockers: 1, warnings: 0, present: ["robots.txt"],
-        securityTxt: { found: false, hasExpires: false, expired: false } },
+        securityTxt: { found: false, parsed: false, hasExpires: false, expired: false } },
       { domain: "b", outcome: "unreachable" },
       { domain: "c", outcome: "checked", blockers: 0, warnings: 1, present: ["security.txt", "robots.txt"],
-        securityTxt: { found: true, hasExpires: true, expired: false } },
+        securityTxt: { found: true, parsed: true, hasExpires: true, expired: false } },
       { domain: "d", outcome: "checked", blockers: 1, warnings: 0, present: ["security.txt"],
-        securityTxt: { found: true, hasExpires: true, expired: true, daysLeft: -12 } },
+        securityTxt: { found: true, parsed: true, hasExpires: true, expired: true, daysLeft: -12 } },
       { domain: "e", outcome: "checked", blockers: 1, warnings: 0, present: ["security.txt"],
-        securityTxt: { found: true, hasExpires: false, expired: false } },
+        securityTxt: { found: true, parsed: true, hasExpires: false, expired: false } },
     ];
 
     const totals = summariseBatch(results);
@@ -1012,16 +1012,40 @@ describe("auditing a list of sites", () => {
     assert.equal(totals.filePresence["robots.txt"], 2);
   });
 
+  it("keeps a served-but-unreadable file out of the security.txt totals", () => {
+    // python.org, 2026-09-19: /security.txt answers 200 with the site's HTML
+    // home page. Something was served, so the file "exists"; nothing in it is
+    // a security.txt. Counting it as a published file puts it in the
+    // denominator of every rate below, and counting it as "no Expires field"
+    // blames a site for a field missing from a document that was never a
+    // security.txt in the first place.
+    const results: DomainResult[] = [
+      { domain: "real", outcome: "checked", blockers: 0, warnings: 0, present: ["security.txt"],
+        securityTxt: { found: true, parsed: true, hasExpires: true, expired: false } },
+      { domain: "html-shell", outcome: "checked", blockers: 1, warnings: 0, present: ["security.txt"],
+        securityTxt: { found: true, parsed: false, hasExpires: false, expired: false } },
+    ];
+
+    const totals = summariseBatch(results);
+    assert.equal(totals.securityTxt.published, 1, "only the file that parsed is a published security.txt");
+    assert.equal(totals.securityTxt.withoutExpires, 0, "an unreadable file is not a file missing Expires");
+    assert.equal(totals.securityTxt.unreadable, 1, "it is reported, on its own line");
+  });
+
   it("writes CSV a spreadsheet can open", () => {
     const csv = toCsv([
       { domain: "a.example", outcome: "checked", blockers: 1, warnings: 2, present: ["security.txt", "robots.txt"],
-        securityTxt: { found: true, hasExpires: true, expired: true, daysLeft: -12 } },
+        securityTxt: { found: true, parsed: true, hasExpires: true, expired: true, daysLeft: -12 } },
       { domain: "b.example", outcome: "unreachable" },
     ]);
     const rows = csv.trimEnd().split("\n");
-    assert.equal(rows[0], "domain,outcome,blockers,warnings,security_txt,security_txt_expires,security_txt_expired,days_left,files_present");
-    assert.equal(rows[1], "a.example,checked,1,2,yes,yes,yes,-12,security.txt robots.txt");
-    assert.equal(rows[2], "b.example,unreachable,,,,,,,");
+    assert.equal(
+      rows[0],
+      "domain,outcome,blockers,warnings,security_txt,security_txt_expires,security_txt_expired," +
+        "days_left,files_present,security_txt_readable",
+    );
+    assert.equal(rows[1], "a.example,checked,1,2,yes,yes,yes,-12,security.txt robots.txt,yes");
+    assert.equal(rows[2], "b.example,unreachable,,,,,,,,");
   });
 
   it("a site that answers nothing does not fail the whole survey", () => {
@@ -1044,7 +1068,7 @@ describe("picking up where a run stopped", () => {
       blockers: 1,
       warnings: 0,
       present: ["security.txt"],
-      securityTxt: { found: true, hasExpires: false, expired: false },
+      securityTxt: { found: true, parsed: true, hasExpires: false, expired: false },
     });
     assert.equal(row.split(",").length, CSV_HEADER.split(",").length,
       "a row must have exactly as many cells as the header promises");

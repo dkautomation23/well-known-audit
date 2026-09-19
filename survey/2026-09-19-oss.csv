@@ -1,0 +1,105 @@
+domain,outcome,blockers,warnings,security_txt,security_txt_expires,security_txt_expired,days_left,files_present,security_txt_readable
+nodejs.org,checked,0,1,yes,yes,no,,security.txt robots.txt llms.txt,yes
+python.org,checked,1,2,yes,no,no,,security.txt robots.txt,no
+rust-lang.org,checked,0,2,yes,yes,no,,security.txt,yes
+go.dev,checked,0,2,no,,,,robots.txt,
+kubernetes.io,checked,0,2,yes,yes,no,,security.txt robots.txt,yes
+prometheus.io,checked,0,2,no,,,,robots.txt,
+grafana.com,checked,0,2,no,,,,robots.txt llms.txt,
+jquery.com,checked,1,1,no,,,,robots.txt change-password,
+vuejs.org,checked,0,2,no,,,,robots.txt llms.txt,
+svelte.dev,checked,0,1,yes,yes,no,,security.txt robots.txt llms.txt,yes
+astro.build,checked,0,2,no,,,,robots.txt,
+vitejs.dev,checked,0,3,no,,,,llms.txt,
+eslint.org,checked,0,2,no,,,,robots.txt,
+prettier.io,checked,0,3,no,,,,llms.txt,
+babeljs.io,checked,0,3,no,,,,,
+webpack.js.org,checked,0,2,no,,,,robots.txt,
+rollupjs.org,checked,0,3,no,,,,llms.txt,
+deno.com,checked,6,3,yes,no,no,,security.txt robots.txt,yes
+bun.sh,checked,0,2,no,,,,robots.txt llms.txt,
+gohugo.io,checked,0,3,no,,,,,
+jekyllrb.com,checked,0,2,no,,,,robots.txt,
+docusaurus.io,checked,0,2,no,,,,robots.txt,
+storybook.js.org,checked,0,2,no,,,,robots.txt llms.txt,
+cypress.io,checked,1,1,yes,no,no,,security.txt robots.txt assetlinks.json,no
+playwright.dev,checked,0,2,no,,,,robots.txt,
+jestjs.io,checked,0,3,no,,,,,
+vitest.dev,checked,0,2,no,,,,robots.txt llms.txt,
+mochajs.org,checked,0,3,no,,,,,
+expressjs.com,checked,0,1,yes,yes,no,,security.txt robots.txt llms.txt,yes
+fastify.dev,checked,0,3,no,,,,llms.txt,
+nestjs.com,checked,8,3,yes,no,no,,security.txt,yes
+koajs.com,checked,0,3,no,,,,,
+hapi.dev,checked,0,3,no,,,,,
+socket.io,checked,0,3,no,,,,,
+axios-http.com,checked,7,3,no,,,,,
+lodash.com,checked,0,2,no,,,,robots.txt,
+momentjs.com,checked,0,3,no,,,,,
+redux.js.org,checked,0,3,no,,,,,
+reactrouter.com,checked,0,3,no,,,,,
+tailwindcss.com,checked,10,1,no,,,,,
+getbootstrap.com,checked,0,2,no,,,,robots.txt,
+sass-lang.com,checked,0,2,no,,,,robots.txt,
+postcss.org,checked,0,3,no,,,,,
+typescriptlang.org,checked,0,3,no,,,,,
+electronjs.org,checked,0,3,no,,,,,
+tauri.app,checked,0,2,no,,,,robots.txt llms.txt,
+flutter.dev,checked,0,3,no,,,,apple-app-site-association assetlinks.json,
+kotlinlang.org,checked,0,2,no,,,,robots.txt llms.txt,
+scala-lang.org,checked,0,2,no,,,,robots.txt,
+ruby-lang.org,checked,0,2,no,,,,robots.txt llms.txt,
+rubyonrails.org,checked,0,2,no,,,,robots.txt,
+laravel.com,checked,0,2,no,,,,robots.txt,
+symfony.com,checked,1,1,yes,yes,yes,-627,security.txt robots.txt,yes
+djangoproject.com,checked,1,0,yes,yes,no,,security.txt robots.txt change-password,yes
+flask.palletsprojects.com,checked,0,2,no,,,,robots.txt,
+fastapi.tiangolo.com,checked,0,2,no,,,,robots.txt,
+numpy.org,checked,0,2,no,,,,robots.txt,
+pandas.pydata.org,checked,0,2,no,,,,robots.txt,
+scipy.org,checked,0,3,no,,,,,
+jupyter.org,checked,1,1,yes,no,no,,security.txt robots.txt,yes
+scikit-learn.org,checked,0,3,no,,,,,
+pytorch.org,checked,0,2,no,,,,robots.txt llms.txt,
+tensorflow.org,checked,0,2,no,,,,robots.txt,
+huggingface.co,checked,1,2,yes,yes,no,,security.txt robots.txt openid-configuration change-password,yes
+apache.org,checked,0,1,yes,yes,no,,security.txt robots.txt,yes
+mozilla.org,checked,2,1,yes,no,no,,security.txt robots.txt apple-app-site-association gpc.json,yes
+gnome.org,checked,0,3,yes,yes,no,,security.txt,yes
+kde.org,checked,0,2,yes,yes,no,,security.txt robots.txt,yes
+debian.org,checked,0,2,yes,yes,no,,security.txt,yes
+fedoraproject.org,checked,0,2,no,,,,robots.txt,
+archlinux.org,checked,0,2,no,,,,robots.txt,
+openssl.org,checked,1,3,yes,no,no,,security.txt robots.txt,yes
+curl.se,checked,0,1,yes,yes,no,,security.txt robots.txt,yes
+git-scm.com,checked,0,3,no,,,,,
+gitlab.com,checked,1,0,yes,yes,no,,security.txt robots.txt openid-configuration change-password,yes
+sourceforge.net,checked,2,2,yes,no,no,,security.txt robots.txt llms.txt,yes
+freebsd.org,checked,0,2,no,,,,robots.txt,
+postgresql.org,checked,0,2,no,,,,robots.txt,
+mariadb.org,checked,1,2,yes,no,no,,security.txt robots.txt,yes
+redis.io,checked,0,2,yes,yes,no,,security.txt robots.txt llms.txt,yes
+mongodb.com,checked,6,2,no,,,,robots.txt llms.txt,
+elastic.co,checked,0,2,no,,,,robots.txt,
+nginx.org,checked,0,2,no,,,,robots.txt,
+haproxy.org,checked,0,2,no,,,,robots.txt,
+envoyproxy.io,checked,0,2,no,,,,robots.txt,
+istio.io,checked,0,2,no,,,,robots.txt,
+helm.sh,checked,0,2,yes,yes,no,,security.txt,yes
+terraform.io,checked,7,3,no,,,,,
+ansible.com,checked,8,3,yes,no,no,,security.txt,yes
+docker.com,checked,1,1,yes,yes,no,,security.txt robots.txt change-password,yes
+podman.io,checked,0,3,no,,,,,
+containerd.io,checked,0,2,no,,,,robots.txt,
+etcd.io,checked,0,2,yes,yes,no,,security.txt robots.txt,yes
+openssf.org,checked,0,2,no,,,,robots.txt llms.txt,
+linuxfoundation.org,checked,0,2,no,,,,robots.txt,
+eclipse.org,checked,0,2,yes,yes,no,,security.txt robots.txt,yes
+qt.io,checked,0,2,no,,,,robots.txt llms.txt,
+wireshark.org,checked,0,2,yes,yes,no,,security.txt robots.txt,yes
+videolan.org,checked,0,2,no,,,,robots.txt,
+ffmpeg.org,checked,0,2,no,,,,robots.txt,
+blender.org,checked,0,1,yes,yes,no,,security.txt robots.txt,yes
+inkscape.org,checked,0,2,no,,,,robots.txt,
+gimp.org,checked,0,2,no,,,,robots.txt,
+libreoffice.org,checked,1,2,yes,no,no,,security.txt,yes
