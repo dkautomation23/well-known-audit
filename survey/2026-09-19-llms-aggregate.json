@@ -1,0 +1,100 @@
+{
+  "method": {
+    "source": "Tranco list V3YPN, top 1500 domains",
+    "collected": "2026-09-19",
+    "tool": "well-known-audit/survey/llms-conformance.mjs",
+    "politeness": "4 domains at a time, 250ms between batches, 300ms between link checks, at most 8 links per site, no retries, honest User-Agent",
+    "soft404": "each domain is first asked for a path that cannot exist; a 200 there means the site answers 200 to anything, and it is excluded from every rate",
+    "robots": "only a group naming the crawler explicitly counts; the wildcard group is not evidence about a named bot, and only Disallow: / counts as a full block"
+  },
+  "population": {
+    "total": 1500,
+    "answered": 765,
+    "could_not_check": {
+      "soft_404": 184,
+      "refused_us": 133,
+      "unreachable": 418
+    }
+  },
+  "llms_txt": {
+    "publishing": 123,
+    "publishing_share_of_answered": 16.1,
+    "served_but_not_text": 9,
+    "absent": 633
+  },
+  "conformance": {
+    "population": 123,
+    "conformant": 107,
+    "conformant_share": 87,
+    "missing_h1": 3,
+    "no_sections": 7,
+    "no_links": 12
+  },
+  "links": {
+    "sites_with_links_checked": 111,
+    "sites_with_at_least_one_broken": 15,
+    "sites_with_broken_share": 13.5,
+    "links_checked": 864,
+    "links_ok": 797,
+    "links_broken": 36,
+    "links_could_not_verify": 31,
+    "broken_share_of_checked": 4.2
+  },
+  "contradiction": {
+    "definition": "publishes a usable llms.txt and, in the same breath, bans at least one named AI crawler outright in robots.txt",
+    "population": 123,
+    "count": 13,
+    "share": 10.6
+  },
+  "robots_stance": {
+    "GPTBot": {
+      "population": 675,
+      "blocked": 106,
+      "partial": 28,
+      "allowed": 26,
+      "absent": 515
+    },
+    "ClaudeBot": {
+      "population": 675,
+      "blocked": 109,
+      "partial": 23,
+      "allowed": 23,
+      "absent": 520
+    },
+    "Google-Extended": {
+      "population": 675,
+      "blocked": 94,
+      "partial": 22,
+      "allowed": 23,
+      "absent": 536
+    },
+    "CCBot": {
+      "population": 675,
+      "blocked": 129,
+      "partial": 13,
+      "allowed": 12,
+      "absent": 521
+    },
+    "PerplexityBot": {
+      "population": 675,
+      "blocked": 89,
+      "partial": 34,
+      "allowed": 22,
+      "absent": 530
+    },
+    "Bytespider": {
+      "population": 675,
+      "blocked": 114,
+      "partial": 9,
+      "allowed": 3,
+      "absent": 549
+    },
+    "Applebot-Extended": {
+      "population": 675,
+      "blocked": 75,
+      "partial": 13,
+      "allowed": 6,
+      "absent": 581
+    }
+  }
+}

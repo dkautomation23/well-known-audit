@@ -276,6 +276,45 @@ $ well-known-audit --batch survey/domains-top500.txt --csv results.csv
 Spot-checked by hand with `curl` against four of the flagged sites before
 publishing, because a number like that is only worth having if it is right.
 
+## Does a published llms.txt actually work?
+
+How many sites publish an `llms.txt` has been counted several times in 2026 and
+the answers agree, so counting it again adds nothing. The next question has not
+been asked: of the files that exist, how many have the shape the specification
+describes, how many still point at pages that are there, and how many belong to
+a site whose `robots.txt` bans the crawler that would read them.
+
+Tranco top 1,500, 19 September 2026. Of 1,500 domains, 765 could be asked at
+all — 418 never answered (most are CDN and infrastructure names carrying no
+website), 133 refused, and 184 answer 200 to a path that cannot exist, so
+nothing they return is evidence. None of those three is inside any rate below.
+
+| | |
+|---|---|
+| Publish an `llms.txt` | 123 of 765 answered (16.1%) |
+| Have the documented shape | 107 (87%) |
+| Contain no links at all | 12 |
+| Sites with at least one dead link inside | 15 of 111 checked (13.5%) |
+| Links followed | 864, of which 36 are dead (4.2%) |
+| **Publish one and ban a named AI crawler outright** | **13 of 123 (10.6%)** |
+
+That last row is the finding. One site in ten writes a guide for a reader it is
+not letting through the door. Only a `robots.txt` group naming the crawler
+explicitly counts here, and only `Disallow: /` counts as a block — the wildcard
+group is not evidence about a named bot, and treating it as one is how
+published blocking rates get inflated.
+
+The domain list, the row-per-domain CSV, the aggregate and the script are in
+[`survey/`](survey/):
+
+```console
+$ node survey/llms-conformance.mjs survey/domains-top1500.txt out.csv
+$ node survey/llms-aggregate.mjs out.csv aggregate.json
+```
+
+At most eight links per site were followed, spaced out, so the dead-link share
+is a floor rather than a ceiling.
+
 ## Honest limits
 
 - **A survey run from one machine sees what that machine is shown.** A site
