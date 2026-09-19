@@ -5,8 +5,8 @@ on:
     tags: ["v*"]
   workflow_dispatch:
 
-# Publishing the package is a separate, manual decision; this job only proves the
-# tag builds and attaches the compiled output to the release.
+# A tag is the release: this builds it, proves it, attaches the tarball and
+# publishes it to npm through trusted publishing - no token anywhere.
 permissions:
   contents: write
   id-token: write      # sign the provenance
@@ -21,6 +21,7 @@ jobs:
         with:
           node-version: "22.x"
           cache: npm
+      - run: npm install -g npm@latest   # trusted publishing needs npm >= 11.5
       - run: npm ci
       - run: npm run build
       - run: node --test "dist/test/**/*.test.js"
@@ -35,3 +36,10 @@ jobs:
         with:
           files: "*.tgz"
           generate_release_notes: true
+
+      # Publishing needs no token: npm trusts this workflow through OIDC, which
+      # is configured once on the package's page. The identity lives for the
+      # length of the job and cannot be copied out of it.
+      - name: Publish to npm
+        run: npm publish
+
