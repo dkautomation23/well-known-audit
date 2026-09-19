@@ -3,6 +3,7 @@
 [![CI](https://github.com/dkautomation23/well-known-audit/actions/workflows/ci.yml/badge.svg)](https://github.com/dkautomation23/well-known-audit/actions/workflows/ci.yml)
 [![OpenSSF Scorecard](https://api.scorecard.dev/projects/github.com/dkautomation23/well-known-audit/badge)](https://scorecard.dev/viewer/?uri=github.com/dkautomation23/well-known-audit)
 [![CodeQL](https://github.com/dkautomation23/well-known-audit/actions/workflows/codeql.yml/badge.svg)](https://github.com/dkautomation23/well-known-audit/actions/workflows/codeql.yml)
+[![npm](https://img.shields.io/npm/v/well-known-audit)](https://www.npmjs.com/package/well-known-audit)
 
 One run, one report: every file a site publishes at its root and under
 `/.well-known/` — what is there, what is broken, what is expired.
@@ -13,6 +14,14 @@ npx well-known-audit yourdomain.com
 
 No runtime dependencies, no API key, no account. TypeScript, Node's own test
 runner, 106 tests.
+
+Every published version is built and published by the workflow in this
+repository, never from a laptop, and carries a provenance statement recorded in
+Sigstore's public transparency log. Anyone can check that before trusting it:
+
+```bash
+npm audit signatures
+```
 
 ## Why
 
