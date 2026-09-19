@@ -1,0 +1,37 @@
+auditing 1000 domain(s), one at a time
+
+     1/1000  dynatrace.com                      3 file(s), 0 blocker(s)
+     2/1000  ivi.ru                             2 file(s), 1 blocker(s)
+     3/1000  impervadns.net                     unreachable
+     4/1000  npr.org                            3 file(s), 0 blocker(s)
+     5/1000  shein.com                          4 file(s), 0 blocker(s)
+     6/1000  mediatek.com                       9 file(s), 5 blocker(s)
+     7/1000  docker.com                         3 file(s), 1 blocker(s)
+     8/1000  run.app                            0 file(s), 0 blocker(s)
+     9/1000  libp2p.direct                      unreachable
+    10/1000  stackoverflow.com                  2 file(s), 1 blocker(s)
+    11/1000  eventbrite.com                     4 file(s), 1 blocker(s)
+    12/1000  behance.net                        3 file(s), 0 blocker(s)
+    13/1000  google.de                          3 file(s), 0 blocker(s)
+    14/1000  foxnews.com                        4 file(s), 0 blocker(s)
+    15/1000  gosuslugi.ru                       unreachable
+    16/1000  ampproject.org                     2 file(s), 0 blocker(s)
+    17/1000  indiatimes.com                     4 file(s), 0 blocker(s)
+    18/1000  amzn.to                            12 file(s), 5 blocker(s)
+    19/1000  mysql.com                          1 file(s), 1 blocker(s)
+    20/1000  exp-tas.com                        unreachable
+    21/1000  ngenix.net                         1 file(s), 1 blocker(s)
+    22/1000  ipv4only.arpa                      unreachable
+    23/1000  amazon.co.za                       2 file(s), 0 blocker(s)
+    24/1000  tplinkcloud.com                    1 file(s), 0 blocker(s)
+    25/1000  discord.media                      1 file(s), 1 blocker(s)
+    26/1000  fandom.com                         1 file(s), 1 blocker(s)
+    27/1000  adobedtm.com                       unreachable
+    28/1000  ft.com                             4 file(s), 0 blocker(s)
+    29/1000  squarespacedns.com                 unreachable
+    30/1000  trendmicro.com                     4 file(s), 2 blocker(s)
+    31/1000  elasticbeanstalk.com               unreachable
+    32/1000  slideshare.net                     3 file(s), 2 blocker(s)
+    33/1000  icloud-content.com                 9 file(s), 5 blocker(s)
+    34/1000  ui-dns.com                         unreachable
+    35/1000  capcut.com                         4 file(s), 0 blocker(s)

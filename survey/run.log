@@ -1,0 +1,534 @@
+auditing 500 domain(s), one at a time
+
+     1/500  google.com                         3 file(s), 0 blocker(s)
+     2/500  cloudflare.com                     3 file(s), 1 blocker(s)
+     3/500  facebook.com                       7 file(s), 0 blocker(s)
+     4/500  gstatic.com                        1 file(s), 0 blocker(s)
+     5/500  googleapis.com                     0 file(s), 0 blocker(s)
+     6/500  microsoft.com                      2 file(s), 0 blocker(s)
+     7/500  akamai.net                         unreachable
+     8/500  amazonaws.com                      2 file(s), 0 blocker(s)
+     9/500  youtube.com                        4 file(s), 1 blocker(s)
+    10/500  apple.com                          4 file(s), 1 blocker(s)
+    11/500  instagram.com                      4 file(s), 3 blocker(s)
+    12/500  mail.ru                            11 file(s), 5 blocker(s)
+    13/500  fbcdn.net                          1 file(s), 6 blocker(s)
+    14/500  ezviz7.com                         unreachable
+    15/500  twitter.com                        5 file(s), 3 blocker(s)
+    16/500  dzen.ru                            3 file(s), 4 blocker(s)
+    17/500  linkedin.com                       1 file(s), 8 blocker(s)
+    18/500  googlevideo.com                    unreachable
+    19/500  domaincontrol.com                  unreachable
+    20/500  googletagmanager.com               0 file(s), 0 blocker(s)
+    21/500  office.com                         0 file(s), 5 blocker(s)
+    22/500  live.com                           0 file(s), 7 blocker(s)
+    23/500  akamaiedge.net                     unreachable
+    24/500  amazon.com                         4 file(s), 1 blocker(s)
+    25/500  gtld-servers.net                   unreachable
+    26/500  akadns.net                         unreachable
+    27/500  hicloudcam.com                     unreachable
+    28/500  azure.com                          1 file(s), 8 blocker(s)
+    29/500  github.com                         5 file(s), 0 blocker(s)
+    30/500  wikipedia.org                      5 file(s), 1 blocker(s)
+    31/500  bing.com                           3 file(s), 0 blocker(s)
+    32/500  whatsapp.net                       5 file(s), 0 blocker(s)
+    33/500  apple-dns.net                      unreachable
+    34/500  appsflyersdk.com                   1 file(s), 1 blocker(s)
+    35/500  googleusercontent.com              0 file(s), 0 blocker(s)
+    36/500  fastly.net                         2 file(s), 0 blocker(s)
+    37/500  doubleclick.net                    3 file(s), 0 blocker(s)
+    38/500  aaplimg.com                        unreachable
+    39/500  microsoftonline.com                unreachable
+    40/500  office.net                         unreachable
+    41/500  netflix.com                        4 file(s), 3 blocker(s)
+    42/500  trafficmanager.net                 unreachable
+    43/500  cloud.microsoft                    1 file(s), 8 blocker(s)
+    44/500  sharepoint.com                     3 file(s), 4 blocker(s)
+    45/500  gandi.net                          3 file(s), 1 blocker(s)
+    46/500  youtu.be                           4 file(s), 5 blocker(s)
+    47/500  digicert.com                       3 file(s), 1 blocker(s)
+    48/500  wordpress.org                      4 file(s), 0 blocker(s)
+    49/500  skype.com                          1 file(s), 8 blocker(s)
+    50/500  x.com                              5 file(s), 3 blocker(s)
+    51/500  icloud.com                         3 file(s), 1 blocker(s)
+    52/500  cloudfront.net                     unreachable
+    53/500  goo.gl                             3 file(s), 1 blocker(s)
+    54/500  tiktok.com                         4 file(s), 5 blocker(s)
+    55/500  whatsapp.com                       5 file(s), 0 blocker(s)
+    56/500  pinterest.com                      3 file(s), 6 blocker(s)
+    57/500  googledomains.com                  0 file(s), 7 blocker(s)
+    58/500  cloudflare.net                     1 file(s), 6 blocker(s)
+    59/500  yahoo.com                          3 file(s), 0 blocker(s)
+    60/500  roblox.com                         6 file(s), 1 blocker(s)
+    61/500  googlesyndication.com              0 file(s), 0 blocker(s)
+    62/500  gvt1.com                           unreachable
+    63/500  pv-cdn.net                         unreachable
+    64/500  spotify.com                        6 file(s), 1 blocker(s)
+    65/500  windows.net                        unreachable
+    66/500  windowsupdate.com                  unreachable
+    67/500  wa.me                              3 file(s), 0 blocker(s)
+    68/500  adobe.com                          7 file(s), 0 blocker(s)
+    69/500  msn.com                            1 file(s), 0 blocker(s)
+    70/500  ntp.org                            2 file(s), 0 blocker(s)
+    71/500  myfritz.net                        2 file(s), 5 blocker(s)
+    72/500  cloudflare-dns.com                 1 file(s), 0 blocker(s)
+    73/500  qq.com                             2 file(s), 7 blocker(s)
+    74/500  nginx.org                          1 file(s), 0 blocker(s)
+    75/500  chatgpt.com                        4 file(s), 1 blocker(s)
+    76/500  root-servers.net                   unreachable
+    77/500  zoom.us                            5 file(s), 0 blocker(s)
+    78/500  cdninstagram.com                   unreachable
+    79/500  workers.dev                        1 file(s), 8 blocker(s)
+    80/500  tiktokcdn.com                      unreachable
+    81/500  akam.net                           unreachable
+    82/500  tiktokv.com                        1 file(s), 0 blocker(s)
+    83/500  openai.com                         4 file(s), 1 blocker(s)
+    84/500  gvt2.com                           unreachable
+    85/500  edgekey.net                        unreachable
+    86/500  baidu.com                          1 file(s), 0 blocker(s)
+    87/500  yandex.net                         3 file(s), 1 blocker(s)
+    88/500  vimeo.com                          6 file(s), 1 blocker(s)
+    89/500  ytimg.com                          unreachable
+    90/500  windows.com                        1 file(s), 8 blocker(s)
+    91/500  opera.com                          4 file(s), 0 blocker(s)
+    92/500  sentry.io                          3 file(s), 6 blocker(s)
+    93/500  f5.com                             2 file(s), 0 blocker(s)
+    94/500  samsung.com                        4 file(s), 0 blocker(s)
+    95/500  nginx.com                          0 file(s), 7 blocker(s)
+    96/500  yandex.ru                          4 file(s), 1 blocker(s)
+    97/500  edgesuite.net                      unreachable
+    98/500  highwebmedia.com                   unreachable
+    99/500  blogspot.com                       1 file(s), 0 blocker(s)
+   100/500  mozilla.org                        2 file(s), 0 blocker(s)
+   101/500  wordpress.com                      6 file(s), 1 blocker(s)
+   102/500  t.me                               2 file(s), 4 blocker(s)
+   103/500  gwfb.net                           unreachable
+   104/500  achmea.nl                          2 file(s), 0 blocker(s)
+   105/500  dellemc.com                        unreachable
+   106/500  actify.nl                          1 file(s), 0 blocker(s)
+   107/500  a2z.com                            unreachable
+   108/500  b-cdn.net                          1 file(s), 9 blocker(s)
+   109/500  reddit.com                         6 file(s), 0 blocker(s)
+   110/500  ui.com                             4 file(s), 1 blocker(s)
+   111/500  office365.com                      1 file(s), 1 blocker(s)
+   112/500  nic.ru                             0 file(s), 7 blocker(s)
+   113/500  yccdn.ru                           unreachable
+   114/500  google-analytics.com               1 file(s), 0 blocker(s)
+   115/500  aws.dev                            unreachable
+   116/500  europa.eu                          1 file(s), 0 blocker(s)
+   117/500  bit.ly                             3 file(s), 1 blocker(s)
+   118/500  okcdn.ru                           0 file(s), 0 blocker(s)
+   119/500  app-analytics-services.com         0 file(s), 0 blocker(s)
+   120/500  outlook.com                        5 file(s), 1 blocker(s)
+   121/500  registrar-servers.com              1 file(s), 0 blocker(s)
+   122/500  app-measurement.com                0 file(s), 0 blocker(s)
+   123/500  amazonvideo.com                    4 file(s), 1 blocker(s)
+   124/500  criteo.com                         3 file(s), 1 blocker(s)
+   125/500  github.io                          0 file(s), 7 blocker(s)
+   126/500  cdn77.org                          unreachable
+   127/500  vk.com                             4 file(s), 1 blocker(s)
+   128/500  apache.org                         2 file(s), 0 blocker(s)
+   129/500  trbcdn.net                         unreachable
+   130/500  snapchat.com                       4 file(s), 1 blocker(s)
+   131/500  amazon-adsystem.com                unreachable
+   132/500  unity3d.com                        unreachable
+   133/500  dnsowl.com                         unreachable
+   134/500  amazon.dev                         unreachable
+   135/500  intuit.com                         4 file(s), 1 blocker(s)
+   136/500  triplinkintl.com                   1 file(s), 8 blocker(s)
+   137/500  dropbox.com                        6 file(s), 2 blocker(s)
+   138/500  afternic.com                       2 file(s), 0 blocker(s)
+   139/500  msftncsi.com                       unreachable
+   140/500  kaspersky.com                      4 file(s), 0 blocker(s)
+   141/500  epicgames.com                      2 file(s), 1 blocker(s)
+   142/500  reg.ru                             0 file(s), 7 blocker(s)
+   143/500  dns.google                         0 file(s), 0 blocker(s)
+   144/500  nih.gov                            1 file(s), 1 blocker(s)
+   145/500  miit.gov.cn                        unreachable
+   146/500  discord.gg                         4 file(s), 5 blocker(s)
+   147/500  static.microsoft                   unreachable
+   148/500  iiko.it                            unreachable
+   149/500  forms.gle                          3 file(s), 1 blocker(s)
+   150/500  azurefd.net                        unreachable
+   151/500  archive.org                        3 file(s), 1 blocker(s)
+   152/500  vkuserphoto.ru                     1 file(s), 1 blocker(s)
+   153/500  xiaomi.com                         4 file(s), 2 blocker(s)
+   154/500  godaddy.com                        2 file(s), 3 blocker(s)
+   155/500  steamserver.net                    unreachable
+   156/500  one.one                            3 file(s), 1 blocker(s)
+   157/500  aliyuncs.com                       0 file(s), 0 blocker(s)
+   158/500  gravatar.com                       4 file(s), 0 blocker(s)
+   159/500  nytimes.com                        3 file(s), 0 blocker(s)
+   160/500  msftconnecttest.com                unreachable
+   161/500  adtrafficquality.google            0 file(s), 0 blocker(s)
+   162/500  tumblr.com                         4 file(s), 4 blocker(s)
+   163/500  applovin.com                       1 file(s), 6 blocker(s)
+   164/500  jomodns.com                        unreachable
+   165/500  tm-azurefd.net                     unreachable
+   166/500  webex.com                          4 file(s), 1 blocker(s)
+   167/500  discord.com                        5 file(s), 0 blocker(s)
+   168/500  dns-parking.com                    unreachable
+   169/500  paypal.com                         6 file(s), 1 blocker(s)
+   170/500  mts.ru                             3 file(s), 0 blocker(s)
+   171/500  ax-msedge.net                      unreachable
+   172/500  example.com                        0 file(s), 0 blocker(s)
+   173/500  3gppnetwork.org                    unreachable
+   174/500  vedcdnlb.com                       unreachable
+   175/500  adobe.io                           unreachable
+   176/500  azurewebsites.net                  unreachable
+   177/500  vk.ru                              4 file(s), 1 blocker(s)
+   178/500  telekom.net                        1 file(s), 8 blocker(s)
+   179/500  ggpht.com                          unreachable
+   180/500  shopify.com                        5 file(s), 1 blocker(s)
+   181/500  spectrum.com                       1 file(s), 1 blocker(s)
+   182/500  base.org                           2 file(s), 0 blocker(s)
+   183/500  hosting24.com                      1 file(s), 8 blocker(s)
+   184/500  doctolib.net                       unreachable
+   185/500  namebrightdns.com                  unreachable
+   186/500  macromedia.com                     unreachable
+   187/500  soundcloud.com                     4 file(s), 0 blocker(s)
+   188/500  cdn-apple.com                      unreachable
+   189/500  flickr.com                         4 file(s), 1 blocker(s)
+   190/500  googleadservices.com               0 file(s), 0 blocker(s)
+   191/500  hichina.com                        unreachable
+   192/500  w3.org                             3 file(s), 1 blocker(s)
+   193/500  adsafeprotected.com                3 file(s), 6 blocker(s)
+   194/500  nflxso.net                         unreachable
+   195/500  lencr.org                          0 file(s), 7 blocker(s)
+   196/500  bytefcdn-oversea.com               unreachable
+   197/500  rubiconproject.com                 2 file(s), 0 blocker(s)
+   198/500  creativecommons.org                1 file(s), 0 blocker(s)
+   199/500  medium.com                         3 file(s), 1 blocker(s)
+   200/500  cnn.com                            3 file(s), 0 blocker(s)
+   201/500  vungle.com                         1 file(s), 0 blocker(s)
+   202/500  duckdns.org                        unreachable
+   203/500  theguardian.com                    4 file(s), 0 blocker(s)
+   204/500  ttdns2.com                         unreachable
+   205/500  oracle.com                         2 file(s), 1 blocker(s)
+   206/500  taboola.com                        2 file(s), 0 blocker(s)
+   207/500  lsrelayaccess.com                  unreachable
+   208/500  ebay.com                           3 file(s), 0 blocker(s)
+   209/500  shifen.com                         unreachable
+   210/500  ksyuncdn.com                       unreachable
+   211/500  t-online.de                        3 file(s), 0 blocker(s)
+   212/500  doi.org                            0 file(s), 0 blocker(s)
+   213/500  youtube-nocookie.com               unreachable
+   214/500  bbc.com                            5 file(s), 0 blocker(s)
+   215/500  forbes.com                         2 file(s), 7 blocker(s)
+   216/500  ailawandorder.com                  unreachable
+   217/500  fastly-edge.com                    unreachable
+   218/500  sciencedirect.com                  1 file(s), 1 blocker(s)
+   219/500  sfx.ms                             unreachable
+   220/500  capcutapi.com                      unreachable
+   221/500  twitch.tv                          3 file(s), 4 blocker(s)
+   222/500  cdngslb.com                        unreachable
+   223/500  gmail.com                          1 file(s), 0 blocker(s)
+   224/500  researchgate.net                   4 file(s), 1 blocker(s)
+   225/500  akamaized.net                      unreachable
+   226/500  mit.edu                            1 file(s), 0 blocker(s)
+   227/500  pages.dev                          1 file(s), 8 blocker(s)
+   228/500  ozon.ru                            4 file(s), 4 blocker(s)
+   229/500  yandexcloud.net                    unreachable
+   230/500  miui.com                           0 file(s), 0 blocker(s)
+   231/500  pki.goog                           2 file(s), 1 blocker(s)
+   232/500  userapi.com                        4 file(s), 1 blocker(s)
+   233/500  ubuntu.com                         2 file(s), 0 blocker(s)
+   234/500  nr-data.net                        unreachable
+   235/500  azureedge.net                      unreachable
+   236/500  bbc.co.uk                          5 file(s), 0 blocker(s)
+   237/500  nist.gov                           1 file(s), 0 blocker(s)
+   238/500  stripe.com                         5 file(s), 0 blocker(s)
+   239/500  playstation.net                    unreachable
+   240/500  pubmatic.com                       1 file(s), 1 blocker(s)
+   241/500  cpanel.net                         2 file(s), 0 blocker(s)
+   242/500  t.co                               1 file(s), 0 blocker(s)
+   243/500  canva.com                          6 file(s), 2 blocker(s)
+   244/500  wsdvs.com                          unreachable
+   245/500  adsrvr.org                         2 file(s), 1 blocker(s)
+   246/500  rbxcdn.com                         unreachable
+   247/500  meraki.com                         unreachable
+   248/500  imcmdb.net                         unreachable
+   249/500  sourceforge.net                    3 file(s), 2 blocker(s)
+   250/500  comcast.net                        1 file(s), 1 blocker(s)
+   251/500  omtrdc.net                         unreachable
+   252/500  roku.com                           6 file(s), 1 blocker(s)
+   253/500  cisco.com                          4 file(s), 0 blocker(s)
+   254/500  wikimedia.org                      0 file(s), 0 blocker(s)
+   255/500  ripn.net                           unreachable
+   256/500  android.com                        3 file(s), 0 blocker(s)
+   257/500  telegram.org                       4 file(s), 1 blocker(s)
+   258/500  hubspot.com                        5 file(s), 0 blocker(s)
+   259/500  alidns.com                         3 file(s), 5 blocker(s)
+   260/500  hcaptcha.com                       2 file(s), 0 blocker(s)
+   261/500  adnxs.com                          0 file(s), 0 blocker(s)
+   262/500  alibabadns.com                     unreachable
+   263/500  scorecardresearch.com              0 file(s), 0 blocker(s)
+   264/500  booking.com                        5 file(s), 1 blocker(s)
+   265/500  imdb.com                           3 file(s), 4 blocker(s)
+   266/500  who.int                            1 file(s), 0 blocker(s)
+   267/500  statsigapi.net                     0 file(s), 0 blocker(s)
+   268/500  name-services.com                  unreachable
+   269/500  media-amazon.com                   unreachable
+   270/500  forter.com                         4 file(s), 0 blocker(s)
+   271/500  wixsite.com                        unreachable
+   272/500  linktr.ee                          5 file(s), 2 blocker(s)
+   273/500  launchpad.net                      1 file(s), 0 blocker(s)
+   274/500  ttvnw.net                          unreachable
+   275/500  spov-msedge.net                    unreachable
+   276/500  facebook.net                       unreachable
+   277/500  amon.tech                          unreachable
+   278/500  ibm.com                            2 file(s), 0 blocker(s)
+   279/500  mangosip.ru                        unreachable
+   280/500  aliyuncsslbintl.com                unreachable
+   281/500  msedge.net                         unreachable
+   282/500  reuters.com                        5 file(s), 4 blocker(s)
+   283/500  2mdn.net                           unreachable
+   284/500  shiabank.com                       unreachable
+   285/500  dnsmadeeasy.com                    0 file(s), 0 blocker(s)
+   286/500  appsflyer.com                      1 file(s), 1 blocker(s)
+   287/500  telecid.ru                         unreachable
+   288/500  etsy.com                           5 file(s), 1 blocker(s)
+   289/500  springer.com                       2 file(s), 7 blocker(s)
+   290/500  telegram.me                        2 file(s), 5 blocker(s)
+   291/500  tinyurl.com                        2 file(s), 1 blocker(s)
+   292/500  drom.ru                            3 file(s), 0 blocker(s)
+   293/500  mzstatic.com                       0 file(s), 7 blocker(s)
+   294/500  salesforce.com                     4 file(s), 0 blocker(s)
+   295/500  hp.com                             2 file(s), 1 blocker(s)
+   296/500  tiktokcdn-us.com                   unreachable
+   297/500  namecheap.com                      3 file(s), 0 blocker(s)
+   298/500  amplitude.com                      3 file(s), 0 blocker(s)
+   299/500  nature.com                         2 file(s), 7 blocker(s)
+   300/500  crpt.ru                            0 file(s), 7 blocker(s)
+   301/500  byteoversea.net                    unreachable
+   302/500  dell.com                           3 file(s), 6 blocker(s)
+   303/500  inmobi.com                         1 file(s), 0 blocker(s)
+   304/500  jsdelivr.net                       unreachable
+   305/500  steampowered.com                   4 file(s), 5 blocker(s)
+   306/500  weibo.com                          1 file(s), 6 blocker(s)
+   307/500  autodesk.com                       0 file(s), 0 blocker(s)
+   308/500  www.gov.uk                         2 file(s), 0 blocker(s)
+   309/500  clarity.ms                         unreachable
+   310/500  avast.com                          6 file(s), 2 blocker(s)
+   311/500  ok.ru                              5 file(s), 1 blocker(s)
+   312/500  wac-msedge.net                     unreachable
+   313/500  alibaba.com                        12 file(s), 5 blocker(s)
+   314/500  weather.com                        6 file(s), 1 blocker(s)
+   315/500  samsungcloud.com                   1 file(s), 0 blocker(s)
+   316/500  arubanetworks.com                  unreachable
+   317/500  harvard.edu                        1 file(s), 0 blocker(s)
+   318/500  debian.org                         1 file(s), 0 blocker(s)
+   319/500  wiley.com                          3 file(s), 1 blocker(s)
+   320/500  ea.com                             3 file(s), 0 blocker(s)
+   321/500  mozilla.com                        4 file(s), 2 blocker(s)
+   322/500  mtgglobals.com                     unreachable
+   323/500  douyincdn.com                      unreachable
+   324/500  samsungqbe.com                     unreachable
+   325/500  heytapmobile.com                   unreachable
+   326/500  shalltry.com                       1 file(s), 1 blocker(s)
+   327/500  php.net                            2 file(s), 0 blocker(s)
+   328/500  datadoghq.com                      4 file(s), 0 blocker(s)
+   329/500  akamaihd.net                       unreachable
+   330/500  aliyun.com                         1 file(s), 0 blocker(s)
+   331/500  googleblog.com                     1 file(s), 8 blocker(s)
+   332/500  amazon.co.uk                       4 file(s), 1 blocker(s)
+   333/500  hostinger.com                      3 file(s), 0 blocker(s)
+   334/500  myshopify.com                      2 file(s), 0 blocker(s)
+   335/500  trueconf.net                       unreachable
+   336/500  spaceweb.pro                       unreachable
+   337/500  worldnic.com                       unreachable
+   338/500  twc.com                            1 file(s), 1 blocker(s)
+   339/500  awswaf.com                         unreachable
+   340/500  smartadserver.com                  1 file(s), 8 blocker(s)
+   341/500  name.com                           2 file(s), 0 blocker(s)
+   342/500  crashlytics.com                    0 file(s), 7 blocker(s)
+   343/500  bilibili.com                       2 file(s), 0 blocker(s)
+   344/500  mobile.de                          5 file(s), 1 blocker(s)
+   345/500  tbcache.com                        unreachable
+   346/500  gnu.org                            1 file(s), 0 blocker(s)
+   347/500  trustpilot.com                     4 file(s), 0 blocker(s)
+   348/500  doubleverify.com                   1 file(s), 0 blocker(s)
+   349/500  naver.com                          3 file(s), 0 blocker(s)
+   350/500  inner-active.mobi                  unreachable
+   351/500  slack.com                          7 file(s), 2 blocker(s)
+   352/500  checkpoint.com                     3 file(s), 6 blocker(s)
+   353/500  media.net                          1 file(s), 0 blocker(s)
+   354/500  vecdnlb.com                        unreachable
+   355/500  edgcdn.net                         unreachable
+   356/500  licdn.com                          unreachable
+   357/500  opendns.com                        1 file(s), 0 blocker(s)
+   358/500  un.org                             1 file(s), 0 blocker(s)
+   359/500  selectel.ru                        2 file(s), 0 blocker(s)
+   360/500  casalemedia.com                    1 file(s), 8 blocker(s)
+   361/500  cdc.gov                            0 file(s), 7 blocker(s)
+   362/500  hostgator.com                      1 file(s), 1 blocker(s)
+   363/500  allawnos.com                       unreachable
+   364/500  tradingview.com                    4 file(s), 1 blocker(s)
+   365/500  washingtonpost.com                 5 file(s), 1 blocker(s)
+   366/500  weebly.com                         1 file(s), 0 blocker(s)
+   367/500  nvidia.com                         3 file(s), 1 blocker(s)
+   368/500  zendesk.com                        5 file(s), 0 blocker(s)
+   369/500  live-video.net                     1 file(s), 1 blocker(s)
+   370/500  dnspod.net                         unreachable
+   371/500  indeed.com                         3 file(s), 1 blocker(s)
+   372/500  issuu.com                          5 file(s), 1 blocker(s)
+   373/500  wsj.com                            4 file(s), 1 blocker(s)
+   374/500  cookiedatabase.org                 1 file(s), 0 blocker(s)
+   375/500  samsungcloudsolution.com           unreachable
+   376/500  bloomberg.com                      5 file(s), 0 blocker(s)
+   377/500  calendly.com                       6 file(s), 0 blocker(s)
+   378/500  cdnbuild.net                       unreachable
+   379/500  stanford.edu                       2 file(s), 1 blocker(s)
+   380/500  tiktokv.us                         unreachable
+   381/500  volcfcdndvs.com                    unreachable
+   382/500  ip-api.com                         1 file(s), 6 blocker(s)
+   383/500  gitlab.com                         4 file(s), 1 blocker(s)
+   384/500  virginm.net                        unreachable
+   385/500  mi.com                             5 file(s), 4 blocker(s)
+   386/500  plesk.com                          3 file(s), 0 blocker(s)
+   387/500  online-metrix.net                  unreachable
+   388/500  newrelic.com                       6 file(s), 2 blocker(s)
+   389/500  yandex.com                         4 file(s), 1 blocker(s)
+   390/500  paloaltonetworks.com               2 file(s), 0 blocker(s)
+   391/500  amazontrust.com                    unreachable
+   392/500  amazon.de                          2 file(s), 0 blocker(s)
+   393/500  launchdarkly.com                   1 file(s), 0 blocker(s)
+   394/500  tp-link.com                        4 file(s), 2 blocker(s)
+   395/500  shopifysvc.com                     unreachable
+   396/500  netangels.ru                       1 file(s), 0 blocker(s)
+   397/500  ibyteimg.com                       unreachable
+   398/500  demdex.net                         unreachable
+   399/500  xcal.tv                            unreachable
+   400/500  bsky.app                           4 file(s), 1 blocker(s)
+   401/500  gandi-ns.fr                        unreachable
+   402/500  vivoglobal.com                     1 file(s), 0 blocker(s)
+   403/500  espn.com                           3 file(s), 0 blocker(s)
+   404/500  ipify.org                          1 file(s), 0 blocker(s)
+   405/500  onelink.me                         1 file(s), 8 blocker(s)
+   406/500  vkuser.net                         unreachable
+   407/500  rocket-cdn.com                     unreachable
+   408/500  kwai-pro.com                       unreachable
+   409/500  nasa.gov                           1 file(s), 0 blocker(s)
+   410/500  aliexpress.com                     3 file(s), 6 blocker(s)
+   411/500  quickconnect.to                    3 file(s), 1 blocker(s)
+   412/500  walmart.com                        4 file(s), 1 blocker(s)
+   413/500  nflxvideo.net                      unreachable
+   414/500  wildberries.ru                     2 file(s), 1 blocker(s)
+   415/500  globo.com                          0 file(s), 0 blocker(s)
+   416/500  prodregistryv2.org                 0 file(s), 0 blocker(s)
+   417/500  unsplash.com                       3 file(s), 1 blocker(s)
+   418/500  163.com                            2 file(s), 7 blocker(s)
+   419/500  heytapdl.com                       unreachable
+   420/500  expireddomains.com                 1 file(s), 1 blocker(s)
+   421/500  ezvizlife.com                      unreachable
+   422/500  line.me                            4 file(s), 1 blocker(s)
+   423/500  brave.com                          4 file(s), 1 blocker(s)
+   424/500  tiktokv.eu                         unreachable
+   425/500  google.cn                          2 file(s), 0 blocker(s)
+   426/500  dailymotion.com                    5 file(s), 1 blocker(s)
+   427/500  steamcommunity.com                 3 file(s), 4 blocker(s)
+   428/500  amazonalexa.com                    1 file(s), 8 blocker(s)
+   429/500  supercell.com                      2 file(s), 0 blocker(s)
+   430/500  tiktokcdn-eu.com                   unreachable
+   431/500  temu.com                           2 file(s), 5 blocker(s)
+   432/500  beian.gov.cn                       unreachable
+   433/500  chinamobile.com                    unreachable
+   434/500  huawei.com                         1 file(s), 0 blocker(s)
+   435/500  kaspersky-labs.com                 unreachable
+   436/500  claude.ai                          6 file(s), 1 blocker(s)
+   437/500  avcdn.net                          unreachable
+   438/500  pangle.io                          unreachable
+   439/500  taobao.com                         1 file(s), 6 blocker(s)
+   440/500  intel.com                          5 file(s), 0 blocker(s)
+   441/500  kwaipros.com                       unreachable
+   442/500  byteglb.com                        unreachable
+   443/500  dotaplabs.net                      unreachable
+   444/500  go.com                             2 file(s), 7 blocker(s)
+   445/500  awsglobalaccelerator.com           unreachable
+   446/500  dropcatch.com                      0 file(s), 7 blocker(s)
+   447/500  netease.com                        unreachable
+   448/500  wbx2.com                           unreachable
+   449/500  goodreads.com                      4 file(s), 0 blocker(s)
+   450/500  ipinfo.io                          2 file(s), 0 blocker(s)
+   451/500  substack.com                       3 file(s), 0 blocker(s)
+   452/500  timeweb.ru                         0 file(s), 7 blocker(s)
+   453/500  skyhigh.cloud                      4 file(s), 3 blocker(s)
+   454/500  myqcloud.com                       unreachable
+   455/500  cloudns.net                        6 file(s), 3 blocker(s)
+   456/500  yahoo.co.jp                        1 file(s), 1 blocker(s)
+   457/500  enacdn.net                         unreachable
+   458/500  businessinsider.com                3 file(s), 0 blocker(s)
+   459/500  sina.com.cn                        0 file(s), 0 blocker(s)
+   460/500  gcdn.co                            unreachable
+   461/500  adobe.net                          unreachable
+   462/500  wp.com                             6 file(s), 1 blocker(s)
+   463/500  tencent-cloud.net                  unreachable
+   464/500  pixabay.com                        2 file(s), 1 blocker(s)
+   465/500  edgecdn.ru                         unreachable
+   466/500  aol.com                            4 file(s), 0 blocker(s)
+   467/500  avsxappcaptiveportal.com           unreachable
+   468/500  speedtest.net                      4 file(s), 0 blocker(s)
+   469/500  g.page                             3 file(s), 2 blocker(s)
+   470/500  cloudflareinsights.com             0 file(s), 7 blocker(s)
+   471/500  vercel-dns-016.com                 unreachable
+   472/500  eye4.cn                            1 file(s), 1 blocker(s)
+   473/500  gamepass.com                       unreachable
+   474/500  duolingo.com                       5 file(s), 1 blocker(s)
+   475/500  mikrotik.com                       2 file(s), 1 blocker(s)
+   476/500  bluehost.com                       1 file(s), 1 blocker(s)
+   477/500  nflximg.com                        unreachable
+   478/500  sohu.com                           5 file(s), 2 blocker(s)
+   479/500  arxiv.org                          1 file(s), 0 blocker(s)
+   480/500  firetvcaptiveportal.com            unreachable
+   481/500  dual-s-msedge.net                  unreachable
+   482/500  ack.de                             1 file(s), 6 blocker(s)
+   483/500  cnbc.com                           2 file(s), 0 blocker(s)
+   484/500  kwai.net                           unreachable
+   485/500  bdydns.com                         unreachable
+   486/500  statista.com                       1 file(s), 0 blocker(s)
+   487/500  list-manage.com                    unreachable
+   488/500  addtoany.com                       1 file(s), 0 blocker(s)
+   489/500  ietf.org                           1 file(s), 0 blocker(s)
+   490/500  okta.com                           4 file(s), 1 blocker(s)
+   491/500  nease.net                          unreachable
+   492/500  sc-gw.com                          unreachable
+   493/500  atlassian.net                      4 file(s), 3 blocker(s)
+   494/500  duckduckgo.com                     7 file(s), 2 blocker(s)
+   495/500  quora.com                          3 file(s), 0 blocker(s)
+   496/500  adriver.ru                         0 file(s), 0 blocker(s)
+   497/500  mcafee.com                         unreachable
+   498/500  amazon.co.jp                       4 file(s), 1 blocker(s)
+   499/500  markmonitor.com                    1 file(s), 1 blocker(s)
+   500/500  scribd.com                         3 file(s), 0 blocker(s)
+
+500 domain(s)
+
+  answered           332  (66%)
+  never answered     168
+  answer 200 to any path  70  (counted only what parsed)
+
+Of the 332 that answered:
+  publish a security.txt        158  (48%)
+  at least one blocker          185  (56%)
+
+Of the 158 security.txt files:
+  valid today                   60  (38%)
+  expired                       6  (4%)
+  no Expires field at all       92  (58%)
+
+Files found, by how many sites publish them:
+  robots.txt                   233  (70%)
+  security.txt                 158  (48%)
+  assetlinks.json              138  (42%)
+  apple-app-site-association   127  (38%)
+  change-password              77  (23%)
+  llms.txt                     70  (21%)
+  gpc.json                     21  (6%)
+  openid-configuration         19  (6%)
+  mta-sts.txt                  6  (2%)
+  ai.txt                       4  (1%)
+  ucp                          4  (1%)
+  dnt-policy.txt               4  (1%)
+
+500 row(s) in survey/2026-09-18-top500.csv
+findings written to survey/2026-09-18-top500.json

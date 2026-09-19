@@ -1,0 +1,501 @@
+domain,outcome,blockers,warnings,security_txt,security_txt_expires,security_txt_expired,days_left,files_present
+google.com,checked,0,2,yes,yes,no,,security.txt robots.txt assetlinks.json
+cloudflare.com,checked,1,1,yes,no,no,,security.txt robots.txt llms.txt
+facebook.com,checked,0,2,yes,yes,no,,security.txt robots.txt llms.txt openid-configuration apple-app-site-association assetlinks.json change-password
+gstatic.com,checked,0,2,no,,,,robots.txt
+googleapis.com,checked,0,3,no,,,,
+microsoft.com,checked,0,1,yes,yes,no,,security.txt robots.txt
+akamai.net,unreachable,,,,,,,
+amazonaws.com,checked,0,1,yes,yes,no,,security.txt robots.txt
+youtube.com,checked,1,1,yes,no,no,,security.txt robots.txt apple-app-site-association assetlinks.json
+apple.com,checked,1,0,yes,yes,no,,security.txt robots.txt apple-app-site-association change-password
+instagram.com,checked,3,4,yes,yes,no,,security.txt robots.txt llms.txt ai.txt ucp openid-configuration apple-app-site-association assetlinks.json change-password mta-sts.txt gpc.json dnt-policy.txt
+mail.ru,checked,4,2,yes,yes,no,,security.txt robots.txt llms.txt ai.txt ucp openid-configuration apple-app-site-association assetlinks.json change-password mta-sts.txt
+fbcdn.net,checked,6,4,yes,yes,no,,security.txt robots.txt llms.txt ai.txt ucp openid-configuration apple-app-site-association assetlinks.json change-password mta-sts.txt gpc.json dnt-policy.txt
+ezviz7.com,unreachable,,,,,,,
+twitter.com,checked,3,4,yes,yes,yes,-991,security.txt robots.txt llms.txt ai.txt ucp openid-configuration apple-app-site-association assetlinks.json change-password mta-sts.txt gpc.json dnt-policy.txt
+dzen.ru,checked,4,3,yes,yes,no,,security.txt robots.txt llms.txt ai.txt ucp openid-configuration apple-app-site-association assetlinks.json change-password mta-sts.txt gpc.json dnt-policy.txt
+linkedin.com,checked,8,3,yes,no,no,,security.txt robots.txt llms.txt ai.txt ucp openid-configuration apple-app-site-association assetlinks.json change-password mta-sts.txt gpc.json dnt-policy.txt
+googlevideo.com,unreachable,,,,,,,
+domaincontrol.com,unreachable,,,,,,,
+googletagmanager.com,checked,0,3,no,,,,
+office.com,checked,5,3,yes,yes,no,,security.txt robots.txt llms.txt ai.txt ucp openid-configuration change-password mta-sts.txt gpc.json dnt-policy.txt
+live.com,checked,7,3,yes,yes,no,,security.txt robots.txt llms.txt ai.txt ucp openid-configuration apple-app-site-association assetlinks.json change-password mta-sts.txt gpc.json dnt-policy.txt
+akamaiedge.net,unreachable,,,,,,,
+amazon.com,checked,1,1,yes,no,no,,security.txt robots.txt apple-app-site-association assetlinks.json
+gtld-servers.net,unreachable,,,,,,,
+akadns.net,unreachable,,,,,,,
+hicloudcam.com,unreachable,,,,,,,
+azure.com,checked,8,2,yes,no,no,,security.txt robots.txt ai.txt ucp openid-configuration apple-app-site-association assetlinks.json change-password mta-sts.txt gpc.json dnt-policy.txt
+github.com,checked,0,0,yes,yes,no,,security.txt robots.txt llms.txt assetlinks.json change-password
+wikipedia.org,checked,1,1,yes,yes,no,,security.txt robots.txt apple-app-site-association assetlinks.json change-password
+bing.com,checked,0,2,no,,,,robots.txt apple-app-site-association assetlinks.json
+whatsapp.net,checked,0,1,yes,yes,no,,security.txt robots.txt openid-configuration apple-app-site-association assetlinks.json
+apple-dns.net,unreachable,,,,,,,
+appsflyersdk.com,checked,1,2,no,,,,change-password
+googleusercontent.com,checked,0,3,no,,,,
+fastly.net,checked,0,2,no,,,,robots.txt llms.txt
+doubleclick.net,checked,0,2,yes,yes,no,,security.txt robots.txt assetlinks.json
+aaplimg.com,unreachable,,,,,,,
+microsoftonline.com,unreachable,,,,,,,
+office.net,unreachable,,,,,,,
+netflix.com,checked,3,4,yes,yes,no,,security.txt robots.txt llms.txt ai.txt ucp openid-configuration apple-app-site-association assetlinks.json change-password mta-sts.txt gpc.json dnt-policy.txt
+trafficmanager.net,unreachable,,,,,,,
+cloud.microsoft,checked,8,3,yes,no,no,,security.txt robots.txt llms.txt ai.txt ucp openid-configuration apple-app-site-association assetlinks.json change-password mta-sts.txt gpc.json dnt-policy.txt
+sharepoint.com,checked,4,0,no,,,,apple-app-site-association assetlinks.json change-password
+gandi.net,checked,1,1,yes,no,no,,security.txt robots.txt dnt-policy.txt
+youtu.be,checked,5,3,yes,no,no,,security.txt robots.txt llms.txt ai.txt ucp openid-configuration apple-app-site-association assetlinks.json change-password mta-sts.txt gpc.json dnt-policy.txt
+digicert.com,checked,1,1,yes,yes,no,,security.txt robots.txt llms.txt
+wordpress.org,checked,0,0,yes,yes,no,,security.txt robots.txt llms.txt change-password
+skype.com,checked,8,3,yes,no,no,,security.txt robots.txt llms.txt ai.txt ucp openid-configuration apple-app-site-association assetlinks.json change-password mta-sts.txt gpc.json dnt-policy.txt
+x.com,checked,3,4,yes,yes,yes,-991,security.txt robots.txt llms.txt ai.txt ucp openid-configuration apple-app-site-association assetlinks.json change-password mta-sts.txt gpc.json dnt-policy.txt
+icloud.com,checked,1,1,no,,,,robots.txt apple-app-site-association change-password
+cloudfront.net,unreachable,,,,,,,
+goo.gl,checked,1,2,no,,,,apple-app-site-association assetlinks.json change-password
+tiktok.com,checked,5,3,yes,no,no,,security.txt robots.txt llms.txt ai.txt ucp openid-configuration apple-app-site-association assetlinks.json change-password mta-sts.txt gpc.json dnt-policy.txt
+whatsapp.com,checked,0,1,yes,yes,no,,security.txt robots.txt openid-configuration apple-app-site-association assetlinks.json
+pinterest.com,checked,6,4,yes,no,no,,security.txt robots.txt llms.txt ai.txt ucp openid-configuration apple-app-site-association assetlinks.json change-password mta-sts.txt gpc.json dnt-policy.txt
+googledomains.com,checked,7,3,yes,yes,no,,security.txt robots.txt llms.txt ai.txt ucp openid-configuration apple-app-site-association assetlinks.json change-password mta-sts.txt gpc.json dnt-policy.txt
+cloudflare.net,checked,6,2,yes,yes,no,,security.txt robots.txt ai.txt ucp openid-configuration apple-app-site-association assetlinks.json change-password mta-sts.txt gpc.json dnt-policy.txt
+yahoo.com,checked,0,1,yes,yes,no,,security.txt robots.txt assetlinks.json
+roblox.com,checked,1,0,yes,no,no,,security.txt robots.txt apple-app-site-association assetlinks.json change-password gpc.json
+googlesyndication.com,checked,0,3,no,,,,
+gvt1.com,unreachable,,,,,,,
+pv-cdn.net,unreachable,,,,,,,
+spotify.com,checked,1,2,yes,no,no,,security.txt robots.txt llms.txt apple-app-site-association assetlinks.json gpc.json
+windows.net,unreachable,,,,,,,
+windowsupdate.com,unreachable,,,,,,,
+wa.me,checked,0,2,no,,,,robots.txt apple-app-site-association assetlinks.json
+adobe.com,checked,0,1,yes,yes,no,,security.txt robots.txt llms.txt apple-app-site-association assetlinks.json change-password gpc.json
+msn.com,checked,0,2,no,,,,robots.txt
+ntp.org,checked,0,2,yes,yes,no,,security.txt robots.txt
+myfritz.net,checked,5,3,yes,yes,no,,security.txt robots.txt llms.txt ai.txt ucp openid-configuration apple-app-site-association assetlinks.json change-password mta-sts.txt gpc.json dnt-policy.txt
+cloudflare-dns.com,checked,0,2,no,,,,robots.txt
+qq.com,checked,7,3,yes,no,no,,security.txt robots.txt llms.txt ai.txt ucp openid-configuration apple-app-site-association assetlinks.json change-password mta-sts.txt gpc.json dnt-policy.txt
+nginx.org,checked,0,2,no,,,,robots.txt
+chatgpt.com,checked,1,1,yes,no,no,,security.txt robots.txt apple-app-site-association assetlinks.json
+root-servers.net,unreachable,,,,,,,
+zoom.us,checked,0,2,yes,yes,no,,security.txt robots.txt openid-configuration apple-app-site-association assetlinks.json
+cdninstagram.com,unreachable,,,,,,,
+workers.dev,checked,8,3,yes,no,no,,security.txt robots.txt llms.txt ai.txt ucp openid-configuration apple-app-site-association assetlinks.json change-password mta-sts.txt gpc.json dnt-policy.txt
+tiktokcdn.com,unreachable,,,,,,,
+akam.net,unreachable,,,,,,,
+tiktokv.com,checked,0,3,no,,,,apple-app-site-association
+openai.com,checked,1,1,yes,no,no,,security.txt robots.txt apple-app-site-association assetlinks.json
+gvt2.com,unreachable,,,,,,,
+edgekey.net,unreachable,,,,,,,
+baidu.com,checked,0,3,no,,,,robots.txt
+yandex.net,checked,1,2,yes,no,no,,security.txt apple-app-site-association assetlinks.json
+vimeo.com,checked,1,0,yes,no,no,,security.txt robots.txt openid-configuration apple-app-site-association assetlinks.json change-password
+ytimg.com,unreachable,,,,,,,
+windows.com,checked,8,3,yes,no,no,,security.txt robots.txt llms.txt ai.txt ucp openid-configuration apple-app-site-association assetlinks.json change-password mta-sts.txt gpc.json dnt-policy.txt
+opera.com,checked,0,1,yes,yes,no,,security.txt robots.txt llms.txt assetlinks.json
+sentry.io,checked,6,3,yes,no,no,,security.txt robots.txt llms.txt ai.txt ucp openid-configuration apple-app-site-association assetlinks.json change-password mta-sts.txt gpc.json dnt-policy.txt
+f5.com,checked,0,1,yes,yes,no,,security.txt robots.txt
+samsung.com,checked,0,2,no,,,,robots.txt llms.txt apple-app-site-association assetlinks.json
+nginx.com,checked,7,3,yes,yes,no,,security.txt robots.txt llms.txt ai.txt ucp openid-configuration apple-app-site-association assetlinks.json change-password mta-sts.txt gpc.json dnt-policy.txt
+yandex.ru,checked,1,1,yes,no,no,,security.txt robots.txt apple-app-site-association assetlinks.json
+edgesuite.net,unreachable,,,,,,,
+highwebmedia.com,unreachable,,,,,,,
+blogspot.com,checked,0,11,no,,,,robots.txt
+mozilla.org,checked,2,1,yes,no,no,,security.txt robots.txt apple-app-site-association gpc.json
+wordpress.com,checked,1,0,yes,no,no,,security.txt robots.txt llms.txt apple-app-site-association assetlinks.json change-password
+t.me,checked,4,4,yes,yes,no,,security.txt llms.txt ai.txt ucp openid-configuration apple-app-site-association assetlinks.json change-password mta-sts.txt gpc.json dnt-policy.txt
+gwfb.net,unreachable,,,,,,,
+achmea.nl,checked,0,1,yes,yes,no,,security.txt robots.txt
+dellemc.com,unreachable,,,,,,,
+actify.nl,checked,0,5,no,,,,robots.txt
+a2z.com,unreachable,,,,,,,
+b-cdn.net,checked,6,3,yes,no,no,,security.txt robots.txt llms.txt ai.txt ucp openid-configuration assetlinks.json change-password mta-sts.txt dnt-policy.txt
+reddit.com,checked,0,2,yes,yes,no,,security.txt robots.txt llms.txt apple-app-site-association assetlinks.json change-password
+ui.com,checked,1,2,yes,no,no,,security.txt robots.txt apple-app-site-association assetlinks.json
+office365.com,checked,1,2,no,,,,change-password
+nic.ru,checked,7,3,yes,yes,no,,security.txt robots.txt llms.txt ai.txt ucp openid-configuration apple-app-site-association assetlinks.json change-password mta-sts.txt gpc.json dnt-policy.txt
+yccdn.ru,unreachable,,,,,,,
+google-analytics.com,checked,0,2,no,,,,robots.txt
+aws.dev,unreachable,,,,,,,
+europa.eu,checked,0,2,no,,,,robots.txt
+bit.ly,checked,1,4,yes,no,no,,security.txt robots.txt llms.txt
+okcdn.ru,checked,0,3,no,,,,
+app-analytics-services.com,checked,0,3,no,,,,
+outlook.com,checked,2,3,yes,yes,no,,security.txt robots.txt llms.txt apple-app-site-association assetlinks.json mta-sts.txt
+registrar-servers.com,checked,0,3,no,,,,robots.txt
+app-measurement.com,checked,0,3,no,,,,
+amazonvideo.com,checked,1,1,no,,,,robots.txt apple-app-site-association assetlinks.json change-password
+criteo.com,checked,1,3,yes,yes,no,,security.txt robots.txt gpc.json
+github.io,checked,7,3,yes,yes,no,,security.txt robots.txt llms.txt ai.txt ucp openid-configuration apple-app-site-association assetlinks.json change-password mta-sts.txt gpc.json dnt-policy.txt
+cdn77.org,unreachable,,,,,,,
+vk.com,checked,1,1,no,,,,robots.txt apple-app-site-association assetlinks.json change-password
+apache.org,checked,0,1,yes,yes,no,,security.txt robots.txt
+trbcdn.net,unreachable,,,,,,,
+snapchat.com,checked,1,1,yes,no,no,,security.txt robots.txt apple-app-site-association assetlinks.json
+amazon-adsystem.com,unreachable,,,,,,,
+unity3d.com,unreachable,,,,,,,
+dnsowl.com,unreachable,,,,,,,
+amazon.dev,unreachable,,,,,,,
+intuit.com,checked,1,2,no,,,,robots.txt apple-app-site-association assetlinks.json change-password gpc.json
+triplinkintl.com,checked,5,5,no,,,,ai.txt ucp openid-configuration apple-app-site-association assetlinks.json change-password mta-sts.txt gpc.json dnt-policy.txt
+dropbox.com,checked,2,1,yes,no,no,,security.txt robots.txt llms.txt openid-configuration apple-app-site-association assetlinks.json
+afternic.com,checked,0,2,no,,,,robots.txt gpc.json
+msftncsi.com,unreachable,,,,,,,
+kaspersky.com,checked,0,2,no,,,,robots.txt llms.txt apple-app-site-association assetlinks.json
+epicgames.com,checked,1,1,yes,yes,no,,security.txt assetlinks.json change-password
+reg.ru,checked,7,3,yes,yes,no,,security.txt robots.txt llms.txt ai.txt ucp openid-configuration apple-app-site-association assetlinks.json change-password mta-sts.txt gpc.json dnt-policy.txt
+dns.google,checked,0,3,no,,,,
+nih.gov,checked,1,2,no,,,,change-password
+miit.gov.cn,unreachable,,,,,,,
+discord.gg,checked,5,3,yes,no,no,,security.txt robots.txt llms.txt ai.txt ucp openid-configuration apple-app-site-association assetlinks.json change-password mta-sts.txt gpc.json dnt-policy.txt
+static.microsoft,unreachable,,,,,,,
+iiko.it,unreachable,,,,,,,
+forms.gle,checked,1,2,no,,,,apple-app-site-association assetlinks.json change-password
+azurefd.net,unreachable,,,,,,,
+archive.org,checked,1,1,yes,no,no,,security.txt robots.txt assetlinks.json
+vkuserphoto.ru,checked,1,2,no,,,,change-password
+xiaomi.com,checked,4,2,yes,no,no,,security.txt robots.txt llms.txt assetlinks.json change-password
+godaddy.com,checked,1,3,no,,,,change-password
+steamserver.net,unreachable,,,,,,,
+one.one,checked,1,2,yes,no,no,,security.txt robots.txt llms.txt
+aliyuncs.com,checked,0,3,no,,,,
+gravatar.com,checked,0,2,no,,,,robots.txt llms.txt apple-app-site-association assetlinks.json
+nytimes.com,checked,1,1,yes,no,no,,security.txt robots.txt apple-app-site-association assetlinks.json gpc.json
+msftconnecttest.com,unreachable,,,,,,,
+adtrafficquality.google,checked,0,3,no,,,,
+tumblr.com,checked,4,2,yes,no,no,,security.txt robots.txt ai.txt ucp openid-configuration apple-app-site-association assetlinks.json change-password mta-sts.txt gpc.json dnt-policy.txt
+applovin.com,checked,6,3,yes,yes,no,,security.txt robots.txt llms.txt ai.txt ucp openid-configuration apple-app-site-association assetlinks.json change-password mta-sts.txt gpc.json dnt-policy.txt
+jomodns.com,unreachable,,,,,,,
+tm-azurefd.net,unreachable,,,,,,,
+webex.com,checked,1,2,no,,,,llms.txt apple-app-site-association assetlinks.json change-password
+discord.com,checked,0,2,yes,yes,no,,security.txt robots.txt openid-configuration apple-app-site-association assetlinks.json
+dns-parking.com,unreachable,,,,,,,
+paypal.com,checked,1,1,yes,no,no,,security.txt robots.txt llms.txt openid-configuration apple-app-site-association assetlinks.json
+mts.ru,checked,0,2,no,,,,robots.txt apple-app-site-association assetlinks.json
+ax-msedge.net,unreachable,,,,,,,
+example.com,checked,0,3,no,,,,
+3gppnetwork.org,unreachable,,,,,,,
+vedcdnlb.com,unreachable,,,,,,,
+adobe.io,unreachable,,,,,,,
+azurewebsites.net,unreachable,,,,,,,
+vk.ru,checked,1,1,no,,,,robots.txt apple-app-site-association assetlinks.json change-password
+telekom.net,checked,8,3,yes,no,no,,security.txt robots.txt llms.txt ai.txt ucp openid-configuration apple-app-site-association assetlinks.json change-password mta-sts.txt gpc.json dnt-policy.txt
+ggpht.com,unreachable,,,,,,,
+shopify.com,checked,1,1,yes,no,no,,security.txt robots.txt llms.txt apple-app-site-association assetlinks.json
+spectrum.com,checked,1,4,no,,,,change-password
+base.org,checked,0,2,no,,,,robots.txt llms.txt
+hosting24.com,checked,8,3,yes,no,no,,security.txt robots.txt llms.txt ai.txt ucp openid-configuration apple-app-site-association assetlinks.json change-password mta-sts.txt gpc.json dnt-policy.txt
+doctolib.net,unreachable,,,,,,,
+namebrightdns.com,unreachable,,,,,,,
+macromedia.com,unreachable,,,,,,,
+soundcloud.com,checked,0,1,yes,yes,no,,security.txt robots.txt apple-app-site-association assetlinks.json
+cdn-apple.com,unreachable,,,,,,,
+flickr.com,checked,1,2,yes,no,no,,security.txt robots.txt apple-app-site-association assetlinks.json
+googleadservices.com,checked,0,3,no,,,,
+hichina.com,unreachable,,,,,,,
+w3.org,checked,1,1,yes,no,no,,security.txt robots.txt change-password
+adsafeprotected.com,checked,6,1,yes,yes,no,,security.txt robots.txt llms.txt ai.txt ucp openid-configuration apple-app-site-association assetlinks.json change-password mta-sts.txt gpc.json dnt-policy.txt
+nflxso.net,unreachable,,,,,,,
+lencr.org,checked,7,3,yes,yes,no,,security.txt robots.txt llms.txt ai.txt ucp openid-configuration apple-app-site-association assetlinks.json change-password mta-sts.txt gpc.json dnt-policy.txt
+bytefcdn-oversea.com,unreachable,,,,,,,
+rubiconproject.com,checked,0,2,no,,,,robots.txt llms.txt
+creativecommons.org,checked,0,2,no,,,,robots.txt
+medium.com,checked,1,1,no,,,,robots.txt apple-app-site-association change-password
+cnn.com,checked,0,2,no,,,,robots.txt apple-app-site-association assetlinks.json
+vungle.com,checked,0,2,no,,,,robots.txt
+duckdns.org,checked,0,3,no,,,,
+theguardian.com,checked,0,1,yes,yes,no,,security.txt robots.txt apple-app-site-association assetlinks.json
+ttdns2.com,unreachable,,,,,,,
+oracle.com,checked,1,1,no,,,,robots.txt change-password
+taboola.com,checked,0,2,no,,,,robots.txt llms.txt
+lsrelayaccess.com,unreachable,,,,,,,
+ebay.com,checked,0,2,no,,,,robots.txt apple-app-site-association assetlinks.json
+shifen.com,unreachable,,,,,,,
+ksyuncdn.com,unreachable,,,,,,,
+t-online.de,checked,0,2,no,,,,robots.txt apple-app-site-association assetlinks.json
+doi.org,checked,0,3,no,,,,
+youtube-nocookie.com,unreachable,,,,,,,
+bbc.com,checked,0,1,yes,yes,no,,security.txt robots.txt apple-app-site-association assetlinks.json change-password
+forbes.com,checked,7,3,yes,no,no,,security.txt robots.txt llms.txt ai.txt ucp openid-configuration apple-app-site-association assetlinks.json change-password mta-sts.txt gpc.json dnt-policy.txt
+ailawandorder.com,unreachable,,,,,,,
+fastly-edge.com,unreachable,,,,,,,
+sciencedirect.com,checked,1,2,no,,,,change-password
+sfx.ms,unreachable,,,,,,,
+capcutapi.com,unreachable,,,,,,,
+twitch.tv,checked,4,3,yes,yes,no,,security.txt robots.txt llms.txt ai.txt ucp openid-configuration apple-app-site-association assetlinks.json change-password mta-sts.txt gpc.json dnt-policy.txt
+cdngslb.com,unreachable,,,,,,,
+gmail.com,checked,0,2,no,,,,robots.txt
+researchgate.net,checked,1,1,no,,,,robots.txt apple-app-site-association assetlinks.json change-password
+akamaized.net,unreachable,,,,,,,
+mit.edu,checked,0,2,no,,,,robots.txt
+pages.dev,checked,8,3,yes,no,no,,security.txt robots.txt llms.txt ai.txt ucp openid-configuration apple-app-site-association assetlinks.json change-password mta-sts.txt gpc.json dnt-policy.txt
+ozon.ru,checked,1,10,no,,,,assetlinks.json
+yandexcloud.net,unreachable,,,,,,,
+miui.com,checked,0,3,no,,,,
+pki.goog,checked,1,1,yes,no,no,,security.txt robots.txt
+userapi.com,checked,1,2,no,,,,robots.txt apple-app-site-association assetlinks.json
+ubuntu.com,checked,0,2,no,,,,robots.txt llms.txt
+nr-data.net,unreachable,,,,,,,
+azureedge.net,unreachable,,,,,,,
+bbc.co.uk,checked,0,1,yes,yes,no,,security.txt robots.txt apple-app-site-association assetlinks.json change-password
+nist.gov,checked,0,2,no,,,,robots.txt
+stripe.com,checked,0,1,yes,yes,no,,security.txt robots.txt llms.txt assetlinks.json gpc.json
+playstation.net,unreachable,,,,,,,
+pubmatic.com,checked,1,4,no,,,,change-password
+cpanel.net,checked,0,1,yes,yes,no,,security.txt robots.txt
+t.co,checked,0,3,no,,,,robots.txt
+canva.com,checked,2,0,yes,no,no,,security.txt robots.txt openid-configuration apple-app-site-association assetlinks.json change-password
+wsdvs.com,unreachable,,,,,,,
+adsrvr.org,checked,1,1,yes,yes,no,,security.txt change-password
+rbxcdn.com,unreachable,,,,,,,
+meraki.com,checked,0,12,no,,,,robots.txt
+imcmdb.net,unreachable,,,,,,,
+sourceforge.net,checked,2,2,yes,no,no,,security.txt robots.txt llms.txt
+comcast.net,checked,1,2,no,,,,change-password
+omtrdc.net,unreachable,,,,,,,
+roku.com,checked,1,1,yes,yes,no,,security.txt robots.txt llms.txt assetlinks.json change-password gpc.json
+cisco.com,checked,0,1,yes,yes,no,,security.txt robots.txt llms.txt assetlinks.json
+wikimedia.org,checked,0,3,no,,,,
+ripn.net,unreachable,,,,,,,
+android.com,checked,0,2,no,,,,robots.txt apple-app-site-association assetlinks.json
+telegram.org,checked,1,4,yes,yes,no,,security.txt llms.txt apple-app-site-association assetlinks.json
+hubspot.com,checked,0,2,yes,yes,no,,security.txt robots.txt llms.txt apple-app-site-association assetlinks.json
+alidns.com,checked,5,2,yes,yes,no,,security.txt robots.txt llms.txt ai.txt ucp openid-configuration apple-app-site-association assetlinks.json change-password mta-sts.txt gpc.json dnt-policy.txt
+hcaptcha.com,checked,0,2,no,,,,robots.txt llms.txt
+adnxs.com,checked,0,3,no,,,,
+alibabadns.com,unreachable,,,,,,,
+scorecardresearch.com,checked,0,3,no,,,,
+booking.com,checked,1,1,yes,yes,yes,-261,security.txt robots.txt apple-app-site-association assetlinks.json gpc.json
+imdb.com,checked,3,5,no,,,,ai.txt ucp openid-configuration apple-app-site-association assetlinks.json change-password mta-sts.txt gpc.json dnt-policy.txt
+who.int,checked,0,2,no,,,,robots.txt
+statsigapi.net,checked,0,3,no,,,,
+name-services.com,unreachable,,,,,,,
+media-amazon.com,unreachable,,,,,,,
+forter.com,checked,0,2,no,,,,robots.txt llms.txt ucp openid-configuration
+wixsite.com,unreachable,,,,,,,
+linktr.ee,checked,2,3,yes,no,no,,security.txt robots.txt llms.txt apple-app-site-association assetlinks.json
+launchpad.net,checked,0,2,no,,,,robots.txt
+ttvnw.net,unreachable,,,,,,,
+spov-msedge.net,unreachable,,,,,,,
+facebook.net,unreachable,,,,,,,
+amon.tech,unreachable,,,,,,,
+ibm.com,checked,0,1,yes,yes,no,,security.txt robots.txt
+mangosip.ru,unreachable,,,,,,,
+aliyuncsslbintl.com,unreachable,,,,,,,
+msedge.net,unreachable,,,,,,,
+reuters.com,checked,4,1,yes,no,no,,security.txt apple-app-site-association assetlinks.json change-password
+2mdn.net,unreachable,,,,,,,
+shiabank.com,unreachable,,,,,,,
+dnsmadeeasy.com,checked,0,3,no,,,,
+appsflyer.com,checked,1,1,no,,,,robots.txt change-password
+telecid.ru,unreachable,,,,,,,
+etsy.com,checked,1,0,yes,yes,no,,security.txt robots.txt apple-app-site-association assetlinks.json change-password
+springer.com,checked,7,3,yes,no,no,,security.txt robots.txt llms.txt ai.txt ucp openid-configuration apple-app-site-association assetlinks.json change-password mta-sts.txt gpc.json dnt-policy.txt
+telegram.me,checked,5,3,yes,yes,no,,security.txt robots.txt llms.txt ai.txt ucp openid-configuration apple-app-site-association assetlinks.json change-password mta-sts.txt gpc.json dnt-policy.txt
+tinyurl.com,checked,1,1,no,,,,robots.txt change-password
+drom.ru,checked,0,2,no,,,,robots.txt apple-app-site-association assetlinks.json
+mzstatic.com,checked,7,3,yes,yes,no,,security.txt robots.txt llms.txt ai.txt ucp openid-configuration apple-app-site-association assetlinks.json change-password mta-sts.txt gpc.json dnt-policy.txt
+salesforce.com,checked,0,2,no,,,,robots.txt llms.txt apple-app-site-association assetlinks.json
+hp.com,checked,1,1,yes,no,no,,security.txt robots.txt
+tiktokcdn-us.com,unreachable,,,,,,,
+namecheap.com,checked,0,2,no,,,,robots.txt openid-configuration assetlinks.json
+amplitude.com,checked,0,2,yes,yes,no,,security.txt robots.txt llms.txt
+nature.com,checked,7,3,yes,no,no,,security.txt robots.txt llms.txt ai.txt ucp openid-configuration apple-app-site-association assetlinks.json change-password mta-sts.txt gpc.json dnt-policy.txt
+crpt.ru,checked,7,3,yes,yes,no,,security.txt robots.txt llms.txt ai.txt ucp openid-configuration apple-app-site-association assetlinks.json change-password mta-sts.txt gpc.json dnt-policy.txt
+byteoversea.net,unreachable,,,,,,,
+dell.com,checked,6,2,yes,yes,yes,-154,security.txt robots.txt llms.txt ai.txt ucp openid-configuration apple-app-site-association assetlinks.json change-password mta-sts.txt gpc.json dnt-policy.txt
+inmobi.com,checked,0,2,no,,,,robots.txt
+jsdelivr.net,unreachable,,,,,,,
+steampowered.com,checked,5,3,yes,no,no,,security.txt robots.txt llms.txt ai.txt ucp openid-configuration apple-app-site-association assetlinks.json change-password mta-sts.txt gpc.json dnt-policy.txt
+weibo.com,checked,6,3,yes,yes,no,,security.txt robots.txt llms.txt ai.txt ucp openid-configuration apple-app-site-association assetlinks.json change-password mta-sts.txt gpc.json dnt-policy.txt
+autodesk.com,checked,0,3,no,,,,
+www.gov.uk,checked,0,1,yes,yes,no,,security.txt robots.txt
+clarity.ms,unreachable,,,,,,,
+avast.com,checked,2,1,yes,yes,yes,-261,security.txt robots.txt llms.txt apple-app-site-association assetlinks.json change-password
+ok.ru,checked,1,0,yes,no,no,,security.txt robots.txt apple-app-site-association assetlinks.json change-password
+wac-msedge.net,unreachable,,,,,,,
+alibaba.com,checked,3,4,no,,,,robots.txt ai.txt ucp openid-configuration apple-app-site-association assetlinks.json change-password mta-sts.txt gpc.json dnt-policy.txt
+weather.com,checked,1,1,yes,yes,no,,security.txt robots.txt llms.txt apple-app-site-association assetlinks.json gpc.json
+samsungcloud.com,checked,0,2,no,,,,robots.txt
+arubanetworks.com,unreachable,,,,,,,
+harvard.edu,checked,0,2,no,,,,robots.txt
+debian.org,checked,0,2,yes,yes,no,,security.txt
+wiley.com,checked,1,0,yes,yes,no,,security.txt robots.txt change-password
+ea.com,checked,0,2,no,,,,robots.txt apple-app-site-association assetlinks.json
+mozilla.com,checked,2,1,yes,no,no,,security.txt robots.txt apple-app-site-association gpc.json
+mtgglobals.com,unreachable,,,,,,,
+douyincdn.com,unreachable,,,,,,,
+samsungqbe.com,unreachable,,,,,,,
+heytapmobile.com,unreachable,,,,,,,
+shalltry.com,checked,1,2,no,,,,change-password
+php.net,checked,0,1,yes,yes,no,,security.txt robots.txt
+datadoghq.com,checked,0,3,yes,yes,no,,security.txt robots.txt llms.txt assetlinks.json
+akamaihd.net,unreachable,,,,,,,
+aliyun.com,checked,0,4,no,,,,
+googleblog.com,checked,8,3,yes,no,no,,security.txt robots.txt llms.txt ai.txt ucp openid-configuration apple-app-site-association assetlinks.json change-password mta-sts.txt gpc.json dnt-policy.txt
+amazon.co.uk,checked,0,4,no,,,,apple-app-site-association assetlinks.json
+hostinger.com,checked,0,1,yes,yes,no,,security.txt robots.txt llms.txt
+myshopify.com,checked,0,3,no,,,,apple-app-site-association assetlinks.json
+trueconf.net,unreachable,,,,,,,
+spaceweb.pro,unreachable,,,,,,,
+worldnic.com,unreachable,,,,,,,
+twc.com,unreachable,,,,,,,
+awswaf.com,unreachable,,,,,,,
+smartadserver.com,checked,8,3,yes,no,no,,security.txt robots.txt llms.txt ai.txt ucp openid-configuration apple-app-site-association assetlinks.json change-password mta-sts.txt gpc.json dnt-policy.txt
+name.com,checked,0,2,no,,,,robots.txt llms.txt
+crashlytics.com,checked,7,3,yes,yes,no,,security.txt robots.txt llms.txt ai.txt ucp openid-configuration apple-app-site-association assetlinks.json change-password mta-sts.txt gpc.json dnt-policy.txt
+bilibili.com,checked,0,2,no,,,,robots.txt llms.txt assetlinks.json
+mobile.de,checked,1,0,yes,yes,no,,security.txt robots.txt apple-app-site-association assetlinks.json change-password
+tbcache.com,unreachable,,,,,,,
+gnu.org,checked,0,2,no,,,,robots.txt
+trustpilot.com,checked,0,2,yes,yes,no,,security.txt robots.txt apple-app-site-association assetlinks.json
+doubleverify.com,checked,0,2,no,,,,robots.txt
+naver.com,checked,0,2,no,,,,robots.txt apple-app-site-association assetlinks.json
+inner-active.mobi,unreachable,,,,,,,
+slack.com,checked,2,0,yes,no,no,,security.txt robots.txt llms.txt openid-configuration apple-app-site-association assetlinks.json change-password
+checkpoint.com,checked,6,3,yes,yes,yes,-291,security.txt robots.txt llms.txt ai.txt ucp openid-configuration apple-app-site-association assetlinks.json change-password mta-sts.txt gpc.json dnt-policy.txt
+media.net,checked,0,3,no,,,,robots.txt
+vecdnlb.com,unreachable,,,,,,,
+edgcdn.net,unreachable,,,,,,,
+licdn.com,unreachable,,,,,,,
+opendns.com,checked,0,2,no,,,,robots.txt
+un.org,checked,0,4,no,,,,
+selectel.ru,checked,0,2,no,,,,robots.txt llms.txt
+casalemedia.com,checked,5,5,no,,,,ai.txt ucp openid-configuration apple-app-site-association assetlinks.json change-password mta-sts.txt gpc.json dnt-policy.txt
+cdc.gov,checked,7,3,yes,yes,no,,security.txt robots.txt llms.txt ai.txt ucp openid-configuration apple-app-site-association assetlinks.json change-password mta-sts.txt gpc.json dnt-policy.txt
+hostgator.com,checked,1,2,no,,,,change-password
+allawnos.com,unreachable,,,,,,,
+tradingview.com,checked,1,0,yes,no,no,,security.txt robots.txt assetlinks.json change-password
+washingtonpost.com,checked,1,2,no,,,,robots.txt apple-app-site-association assetlinks.json change-password gpc.json
+weebly.com,checked,0,2,no,,,,robots.txt
+nvidia.com,checked,1,1,no,,,,robots.txt llms.txt change-password
+zendesk.com,checked,0,1,yes,yes,no,,security.txt robots.txt llms.txt apple-app-site-association assetlinks.json
+live-video.net,checked,1,2,no,,,,change-password
+dnspod.net,unreachable,,,,,,,
+indeed.com,checked,1,1,no,,,,robots.txt apple-app-site-association change-password
+issuu.com,checked,1,0,yes,no,no,,security.txt robots.txt apple-app-site-association assetlinks.json change-password
+wsj.com,checked,1,2,no,,,,robots.txt apple-app-site-association assetlinks.json change-password
+cookiedatabase.org,checked,0,3,no,,,,robots.txt
+samsungcloudsolution.com,unreachable,,,,,,,
+bloomberg.com,checked,0,1,yes,yes,no,,security.txt robots.txt openid-configuration apple-app-site-association assetlinks.json
+calendly.com,checked,0,1,yes,yes,no,,security.txt robots.txt llms.txt openid-configuration apple-app-site-association assetlinks.json
+cdnbuild.net,unreachable,,,,,,,
+stanford.edu,checked,1,1,no,,,,robots.txt change-password
+tiktokv.us,unreachable,,,,,,,
+volcfcdndvs.com,unreachable,,,,,,,
+ip-api.com,checked,6,3,yes,yes,no,,security.txt robots.txt llms.txt ai.txt ucp openid-configuration apple-app-site-association assetlinks.json change-password mta-sts.txt gpc.json dnt-policy.txt
+gitlab.com,checked,1,0,yes,yes,no,,security.txt robots.txt openid-configuration change-password
+virginm.net,unreachable,,,,,,,
+mi.com,checked,4,2,yes,no,no,,security.txt robots.txt llms.txt assetlinks.json change-password
+plesk.com,checked,0,1,yes,yes,no,,security.txt robots.txt llms.txt
+online-metrix.net,unreachable,,,,,,,
+newrelic.com,checked,2,0,yes,no,no,,security.txt robots.txt llms.txt apple-app-site-association assetlinks.json change-password
+yandex.com,checked,1,2,yes,no,no,,security.txt apple-app-site-association assetlinks.json
+paloaltonetworks.com,checked,0,2,no,,,,robots.txt llms.txt
+amazontrust.com,unreachable,,,,,,,
+amazon.de,checked,0,2,no,,,,robots.txt apple-app-site-association assetlinks.json
+launchdarkly.com,checked,0,3,no,,,,robots.txt
+tp-link.com,checked,2,1,yes,no,no,,security.txt robots.txt apple-app-site-association assetlinks.json
+shopifysvc.com,unreachable,,,,,,,
+netangels.ru,checked,0,2,no,,,,robots.txt
+ibyteimg.com,unreachable,,,,,,,
+demdex.net,unreachable,,,,,,,
+xcal.tv,unreachable,,,,,,,
+bsky.app,checked,1,1,yes,no,no,,security.txt robots.txt apple-app-site-association assetlinks.json
+gandi-ns.fr,unreachable,,,,,,,
+vivoglobal.com,checked,0,2,no,,,,robots.txt
+espn.com,checked,0,2,no,,,,robots.txt apple-app-site-association assetlinks.json
+ipify.org,checked,0,2,no,,,,robots.txt
+onelink.me,checked,8,3,yes,no,no,,security.txt robots.txt llms.txt ai.txt ucp openid-configuration apple-app-site-association assetlinks.json change-password mta-sts.txt gpc.json dnt-policy.txt
+vkuser.net,unreachable,,,,,,,
+rocket-cdn.com,unreachable,,,,,,,
+kwai-pro.com,unreachable,,,,,,,
+nasa.gov,checked,0,2,no,,,,robots.txt
+aliexpress.com,checked,6,3,yes,no,no,,security.txt robots.txt llms.txt ai.txt ucp openid-configuration apple-app-site-association assetlinks.json change-password mta-sts.txt gpc.json dnt-policy.txt
+quickconnect.to,checked,1,10,yes,yes,no,,security.txt robots.txt llms.txt
+walmart.com,checked,1,1,yes,no,no,,security.txt robots.txt apple-app-site-association assetlinks.json
+nflxvideo.net,unreachable,,,,,,,
+wildberries.ru,checked,1,2,no,,,,ucp openid-configuration apple-app-site-association assetlinks.json change-password
+globo.com,checked,0,2,no,,,,robots.txt
+prodregistryv2.org,checked,0,3,no,,,,
+unsplash.com,checked,1,2,yes,no,no,,security.txt robots.txt apple-app-site-association
+163.com,checked,7,3,yes,no,no,,security.txt robots.txt llms.txt ai.txt ucp openid-configuration apple-app-site-association assetlinks.json change-password mta-sts.txt gpc.json dnt-policy.txt
+heytapdl.com,unreachable,,,,,,,
+expireddomains.com,checked,1,2,no,,,,change-password
+ezvizlife.com,unreachable,,,,,,,
+line.me,checked,1,1,yes,no,no,,security.txt robots.txt apple-app-site-association assetlinks.json
+brave.com,checked,1,2,yes,no,no,,security.txt robots.txt assetlinks.json gpc.json
+tiktokv.eu,unreachable,,,,,,,
+google.cn,checked,0,3,yes,yes,no,,security.txt assetlinks.json
+dailymotion.com,checked,1,0,yes,no,no,,security.txt robots.txt llms.txt apple-app-site-association change-password
+steamcommunity.com,checked,4,3,yes,yes,no,,security.txt robots.txt llms.txt ai.txt ucp openid-configuration apple-app-site-association assetlinks.json change-password mta-sts.txt gpc.json dnt-policy.txt
+amazonalexa.com,checked,8,3,yes,no,no,,security.txt robots.txt llms.txt ai.txt ucp openid-configuration apple-app-site-association assetlinks.json change-password mta-sts.txt gpc.json dnt-policy.txt
+supercell.com,checked,0,1,yes,yes,no,,security.txt robots.txt
+tiktokcdn-eu.com,unreachable,,,,,,,
+temu.com,checked,5,3,yes,yes,no,,security.txt robots.txt llms.txt ai.txt ucp openid-configuration apple-app-site-association assetlinks.json change-password mta-sts.txt gpc.json dnt-policy.txt
+beian.gov.cn,unreachable,,,,,,,
+chinamobile.com,unreachable,,,,,,,
+huawei.com,checked,0,4,no,,,,
+kaspersky-labs.com,unreachable,,,,,,,
+claude.ai,checked,1,3,yes,yes,no,,security.txt robots.txt llms.txt apple-app-site-association assetlinks.json gpc.json
+avcdn.net,unreachable,,,,,,,
+pangle.io,unreachable,,,,,,,
+taobao.com,checked,6,4,yes,yes,no,,security.txt ai.txt ucp openid-configuration apple-app-site-association assetlinks.json change-password mta-sts.txt gpc.json dnt-policy.txt
+intel.com,checked,0,2,yes,yes,no,,security.txt robots.txt llms.txt apple-app-site-association assetlinks.json
+kwaipros.com,unreachable,,,,,,,
+byteglb.com,unreachable,,,,,,,
+dotaplabs.net,unreachable,,,,,,,
+go.com,checked,7,3,yes,no,no,,security.txt robots.txt llms.txt ai.txt ucp openid-configuration apple-app-site-association assetlinks.json change-password mta-sts.txt gpc.json dnt-policy.txt
+awsglobalaccelerator.com,unreachable,,,,,,,
+dropcatch.com,checked,7,3,yes,yes,no,,security.txt robots.txt llms.txt ai.txt ucp openid-configuration apple-app-site-association assetlinks.json change-password mta-sts.txt gpc.json dnt-policy.txt
+netease.com,unreachable,,,,,,,
+wbx2.com,unreachable,,,,,,,
+goodreads.com,checked,0,2,no,,,,robots.txt openid-configuration apple-app-site-association assetlinks.json
+ipinfo.io,checked,0,1,yes,yes,no,,security.txt robots.txt
+substack.com,checked,0,2,no,,,,robots.txt apple-app-site-association assetlinks.json
+timeweb.ru,checked,7,3,yes,yes,no,,security.txt robots.txt llms.txt ai.txt ucp openid-configuration apple-app-site-association assetlinks.json change-password mta-sts.txt gpc.json dnt-policy.txt
+skyhigh.cloud,checked,3,3,yes,no,no,,security.txt robots.txt llms.txt assetlinks.json
+myqcloud.com,unreachable,,,,,,,
+cloudns.net,checked,4,2,yes,no,no,,security.txt robots.txt llms.txt ai.txt openid-configuration change-password
+yahoo.co.jp,checked,1,2,no,,,,change-password
+enacdn.net,unreachable,,,,,,,
+businessinsider.com,checked,0,2,no,,,,robots.txt apple-app-site-association assetlinks.json
+sina.com.cn,checked,0,2,no,,,,robots.txt
+gcdn.co,unreachable,,,,,,,
+adobe.net,unreachable,,,,,,,
+wp.com,checked,1,0,yes,no,no,,security.txt robots.txt llms.txt apple-app-site-association assetlinks.json change-password
+tencent-cloud.net,unreachable,,,,,,,
+pixabay.com,checked,1,1,no,,,,robots.txt change-password
+edgecdn.ru,unreachable,,,,,,,
+aol.com,checked,0,2,yes,yes,no,,security.txt robots.txt apple-app-site-association assetlinks.json
+avsxappcaptiveportal.com,unreachable,,,,,,,
+speedtest.net,checked,0,1,yes,yes,no,,security.txt robots.txt apple-app-site-association assetlinks.json
+g.page,checked,2,3,yes,yes,no,,security.txt robots.txt llms.txt
+cloudflareinsights.com,checked,7,3,yes,yes,no,,security.txt robots.txt llms.txt ai.txt ucp openid-configuration apple-app-site-association assetlinks.json change-password mta-sts.txt gpc.json dnt-policy.txt
+vercel-dns-016.com,unreachable,,,,,,,
+eye4.cn,checked,1,2,no,,,,change-password
+gamepass.com,unreachable,,,,,,,
+duolingo.com,checked,1,3,yes,yes,no,,security.txt robots.txt llms.txt apple-app-site-association assetlinks.json
+mikrotik.com,checked,1,2,yes,no,no,,security.txt robots.txt
+bluehost.com,checked,1,2,no,,,,change-password
+nflximg.com,unreachable,,,,,,,
+sohu.com,checked,2,6,no,,,,ai.txt change-password mta-sts.txt dnt-policy.txt
+arxiv.org,checked,0,2,no,,,,robots.txt
+firetvcaptiveportal.com,unreachable,,,,,,,
+dual-s-msedge.net,unreachable,,,,,,,
+ack.de,checked,6,3,yes,yes,no,,security.txt robots.txt llms.txt ai.txt ucp openid-configuration apple-app-site-association assetlinks.json change-password mta-sts.txt gpc.json dnt-policy.txt
+cnbc.com,checked,0,2,no,,,,robots.txt apple-app-site-association assetlinks.json
+kwai.net,unreachable,,,,,,,
+bdydns.com,unreachable,,,,,,,
+statista.com,checked,0,2,no,,,,robots.txt
+list-manage.com,unreachable,,,,,,,
+addtoany.com,checked,0,2,no,,,,robots.txt
+ietf.org,checked,0,2,no,,,,robots.txt
+okta.com,checked,1,0,yes,yes,no,,security.txt robots.txt llms.txt change-password
+nease.net,unreachable,,,,,,,
+sc-gw.com,unreachable,,,,,,,
+atlassian.net,checked,3,3,yes,yes,no,,security.txt robots.txt llms.txt ai.txt ucp openid-configuration apple-app-site-association assetlinks.json change-password mta-sts.txt gpc.json dnt-policy.txt
+duckduckgo.com,checked,2,2,yes,yes,no,,security.txt robots.txt llms.txt assetlinks.json change-password gpc.json dnt-policy.txt
+quora.com,checked,0,2,no,,,,robots.txt apple-app-site-association assetlinks.json
+adriver.ru,checked,0,9,no,,,,
+mcafee.com,unreachable,,,,,,,
+amazon.co.jp,checked,1,1,yes,no,no,,security.txt robots.txt apple-app-site-association assetlinks.json
+markmonitor.com,checked,1,2,no,,,,change-password
+scribd.com,checked,0,2,no,,,,robots.txt apple-app-site-association assetlinks.json

@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Report a security vulnerability
+    url: https://github.com/dkautomation23/ucp-audit/security/advisories/new
+    about: Do not open a public issue for a security problem — see SECURITY.md.
+  - name: Ask a question
+    url: mailto:hello@dkautomation.dev
+    about: For anything that isn't a bug or a feature request.

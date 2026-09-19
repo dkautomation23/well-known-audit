@@ -1,0 +1,5918 @@
+{
+  "checkedAt": "2026-09-18T17:13:12.530Z",
+  "summary": {
+    "total": 500,
+    "checked": 332,
+    "unreachable": 168,
+    "answerAnything": 70,
+    "withBlockers": 185,
+    "securityTxt": {
+      "published": 158,
+      "withoutExpires": 92,
+      "expired": 6,
+      "valid": 60
+    },
+    "filePresence": {
+      "security.txt": 158,
+      "robots.txt": 233,
+      "assetlinks.json": 138,
+      "llms.txt": 70,
+      "openid-configuration": 19,
+      "apple-app-site-association": 127,
+      "change-password": 77,
+      "ai.txt": 4,
+      "ucp": 4,
+      "mta-sts.txt": 6,
+      "gpc.json": 21,
+      "dnt-policy.txt": 4
+    }
+  },
+  "results": [
+    {
+      "domain": "google.com",
+      "outcome": "checked",
+      "blockers": 0,
+      "warnings": 2,
+      "present": [
+        "security.txt",
+        "robots.txt",
+        "assetlinks.json"
+      ],
+      "securityTxt": {
+        "found": true,
+        "hasExpires": true,
+        "expired": false
+      }
+    },
+    {
+      "domain": "cloudflare.com",
+      "outcome": "checked",
+      "blockers": 1,
+      "warnings": 1,
+      "present": [
+        "security.txt",
+        "robots.txt",
+        "llms.txt"
+      ],
+      "securityTxt": {
+        "found": true,
+        "hasExpires": false,
+        "expired": false
+      }
+    },
+    {
+      "domain": "facebook.com",
+      "outcome": "checked",
+      "blockers": 0,
+      "warnings": 2,
+      "present": [
+        "security.txt",
+        "robots.txt",
+        "llms.txt",
+        "openid-configuration",
+        "apple-app-site-association",
+        "assetlinks.json",
+        "change-password"
+      ],
+      "securityTxt": {
+        "found": true,
+        "hasExpires": true,
+        "expired": false
+      }
+    },
+    {
+      "domain": "gstatic.com",
+      "outcome": "checked",
+      "blockers": 0,
+      "warnings": 2,
+      "present": [
+        "robots.txt"
+      ],
+      "securityTxt": {
+        "found": false,
+        "hasExpires": false,
+        "expired": false
+      }
+    },
+    {
+      "domain": "googleapis.com",
+      "outcome": "checked",
+      "blockers": 0,
+      "warnings": 3,
+      "present": [],
+      "securityTxt": {
+        "found": false,
+        "hasExpires": false,
+        "expired": false
+      }
+    },
+    {
+      "domain": "microsoft.com",
+      "outcome": "checked",
+      "blockers": 0,
+      "warnings": 1,
+      "present": [
+        "security.txt",
+        "robots.txt"
+      ],
+      "securityTxt": {
+        "found": true,
+        "hasExpires": true,
+        "expired": false
+      }
+    },
+    {
+      "domain": "akamai.net",
+      "outcome": "unreachable"
+    },
+    {
+      "domain": "amazonaws.com",
+      "outcome": "checked",
+      "blockers": 0,
+      "warnings": 1,
+      "present": [
+        "security.txt",
+        "robots.txt"
+      ],
+      "securityTxt": {
+        "found": true,
+        "hasExpires": true,
+        "expired": false
+      }
+    },
+    {
+      "domain": "youtube.com",
+      "outcome": "checked",
+      "blockers": 1,
+      "warnings": 1,
+      "present": [
+        "security.txt",
+        "robots.txt",
+        "apple-app-site-association",
+        "assetlinks.json"
+      ],
+      "securityTxt": {
+        "found": true,
+        "hasExpires": false,
+        "expired": false
+      }
+    },
+    {
+      "domain": "apple.com",
+      "outcome": "checked",
+      "blockers": 1,
+      "warnings": 0,
+      "present": [
+        "security.txt",
+        "robots.txt",
+        "apple-app-site-association",
+        "change-password"
+      ],
+      "securityTxt": {
+        "found": true,
+        "hasExpires": true,
+        "expired": false
+      }
+    },
+    {
+      "domain": "instagram.com",
+      "outcome": "checked",
+      "answersAnything": true,
+      "blockers": 3,
+      "warnings": 4,
+      "present": [
+        "robots.txt",
+        "openid-configuration",
+        "apple-app-site-association",
+        "assetlinks.json"
+      ],
+      "securityTxt": {
+        "found": false,
+        "hasExpires": false,
+        "expired": false
+      }
+    },
+    {
+      "domain": "mail.ru",
+      "outcome": "checked",
+      "blockers": 5,
+      "warnings": 2,
+      "present": [
+        "security.txt",
+        "robots.txt",
+        "llms.txt",
+        "ai.txt",
+        "ucp",
+        "openid-configuration",
+        "apple-app-site-association",
+        "assetlinks.json",
+        "change-password",
+        "mta-sts.txt",
+        "gpc.json"
+      ],
+      "securityTxt": {
+        "found": true,
+        "hasExpires": false,
+        "expired": false
+      }
+    },
+    {
+      "domain": "fbcdn.net",
+      "outcome": "checked",
+      "answersAnything": true,
+      "blockers": 6,
+      "warnings": 4,
+      "present": [
+        "robots.txt"
+      ],
+      "securityTxt": {
+        "found": false,
+        "hasExpires": false,
+        "expired": false
+      }
+    },
+    {
+      "domain": "ezviz7.com",
+      "outcome": "unreachable"
+    },
+    {
+      "domain": "twitter.com",
+      "outcome": "checked",
+      "answersAnything": true,
+      "blockers": 3,
+      "warnings": 4,
+      "present": [
+        "security.txt",
+        "robots.txt",
+        "apple-app-site-association",
+        "assetlinks.json",
+        "gpc.json"
+      ],
+      "securityTxt": {
+        "found": true,
+        "hasExpires": true,
+        "expired": true,
+        "daysLeft": -991
+      }
+    },
+    {
+      "domain": "dzen.ru",
+      "outcome": "checked",
+      "answersAnything": true,
+      "blockers": 4,
+      "warnings": 3,
+      "present": [
+        "robots.txt",
+        "apple-app-site-association",
+        "assetlinks.json"
+      ],
+      "securityTxt": {
+        "found": false,
+        "hasExpires": false,
+        "expired": false
+      }
+    },
+    {
+      "domain": "linkedin.com",
+      "outcome": "checked",
+      "answersAnything": true,
+      "blockers": 8,
+      "warnings": 3,
+      "present": [
+        "security.txt"
+      ],
+      "securityTxt": {
+        "found": true,
+        "hasExpires": false,
+        "expired": false
+      }
+    },
+    {
+      "domain": "googlevideo.com",
+      "outcome": "unreachable"
+    },
+    {
+      "domain": "domaincontrol.com",
+      "outcome": "unreachable"
+    },
+    {
+      "domain": "googletagmanager.com",
+      "outcome": "checked",
+      "blockers": 0,
+      "warnings": 3,
+      "present": [],
+      "securityTxt": {
+        "found": false,
+        "hasExpires": false,
+        "expired": false
+      }
+    },
+    {
+      "domain": "office.com",
+      "outcome": "checked",
+      "answersAnything": true,
+      "blockers": 5,
+      "warnings": 3,
+      "present": [],
+      "securityTxt": {
+        "found": false,
+        "hasExpires": false,
+        "expired": false
+      }
+    },
+    {
+      "domain": "live.com",
+      "outcome": "checked",
+      "answersAnything": true,
+      "blockers": 7,
+      "warnings": 3,
+      "present": [],
+      "securityTxt": {
+        "found": false,
+        "hasExpires": false,
+        "expired": false
+      }
+    },
+    {
+      "domain": "akamaiedge.net",
+      "outcome": "unreachable"
+    },
+    {
+      "domain": "amazon.com",
+      "outcome": "checked",
+      "blockers": 1,
+      "warnings": 1,
+      "present": [
+        "security.txt",
+        "robots.txt",
+        "apple-app-site-association",
+        "assetlinks.json"
+      ],
+      "securityTxt": {
+        "found": true,
+        "hasExpires": false,
+        "expired": false
+      }
+    },
+    {
+      "domain": "gtld-servers.net",
+      "outcome": "unreachable"
+    },
+    {
+      "domain": "akadns.net",
+      "outcome": "unreachable"
+    },
+    {
+      "domain": "hicloudcam.com",
+      "outcome": "unreachable"
+    },
+    {
+      "domain": "azure.com",
+      "outcome": "checked",
+      "answersAnything": true,
+      "blockers": 8,
+      "warnings": 2,
+      "present": [
+        "security.txt"
+      ],
+      "securityTxt": {
+        "found": true,
+        "hasExpires": false,
+        "expired": false
+      }
+    },
+    {
+      "domain": "github.com",
+      "outcome": "checked",
+      "blockers": 0,
+      "warnings": 0,
+      "present": [
+        "security.txt",
+        "robots.txt",
+        "llms.txt",
+        "assetlinks.json",
+        "change-password"
+      ],
+      "securityTxt": {
+        "found": true,
+        "hasExpires": true,
+        "expired": false
+      }
+    },
+    {
+      "domain": "wikipedia.org",
+      "outcome": "checked",
+      "blockers": 1,
+      "warnings": 1,
+      "present": [
+        "security.txt",
+        "robots.txt",
+        "apple-app-site-association",
+        "assetlinks.json",
+        "change-password"
+      ],
+      "securityTxt": {
+        "found": true,
+        "hasExpires": true,
+        "expired": false
+      }
+    },
+    {
+      "domain": "bing.com",
+      "outcome": "checked",
+      "blockers": 0,
+      "warnings": 2,
+      "present": [
+        "robots.txt",
+        "apple-app-site-association",
+        "assetlinks.json"
+      ],
+      "securityTxt": {
+        "found": false,
+        "hasExpires": false,
+        "expired": false
+      }
+    },
+    {
+      "domain": "whatsapp.net",
+      "outcome": "checked",
+      "blockers": 0,
+      "warnings": 1,
+      "present": [
+        "security.txt",
+        "robots.txt",
+        "openid-configuration",
+        "apple-app-site-association",
+        "assetlinks.json"
+      ],
+      "securityTxt": {
+        "found": true,
+        "hasExpires": true,
+        "expired": false
+      }
+    },
+    {
+      "domain": "apple-dns.net",
+      "outcome": "unreachable"
+    },
+    {
+      "domain": "appsflyersdk.com",
+      "outcome": "checked",
+      "blockers": 1,
+      "warnings": 2,
+      "present": [
+        "change-password"
+      ],
+      "securityTxt": {
+        "found": false,
+        "hasExpires": false,
+        "expired": false
+      }
+    },
+    {
+      "domain": "googleusercontent.com",
+      "outcome": "checked",
+      "blockers": 0,
+      "warnings": 3,
+      "present": [],
+      "securityTxt": {
+        "found": false,
+        "hasExpires": false,
+        "expired": false
+      }
+    },
+    {
+      "domain": "fastly.net",
+      "outcome": "checked",
+      "blockers": 0,
+      "warnings": 2,
+      "present": [
+        "robots.txt",
+        "llms.txt"
+      ],
+      "securityTxt": {
+        "found": false,
+        "hasExpires": false,
+        "expired": false
+      }
+    },
+    {
+      "domain": "doubleclick.net",
+      "outcome": "checked",
+      "blockers": 0,
+      "warnings": 2,
+      "present": [
+        "security.txt",
+        "robots.txt",
+        "assetlinks.json"
+      ],
+      "securityTxt": {
+        "found": true,
+        "hasExpires": true,
+        "expired": false
+      }
+    },
+    {
+      "domain": "aaplimg.com",
+      "outcome": "unreachable"
+    },
+    {
+      "domain": "microsoftonline.com",
+      "outcome": "unreachable"
+    },
+    {
+      "domain": "office.net",
+      "outcome": "unreachable"
+    },
+    {
+      "domain": "netflix.com",
+      "outcome": "checked",
+      "answersAnything": true,
+      "blockers": 3,
+      "warnings": 4,
+      "present": [
+        "security.txt",
+        "robots.txt",
+        "apple-app-site-association",
+        "assetlinks.json"
+      ],
+      "securityTxt": {
+        "found": true,
+        "hasExpires": true,
+        "expired": false
+      }
+    },
+    {
+      "domain": "trafficmanager.net",
+      "outcome": "unreachable"
+    },
+    {
+      "domain": "cloud.microsoft",
+      "outcome": "checked",
+      "answersAnything": true,
+      "blockers": 8,
+      "warnings": 3,
+      "present": [
+        "security.txt"
+      ],
+      "securityTxt": {
+        "found": true,
+        "hasExpires": false,
+        "expired": false
+      }
+    },
+    {
+      "domain": "sharepoint.com",
+      "outcome": "checked",
+      "blockers": 4,
+      "warnings": 0,
+      "present": [
+        "apple-app-site-association",
+        "assetlinks.json",
+        "change-password"
+      ],
+      "securityTxt": {
+        "found": false,
+        "hasExpires": false,
+        "expired": false
+      }
+    },
+    {
+      "domain": "gandi.net",
+      "outcome": "checked",
+      "blockers": 1,
+      "warnings": 1,
+      "present": [
+        "security.txt",
+        "robots.txt",
+        "dnt-policy.txt"
+      ],
+      "securityTxt": {
+        "found": true,
+        "hasExpires": false,
+        "expired": false
+      }
+    },
+    {
+      "domain": "youtu.be",
+      "outcome": "checked",
+      "answersAnything": true,
+      "blockers": 5,
+      "warnings": 3,
+      "present": [
+        "security.txt",
+        "robots.txt",
+        "apple-app-site-association",
+        "assetlinks.json"
+      ],
+      "securityTxt": {
+        "found": true,
+        "hasExpires": false,
+        "expired": false
+      }
+    },
+    {
+      "domain": "digicert.com",
+      "outcome": "checked",
+      "blockers": 1,
+      "warnings": 1,
+      "present": [
+        "security.txt",
+        "robots.txt",
+        "llms.txt"
+      ],
+      "securityTxt": {
+        "found": true,
+        "hasExpires": false,
+        "expired": false
+      }
+    },
+    {
+      "domain": "wordpress.org",
+      "outcome": "checked",
+      "blockers": 0,
+      "warnings": 0,
+      "present": [
+        "security.txt",
+        "robots.txt",
+        "llms.txt",
+        "change-password"
+      ],
+      "securityTxt": {
+        "found": true,
+        "hasExpires": true,
+        "expired": false
+      }
+    },
+    {
+      "domain": "skype.com",
+      "outcome": "checked",
+      "answersAnything": true,
+      "blockers": 8,
+      "warnings": 3,
+      "present": [
+        "security.txt"
+      ],
+      "securityTxt": {
+        "found": true,
+        "hasExpires": false,
+        "expired": false
+      }
+    },
+    {
+      "domain": "x.com",
+      "outcome": "checked",
+      "answersAnything": true,
+      "blockers": 3,
+      "warnings": 4,
+      "present": [
+        "security.txt",
+        "robots.txt",
+        "apple-app-site-association",
+        "assetlinks.json",
+        "gpc.json"
+      ],
+      "securityTxt": {
+        "found": true,
+        "hasExpires": true,
+        "expired": true,
+        "daysLeft": -991
+      }
+    },
+    {
+      "domain": "icloud.com",
+      "outcome": "checked",
+      "blockers": 1,
+      "warnings": 1,
+      "present": [
+        "robots.txt",
+        "apple-app-site-association",
+        "change-password"
+      ],
+      "securityTxt": {
+        "found": false,
+        "hasExpires": false,
+        "expired": false
+      }
+    },
+    {
+      "domain": "cloudfront.net",
+      "outcome": "unreachable"
+    },
+    {
+      "domain": "goo.gl",
+      "outcome": "checked",
+      "blockers": 1,
+      "warnings": 2,
+      "present": [
+        "apple-app-site-association",
+        "assetlinks.json",
+        "change-password"
+      ],
+      "securityTxt": {
+        "found": false,
+        "hasExpires": false,
+        "expired": false
+      }
+    },
+    {
+      "domain": "tiktok.com",
+      "outcome": "checked",
+      "answersAnything": true,
+      "blockers": 5,
+      "warnings": 3,
+      "present": [
+        "security.txt",
+        "robots.txt",
+        "apple-app-site-association",
+        "assetlinks.json"
+      ],
+      "securityTxt": {
+        "found": true,
+        "hasExpires": false,
+        "expired": false
+      }
+    },
+    {
+      "domain": "whatsapp.com",
+      "outcome": "checked",
+      "blockers": 0,
+      "warnings": 1,
+      "present": [
+        "security.txt",
+        "robots.txt",
+        "openid-configuration",
+        "apple-app-site-association",
+        "assetlinks.json"
+      ],
+      "securityTxt": {
+        "found": true,
+        "hasExpires": true,
+        "expired": false
+      }
+    },
+    {
+      "domain": "pinterest.com",
+      "outcome": "checked",
+      "answersAnything": true,
+      "blockers": 6,
+      "warnings": 4,
+      "present": [
+        "security.txt",
+        "robots.txt",
+        "assetlinks.json"
+      ],
+      "securityTxt": {
+        "found": true,
+        "hasExpires": false,
+        "expired": false
+      }
+    },
+    {
+      "domain": "googledomains.com",
+      "outcome": "checked",
+      "answersAnything": true,
+      "blockers": 7,
+      "warnings": 3,
+      "present": [],
+      "securityTxt": {
+        "found": false,
+        "hasExpires": false,
+        "expired": false
+      }
+    },
+    {
+      "domain": "cloudflare.net",
+      "outcome": "checked",
+      "answersAnything": true,
+      "blockers": 6,
+      "warnings": 2,
+      "present": [
+        "robots.txt"
+      ],
+      "securityTxt": {
+        "found": false,
+        "hasExpires": false,
+        "expired": false
+      }
+    },
+    {
+      "domain": "yahoo.com",
+      "outcome": "checked",
+      "blockers": 0,
+      "warnings": 1,
+      "present": [
+        "security.txt",
+        "robots.txt",
+        "assetlinks.json"
+      ],
+      "securityTxt": {
+        "found": true,
+        "hasExpires": true,
+        "expired": false
+      }
+    },
+    {
+      "domain": "roblox.com",
+      "outcome": "checked",
+      "blockers": 1,
+      "warnings": 0,
+      "present": [
+        "security.txt",
+        "robots.txt",
+        "apple-app-site-association",
+        "assetlinks.json",
+        "change-password",
+        "gpc.json"
+      ],
+      "securityTxt": {
+        "found": true,
+        "hasExpires": false,
+        "expired": false
+      }
+    },
+    {
+      "domain": "googlesyndication.com",
+      "outcome": "checked",
+      "blockers": 0,
+      "warnings": 3,
+      "present": [],
+      "securityTxt": {
+        "found": false,
+        "hasExpires": false,
+        "expired": false
+      }
+    },
+    {
+      "domain": "gvt1.com",
+      "outcome": "unreachable"
+    },
+    {
+      "domain": "pv-cdn.net",
+      "outcome": "unreachable"
+    },
+    {
+      "domain": "spotify.com",
+      "outcome": "checked",
+      "blockers": 1,
+      "warnings": 2,
+      "present": [
+        "security.txt",
+        "robots.txt",
+        "llms.txt",
+        "apple-app-site-association",
+        "assetlinks.json",
+        "gpc.json"
+      ],
+      "securityTxt": {
+        "found": true,
+        "hasExpires": false,
+        "expired": false
+      }
+    },
+    {
+      "domain": "windows.net",
+      "outcome": "unreachable"
+    },
+    {
+      "domain": "windowsupdate.com",
+      "outcome": "unreachable"
+    },
+    {
+      "domain": "wa.me",
+      "outcome": "checked",
+      "blockers": 0,
+      "warnings": 2,
+      "present": [
+        "robots.txt",
+        "apple-app-site-association",
+        "assetlinks.json"
+      ],
+      "securityTxt": {
+        "found": false,
+        "hasExpires": false,
+        "expired": false
+      }
+    },
+    {
+      "domain": "adobe.com",
+      "outcome": "checked",
+      "blockers": 0,
+      "warnings": 1,
+      "present": [
+        "security.txt",
+        "robots.txt",
+        "llms.txt",
+        "apple-app-site-association",
+        "assetlinks.json",
+        "change-password",
+        "gpc.json"
+      ],
+      "securityTxt": {
+        "found": true,
+        "hasExpires": true,
+        "expired": false
+      }
+    },
+    {
+      "domain": "msn.com",
+      "outcome": "checked",
+      "blockers": 0,
+      "warnings": 2,
+      "present": [
+        "robots.txt"
+      ],
+      "securityTxt": {
+        "found": false,
+        "hasExpires": false,
+        "expired": false
+      }
+    },
+    {
+      "domain": "ntp.org",
+      "outcome": "checked",
+      "blockers": 0,
+      "warnings": 2,
+      "present": [
+        "security.txt",
+        "robots.txt"
+      ],
+      "securityTxt": {
+        "found": true,
+        "hasExpires": true,
+        "expired": false
+      }
+    },
+    {
+      "domain": "myfritz.net",
+      "outcome": "checked",
+      "answersAnything": true,
+      "blockers": 5,
+      "warnings": 3,
+      "present": [
+        "security.txt",
+        "robots.txt"
+      ],
+      "securityTxt": {
+        "found": true,
+        "hasExpires": true,
+        "expired": false
+      }
+    },
+    {
+      "domain": "cloudflare-dns.com",
+      "outcome": "checked",
+      "blockers": 0,
+      "warnings": 2,
+      "present": [
+        "robots.txt"
+      ],
+      "securityTxt": {
+        "found": false,
+        "hasExpires": false,
+        "expired": false
+      }
+    },
+    {
+      "domain": "qq.com",
+      "outcome": "checked",
+      "answersAnything": true,
+      "blockers": 7,
+      "warnings": 3,
+      "present": [
+        "security.txt",
+        "robots.txt"
+      ],
+      "securityTxt": {
+        "found": true,
+        "hasExpires": false,
+        "expired": false
+      }
+    },
+    {
+      "domain": "nginx.org",
+      "outcome": "checked",
+      "blockers": 0,
+      "warnings": 2,
+      "present": [
+        "robots.txt"
+      ],
+      "securityTxt": {
+        "found": false,
+        "hasExpires": false,
+        "expired": false
+      }
+    },
+    {
+      "domain": "chatgpt.com",
+      "outcome": "checked",
+      "blockers": 1,
+      "warnings": 1,
+      "present": [
+        "security.txt",
+        "robots.txt",
+        "apple-app-site-association",
+        "assetlinks.json"
+      ],
+      "securityTxt": {
+        "found": true,
+        "hasExpires": false,
+        "expired": false
+      }
+    },
+    {
+      "domain": "root-servers.net",
+      "outcome": "unreachable"
+    },
+    {
+      "domain": "zoom.us",
+      "outcome": "checked",
+      "blockers": 0,
+      "warnings": 2,
+      "present": [
+        "security.txt",
+        "robots.txt",
+        "openid-configuration",
+        "apple-app-site-association",
+        "assetlinks.json"
+      ],
+      "securityTxt": {
+        "found": true,
+        "hasExpires": true,
+        "expired": false
+      }
+    },
+    {
+      "domain": "cdninstagram.com",
+      "outcome": "unreachable"
+    },
+    {
+      "domain": "workers.dev",
+      "outcome": "checked",
+      "answersAnything": true,
+      "blockers": 8,
+      "warnings": 3,
+      "present": [
+        "security.txt"
+      ],
+      "securityTxt": {
+        "found": true,
+        "hasExpires": false,
+        "expired": false
+      }
+    },
+    {
+      "domain": "tiktokcdn.com",
+      "outcome": "unreachable"
+    },
+    {
+      "domain": "akam.net",
+      "outcome": "unreachable"
+    },
+    {
+      "domain": "tiktokv.com",
+      "outcome": "checked",
+      "blockers": 0,
+      "warnings": 3,
+      "present": [
+        "apple-app-site-association"
+      ],
+      "securityTxt": {
+        "found": false,
+        "hasExpires": false,
+        "expired": false
+      }
+    },
+    {
+      "domain": "openai.com",
+      "outcome": "checked",
+      "blockers": 1,
+      "warnings": 1,
+      "present": [
+        "security.txt",
+        "robots.txt",
+        "apple-app-site-association",
+        "assetlinks.json"
+      ],
+      "securityTxt": {
+        "found": true,
+        "hasExpires": false,
+        "expired": false
+      }
+    },
+    {
+      "domain": "gvt2.com",
+      "outcome": "unreachable"
+    },
+    {
+      "domain": "edgekey.net",
+      "outcome": "unreachable"
+    },
+    {
+      "domain": "baidu.com",
+      "outcome": "checked",
+      "blockers": 0,
+      "warnings": 3,
+      "present": [
+        "robots.txt"
+      ],
+      "securityTxt": {
+        "found": false,
+        "hasExpires": false,
+        "expired": false
+      }
+    },
+    {
+      "domain": "yandex.net",
+      "outcome": "checked",
+      "blockers": 1,
+      "warnings": 2,
+      "present": [
+        "security.txt",
+        "apple-app-site-association",
+        "assetlinks.json"
+      ],
+      "securityTxt": {
+        "found": true,
+        "hasExpires": false,
+        "expired": false
+      }
+    },
+    {
+      "domain": "vimeo.com",
+      "outcome": "checked",
+      "blockers": 1,
+      "warnings": 0,
+      "present": [
+        "security.txt",
+        "robots.txt",
+        "openid-configuration",
+        "apple-app-site-association",
+        "assetlinks.json",
+        "change-password"
+      ],
+      "securityTxt": {
+        "found": true,
+        "hasExpires": false,
+        "expired": false
+      }
+    },
+    {
+      "domain": "ytimg.com",
+      "outcome": "unreachable"
+    },
+    {
+      "domain": "windows.com",
+      "outcome": "checked",
+      "answersAnything": true,
+      "blockers": 8,
+      "warnings": 3,
+      "present": [
+        "security.txt"
+      ],
+      "securityTxt": {
+        "found": true,
+        "hasExpires": false,
+        "expired": false
+      }
+    },
+    {
+      "domain": "opera.com",
+      "outcome": "checked",
+      "blockers": 0,
+      "warnings": 1,
+      "present": [
+        "security.txt",
+        "robots.txt",
+        "llms.txt",
+        "assetlinks.json"
+      ],
+      "securityTxt": {
+        "found": true,
+        "hasExpires": true,
+        "expired": false
+      }
+    },
+    {
+      "domain": "sentry.io",
+      "outcome": "checked",
+      "answersAnything": true,
+      "blockers": 6,
+      "warnings": 3,
+      "present": [
+        "security.txt",
+        "robots.txt",
+        "llms.txt"
+      ],
+      "securityTxt": {
+        "found": true,
+        "hasExpires": false,
+        "expired": false
+      }
+    },
+    {
+      "domain": "f5.com",
+      "outcome": "checked",
+      "blockers": 0,
+      "warnings": 1,
+      "present": [
+        "security.txt",
+        "robots.txt"
+      ],
+      "securityTxt": {
+        "found": true,
+        "hasExpires": true,
+        "expired": false
+      }
+    },
+    {
+      "domain": "samsung.com",
+      "outcome": "checked",
+      "blockers": 0,
+      "warnings": 2,
+      "present": [
+        "robots.txt",
+        "llms.txt",
+        "apple-app-site-association",
+        "assetlinks.json"
+      ],
+      "securityTxt": {
+        "found": false,
+        "hasExpires": false,
+        "expired": false
+      }
+    },
+    {
+      "domain": "nginx.com",
+      "outcome": "checked",
+      "answersAnything": true,
+      "blockers": 7,
+      "warnings": 3,
+      "present": [],
+      "securityTxt": {
+        "found": false,
+        "hasExpires": false,
+        "expired": false
+      }
+    },
+    {
+      "domain": "yandex.ru",
+      "outcome": "checked",
+      "blockers": 1,
+      "warnings": 1,
+      "present": [
+        "security.txt",
+        "robots.txt",
+        "apple-app-site-association",
+        "assetlinks.json"
+      ],
+      "securityTxt": {
+        "found": true,
+        "hasExpires": false,
+        "expired": false
+      }
+    },
+    {
+      "domain": "edgesuite.net",
+      "outcome": "unreachable"
+    },
+    {
+      "domain": "highwebmedia.com",
+      "outcome": "unreachable"
+    },
+    {
+      "domain": "blogspot.com",
+      "outcome": "checked",
+      "blockers": 0,
+      "warnings": 11,
+      "present": [
+        "robots.txt"
+      ],
+      "securityTxt": {
+        "found": false,
+        "hasExpires": false,
+        "expired": false
+      }
+    },
+    {
+      "domain": "mozilla.org",
+      "outcome": "checked",
+      "blockers": 0,
+      "warnings": 4,
+      "present": [
+        "apple-app-site-association",
+        "gpc.json"
+      ],
+      "securityTxt": {
+        "found": false,
+        "hasExpires": false,
+        "expired": false
+      }
+    },
+    {
+      "domain": "wordpress.com",
+      "outcome": "checked",
+      "blockers": 1,
+      "warnings": 0,
+      "present": [
+        "security.txt",
+        "robots.txt",
+        "llms.txt",
+        "apple-app-site-association",
+        "assetlinks.json",
+        "change-password"
+      ],
+      "securityTxt": {
+        "found": true,
+        "hasExpires": false,
+        "expired": false
+      }
+    },
+    {
+      "domain": "t.me",
+      "outcome": "checked",
+      "answersAnything": true,
+      "blockers": 4,
+      "warnings": 4,
+      "present": [
+        "apple-app-site-association",
+        "assetlinks.json"
+      ],
+      "securityTxt": {
+        "found": false,
+        "hasExpires": false,
+        "expired": false
+      }
+    },
+    {
+      "domain": "gwfb.net",
+      "outcome": "unreachable"
+    },
+    {
+      "domain": "achmea.nl",
+      "outcome": "checked",
+      "blockers": 0,
+      "warnings": 3,
+      "present": [
+        "security.txt",
+        "robots.txt"
+      ],
+      "securityTxt": {
+        "found": true,
+        "hasExpires": true,
+        "expired": false
+      }
+    },
+    {
+      "domain": "dellemc.com",
+      "outcome": "unreachable"
+    },
+    {
+      "domain": "actify.nl",
+      "outcome": "checked",
+      "blockers": 0,
+      "warnings": 3,
+      "present": [
+        "robots.txt"
+      ],
+      "securityTxt": {
+        "found": false,
+        "hasExpires": false,
+        "expired": false
+      }
+    },
+    {
+      "domain": "a2z.com",
+      "outcome": "unreachable"
+    },
+    {
+      "domain": "b-cdn.net",
+      "outcome": "checked",
+      "answersAnything": true,
+      "blockers": 9,
+      "warnings": 3,
+      "present": [
+        "security.txt"
+      ],
+      "securityTxt": {
+        "found": true,
+        "hasExpires": false,
+        "expired": false
+      }
+    },
+    {
+      "domain": "reddit.com",
+      "outcome": "checked",
+      "blockers": 0,
+      "warnings": 2,
+      "present": [
+        "security.txt",
+        "robots.txt",
+        "llms.txt",
+        "apple-app-site-association",
+        "assetlinks.json",
+        "change-password"
+      ],
+      "securityTxt": {
+        "found": true,
+        "hasExpires": true,
+        "expired": false
+      }
+    },
+    {
+      "domain": "ui.com",
+      "outcome": "checked",
+      "blockers": 1,
+      "warnings": 2,
+      "present": [
+        "security.txt",
+        "robots.txt",
+        "apple-app-site-association",
+        "assetlinks.json"
+      ],
+      "securityTxt": {
+        "found": true,
+        "hasExpires": false,
+        "expired": false
+      }
+    },
+    {
+      "domain": "office365.com",
+      "outcome": "checked",
+      "blockers": 1,
+      "warnings": 2,
+      "present": [
+        "change-password"
+      ],
+      "securityTxt": {
+        "found": false,
+        "hasExpires": false,
+        "expired": false
+      }
+    },
+    {
+      "domain": "nic.ru",
+      "outcome": "checked",
+      "answersAnything": true,
+      "blockers": 7,
+      "warnings": 3,
+      "present": [],
+      "securityTxt": {
+        "found": false,
+        "hasExpires": false,
+        "expired": false
+      }
+    },
+    {
+      "domain": "yccdn.ru",
+      "outcome": "unreachable"
+    },
+    {
+      "domain": "google-analytics.com",
+      "outcome": "checked",
+      "blockers": 0,
+      "warnings": 2,
+      "present": [
+        "robots.txt"
+      ],
+      "securityTxt": {
+        "found": false,
+        "hasExpires": false,
+        "expired": false
+      }
+    },
+    {
+      "domain": "aws.dev",
+      "outcome": "unreachable"
+    },
+    {
+      "domain": "europa.eu",
+      "outcome": "checked",
+      "blockers": 0,
+      "warnings": 2,
+      "present": [
+        "robots.txt"
+      ],
+      "securityTxt": {
+        "found": false,
+        "hasExpires": false,
+        "expired": false
+      }
+    },
+    {
+      "domain": "bit.ly",
+      "outcome": "checked",
+      "blockers": 1,
+      "warnings": 4,
+      "present": [
+        "security.txt",
+        "robots.txt",
+        "llms.txt"
+      ],
+      "securityTxt": {
+        "found": true,
+        "hasExpires": false,
+        "expired": false
+      }
+    },
+    {
+      "domain": "okcdn.ru",
+      "outcome": "checked",
+      "blockers": 0,
+      "warnings": 3,
+      "present": [],
+      "securityTxt": {
+        "found": false,
+        "hasExpires": false,
+        "expired": false
+      }
+    },
+    {
+      "domain": "app-analytics-services.com",
+      "outcome": "checked",
+      "blockers": 0,
+      "warnings": 3,
+      "present": [],
+      "securityTxt": {
+        "found": false,
+        "hasExpires": false,
+        "expired": false
+      }
+    },
+    {
+      "domain": "outlook.com",
+      "outcome": "checked",
+      "blockers": 1,
+      "warnings": 4,
+      "present": [
+        "security.txt",
+        "llms.txt",
+        "apple-app-site-association",
+        "assetlinks.json",
+        "mta-sts.txt"
+      ],
+      "securityTxt": {
+        "found": true,
+        "hasExpires": false,
+        "expired": false
+      }
+    },
+    {
+      "domain": "registrar-servers.com",
+      "outcome": "checked",
+      "blockers": 0,
+      "warnings": 3,
+      "present": [
+        "robots.txt"
+      ],
+      "securityTxt": {
+        "found": false,
+        "hasExpires": false,
+        "expired": false
+      }
+    },
+    {
+      "domain": "app-measurement.com",
+      "outcome": "checked",
+      "blockers": 0,
+      "warnings": 3,
+      "present": [],
+      "securityTxt": {
+        "found": false,
+        "hasExpires": false,
+        "expired": false
+      }
+    },
+    {
+      "domain": "amazonvideo.com",
+      "outcome": "checked",
+      "blockers": 1,
+      "warnings": 1,
+      "present": [
+        "robots.txt",
+        "apple-app-site-association",
+        "assetlinks.json",
+        "change-password"
+      ],
+      "securityTxt": {
+        "found": false,
+        "hasExpires": false,
+        "expired": false
+      }
+    },
+    {
+      "domain": "criteo.com",
+      "outcome": "checked",
+      "blockers": 1,
+      "warnings": 3,
+      "present": [
+        "security.txt",
+        "robots.txt",
+        "gpc.json"
+      ],
+      "securityTxt": {
+        "found": true,
+        "hasExpires": true,
+        "expired": false
+      }
+    },
+    {
+      "domain": "github.io",
+      "outcome": "checked",
+      "answersAnything": true,
+      "blockers": 7,
+      "warnings": 3,
+      "present": [],
+      "securityTxt": {
+        "found": false,
+        "hasExpires": false,
+        "expired": false
+      }
+    },
+    {
+      "domain": "cdn77.org",
+      "outcome": "unreachable"
+    },
+    {
+      "domain": "vk.com",
+      "outcome": "checked",
+      "blockers": 1,
+      "warnings": 1,
+      "present": [
+        "robots.txt",
+        "apple-app-site-association",
+        "assetlinks.json",
+        "change-password"
+      ],
+      "securityTxt": {
+        "found": false,
+        "hasExpires": false,
+        "expired": false
+      }
+    },
+    {
+      "domain": "apache.org",
+      "outcome": "checked",
+      "blockers": 0,
+      "warnings": 1,
+      "present": [
+        "security.txt",
+        "robots.txt"
+      ],
+      "securityTxt": {
+        "found": true,
+        "hasExpires": true,
+        "expired": false
+      }
+    },
+    {
+      "domain": "trbcdn.net",
+      "outcome": "unreachable"
+    },
+    {
+      "domain": "snapchat.com",
+      "outcome": "checked",
+      "blockers": 1,
+      "warnings": 1,
+      "present": [
+        "security.txt",
+        "robots.txt",
+        "apple-app-site-association",
+        "assetlinks.json"
+      ],
+      "securityTxt": {
+        "found": true,
+        "hasExpires": false,
+        "expired": false
+      }
+    },
+    {
+      "domain": "amazon-adsystem.com",
+      "outcome": "unreachable"
+    },
+    {
+      "domain": "unity3d.com",
+      "outcome": "unreachable"
+    },
+    {
+      "domain": "dnsowl.com",
+      "outcome": "unreachable"
+    },
+    {
+      "domain": "amazon.dev",
+      "outcome": "unreachable"
+    },
+    {
+      "domain": "intuit.com",
+      "outcome": "checked",
+      "blockers": 1,
+      "warnings": 3,
+      "present": [
+        "apple-app-site-association",
+        "assetlinks.json",
+        "change-password",
+        "gpc.json"
+      ],
+      "securityTxt": {
+        "found": false,
+        "hasExpires": false,
+        "expired": false
+      }
+    },
+    {
+      "domain": "triplinkintl.com",
+      "outcome": "checked",
+      "answersAnything": true,
+      "blockers": 8,
+      "warnings": 3,
+      "present": [
+        "security.txt"
+      ],
+      "securityTxt": {
+        "found": true,
+        "hasExpires": false,
+        "expired": false
+      }
+    },
+    {
+      "domain": "dropbox.com",
+      "outcome": "checked",
+      "blockers": 2,
+      "warnings": 1,
+      "present": [
+        "security.txt",
+        "robots.txt",
+        "llms.txt",
+        "openid-configuration",
+        "apple-app-site-association",
+        "assetlinks.json"
+      ],
+      "securityTxt": {
+        "found": true,
+        "hasExpires": false,
+        "expired": false
+      }
+    },
+    {
+      "domain": "afternic.com",
+      "outcome": "checked",
+      "blockers": 0,
+      "warnings": 2,
+      "present": [
+        "robots.txt",
+        "gpc.json"
+      ],
+      "securityTxt": {
+        "found": false,
+        "hasExpires": false,
+        "expired": false
+      }
+    },
+    {
+      "domain": "msftncsi.com",
+      "outcome": "unreachable"
+    },
+    {
+      "domain": "kaspersky.com",
+      "outcome": "checked",
+      "blockers": 0,
+      "warnings": 2,
+      "present": [
+        "robots.txt",
+        "llms.txt",
+        "apple-app-site-association",
+        "assetlinks.json"
+      ],
+      "securityTxt": {
+        "found": false,
+        "hasExpires": false,
+        "expired": false
+      }
+    },
+    {
+      "domain": "epicgames.com",
+      "outcome": "checked",
+      "blockers": 1,
+      "warnings": 1,
+      "present": [
+        "security.txt",
+        "change-password"
+      ],
+      "securityTxt": {
+        "found": true,
+        "hasExpires": true,
+        "expired": false
+      }
+    },
+    {
+      "domain": "reg.ru",
+      "outcome": "checked",
+      "answersAnything": true,
+      "blockers": 7,
+      "warnings": 3,
+      "present": [],
+      "securityTxt": {
+        "found": false,
+        "hasExpires": false,
+        "expired": false
+      }
+    },
+    {
+      "domain": "dns.google",
+      "outcome": "checked",
+      "blockers": 0,
+      "warnings": 3,
+      "present": [],
+      "securityTxt": {
+        "found": false,
+        "hasExpires": false,
+        "expired": false
+      }
+    },
+    {
+      "domain": "nih.gov",
+      "outcome": "checked",
+      "blockers": 1,
+      "warnings": 2,
+      "present": [
+        "change-password"
+      ],
+      "securityTxt": {
+        "found": false,
+        "hasExpires": false,
+        "expired": false
+      }
+    },
+    {
+      "domain": "miit.gov.cn",
+      "outcome": "unreachable"
+    },
+    {
+      "domain": "discord.gg",
+      "outcome": "checked",
+      "answersAnything": true,
+      "blockers": 5,
+      "warnings": 3,
+      "present": [
+        "security.txt",
+        "robots.txt",
+        "apple-app-site-association",
+        "assetlinks.json"
+      ],
+      "securityTxt": {
+        "found": true,
+        "hasExpires": false,
+        "expired": false
+      }
+    },
+    {
+      "domain": "static.microsoft",
+      "outcome": "unreachable"
+    },
+    {
+      "domain": "iiko.it",
+      "outcome": "unreachable"
+    },
+    {
+      "domain": "forms.gle",
+      "outcome": "checked",
+      "blockers": 1,
+      "warnings": 2,
+      "present": [
+        "apple-app-site-association",
+        "assetlinks.json",
+        "change-password"
+      ],
+      "securityTxt": {
+        "found": false,
+        "hasExpires": false,
+        "expired": false
+      }
+    },
+    {
+      "domain": "azurefd.net",
+      "outcome": "unreachable"
+    },
+    {
+      "domain": "archive.org",
+      "outcome": "checked",
+      "blockers": 1,
+      "warnings": 1,
+      "present": [
+        "security.txt",
+        "robots.txt",
+        "assetlinks.json"
+      ],
+      "securityTxt": {
+        "found": true,
+        "hasExpires": false,
+        "expired": false
+      }
+    },
+    {
+      "domain": "vkuserphoto.ru",
+      "outcome": "checked",
+      "blockers": 1,
+      "warnings": 2,
+      "present": [
+        "change-password"
+      ],
+      "securityTxt": {
+        "found": false,
+        "hasExpires": false,
+        "expired": false
+      }
+    },
+    {
+      "domain": "xiaomi.com",
+      "outcome": "checked",
+      "blockers": 2,
+      "warnings": 2,
+      "present": [
+        "robots.txt",
+        "llms.txt",
+        "assetlinks.json",
+        "change-password"
+      ],
+      "securityTxt": {
+        "found": false,
+        "hasExpires": false,
+        "expired": false
+      }
+    },
+    {
+      "domain": "godaddy.com",
+      "outcome": "checked",
+      "blockers": 3,
+      "warnings": 2,
+      "present": [
+        "security.txt",
+        "change-password"
+      ],
+      "securityTxt": {
+        "found": true,
+        "hasExpires": false,
+        "expired": false
+      }
+    },
+    {
+      "domain": "steamserver.net",
+      "outcome": "unreachable"
+    },
+    {
+      "domain": "one.one",
+      "outcome": "checked",
+      "blockers": 1,
+      "warnings": 2,
+      "present": [
+        "security.txt",
+        "robots.txt",
+        "llms.txt"
+      ],
+      "securityTxt": {
+        "found": true,
+        "hasExpires": false,
+        "expired": false
+      }
+    },
+    {
+      "domain": "aliyuncs.com",
+      "outcome": "checked",
+      "blockers": 0,
+      "warnings": 3,
+      "present": [],
+      "securityTxt": {
+        "found": false,
+        "hasExpires": false,
+        "expired": false
+      }
+    },
+    {
+      "domain": "gravatar.com",
+      "outcome": "checked",
+      "blockers": 0,
+      "warnings": 2,
+      "present": [
+        "robots.txt",
+        "llms.txt",
+        "apple-app-site-association",
+        "assetlinks.json"
+      ],
+      "securityTxt": {
+        "found": false,
+        "hasExpires": false,
+        "expired": false
+      }
+    },
+    {
+      "domain": "nytimes.com",
+      "outcome": "checked",
+      "blockers": 0,
+      "warnings": 4,
+      "present": [
+        "apple-app-site-association",
+        "assetlinks.json",
+        "gpc.json"
+      ],
+      "securityTxt": {
+        "found": false,
+        "hasExpires": false,
+        "expired": false
+      }
+    },
+    {
+      "domain": "msftconnecttest.com",
+      "outcome": "unreachable"
+    },
+    {
+      "domain": "adtrafficquality.google",
+      "outcome": "checked",
+      "blockers": 0,
+      "warnings": 3,
+      "present": [],
+      "securityTxt": {
+        "found": false,
+        "hasExpires": false,
+        "expired": false
+      }
+    },
+    {
+      "domain": "tumblr.com",
+      "outcome": "checked",
+      "answersAnything": true,
+      "blockers": 4,
+      "warnings": 2,
+      "present": [
+        "security.txt",
+        "robots.txt",
+        "apple-app-site-association",
+        "assetlinks.json"
+      ],
+      "securityTxt": {
+        "found": true,
+        "hasExpires": false,
+        "expired": false
+      }
+    },
+    {
+      "domain": "applovin.com",
+      "outcome": "checked",
+      "answersAnything": true,
+      "blockers": 6,
+      "warnings": 3,
+      "present": [
+        "robots.txt"
+      ],
+      "securityTxt": {
+        "found": false,
+        "hasExpires": false,
+        "expired": false
+      }
+    },
+    {
+      "domain": "jomodns.com",
+      "outcome": "unreachable"
+    },
+    {
+      "domain": "tm-azurefd.net",
+      "outcome": "unreachable"
+    },
+    {
+      "domain": "webex.com",
+      "outcome": "checked",
+      "blockers": 1,
+      "warnings": 2,
+      "present": [
+        "llms.txt",
+        "apple-app-site-association",
+        "assetlinks.json",
+        "change-password"
+      ],
+      "securityTxt": {
+        "found": false,
+        "hasExpires": false,
+        "expired": false
+      }
+    },
+    {
+      "domain": "discord.com",
+      "outcome": "checked",
+      "blockers": 0,
+      "warnings": 2,
+      "present": [
+        "security.txt",
+        "robots.txt",
+        "openid-configuration",
+        "apple-app-site-association",
+        "assetlinks.json"
+      ],
+      "securityTxt": {
+        "found": true,
+        "hasExpires": true,
+        "expired": false
+      }
+    },
+    {
+      "domain": "dns-parking.com",
+      "outcome": "unreachable"
+    },
+    {
+      "domain": "paypal.com",
+      "outcome": "checked",
+      "blockers": 1,
+      "warnings": 1,
+      "present": [
+        "security.txt",
+        "robots.txt",
+        "llms.txt",
+        "openid-configuration",
+        "apple-app-site-association",
+        "assetlinks.json"
+      ],
+      "securityTxt": {
+        "found": true,
+        "hasExpires": false,
+        "expired": false
+      }
+    },
+    {
+      "domain": "mts.ru",
+      "outcome": "checked",
+      "blockers": 0,
+      "warnings": 2,
+      "present": [
+        "robots.txt",
+        "apple-app-site-association",
+        "assetlinks.json"
+      ],
+      "securityTxt": {
+        "found": false,
+        "hasExpires": false,
+        "expired": false
+      }
+    },
+    {
+      "domain": "ax-msedge.net",
+      "outcome": "unreachable"
+    },
+    {
+      "domain": "example.com",
+      "outcome": "checked",
+      "blockers": 0,
+      "warnings": 3,
+      "present": [],
+      "securityTxt": {
+        "found": false,
+        "hasExpires": false,
+        "expired": false
+      }
+    },
+    {
+      "domain": "3gppnetwork.org",
+      "outcome": "unreachable"
+    },
+    {
+      "domain": "vedcdnlb.com",
+      "outcome": "unreachable"
+    },
+    {
+      "domain": "adobe.io",
+      "outcome": "unreachable"
+    },
+    {
+      "domain": "azurewebsites.net",
+      "outcome": "unreachable"
+    },
+    {
+      "domain": "vk.ru",
+      "outcome": "checked",
+      "blockers": 1,
+      "warnings": 1,
+      "present": [
+        "robots.txt",
+        "apple-app-site-association",
+        "assetlinks.json",
+        "change-password"
+      ],
+      "securityTxt": {
+        "found": false,
+        "hasExpires": false,
+        "expired": false
+      }
+    },
+    {
+      "domain": "telekom.net",
+      "outcome": "checked",
+      "answersAnything": true,
+      "blockers": 8,
+      "warnings": 3,
+      "present": [
+        "security.txt"
+      ],
+      "securityTxt": {
+        "found": true,
+        "hasExpires": false,
+        "expired": false
+      }
+    },
+    {
+      "domain": "ggpht.com",
+      "outcome": "unreachable"
+    },
+    {
+      "domain": "shopify.com",
+      "outcome": "checked",
+      "blockers": 1,
+      "warnings": 1,
+      "present": [
+        "security.txt",
+        "robots.txt",
+        "llms.txt",
+        "apple-app-site-association",
+        "assetlinks.json"
+      ],
+      "securityTxt": {
+        "found": true,
+        "hasExpires": false,
+        "expired": false
+      }
+    },
+    {
+      "domain": "spectrum.com",
+      "outcome": "checked",
+      "blockers": 1,
+      "warnings": 4,
+      "present": [
+        "change-password"
+      ],
+      "securityTxt": {
+        "found": false,
+        "hasExpires": false,
+        "expired": false
+      }
+    },
+    {
+      "domain": "base.org",
+      "outcome": "checked",
+      "blockers": 0,
+      "warnings": 2,
+      "present": [
+        "robots.txt",
+        "llms.txt"
+      ],
+      "securityTxt": {
+        "found": false,
+        "hasExpires": false,
+        "expired": false
+      }
+    },
+    {
+      "domain": "hosting24.com",
+      "outcome": "checked",
+      "answersAnything": true,
+      "blockers": 8,
+      "warnings": 3,
+      "present": [
+        "security.txt"
+      ],
+      "securityTxt": {
+        "found": true,
+        "hasExpires": false,
+        "expired": false
+      }
+    },
+    {
+      "domain": "doctolib.net",
+      "outcome": "unreachable"
+    },
+    {
+      "domain": "namebrightdns.com",
+      "outcome": "unreachable"
+    },
+    {
+      "domain": "macromedia.com",
+      "outcome": "unreachable"
+    },
+    {
+      "domain": "soundcloud.com",
+      "outcome": "checked",
+      "blockers": 0,
+      "warnings": 1,
+      "present": [
+        "security.txt",
+        "robots.txt",
+        "apple-app-site-association",
+        "assetlinks.json"
+      ],
+      "securityTxt": {
+        "found": true,
+        "hasExpires": true,
+        "expired": false
+      }
+    },
+    {
+      "domain": "cdn-apple.com",
+      "outcome": "unreachable"
+    },
+    {
+      "domain": "flickr.com",
+      "outcome": "checked",
+      "blockers": 1,
+      "warnings": 2,
+      "present": [
+        "security.txt",
+        "robots.txt",
+        "apple-app-site-association",
+        "assetlinks.json"
+      ],
+      "securityTxt": {
+        "found": true,
+        "hasExpires": false,
+        "expired": false
+      }
+    },
+    {
+      "domain": "googleadservices.com",
+      "outcome": "checked",
+      "blockers": 0,
+      "warnings": 3,
+      "present": [],
+      "securityTxt": {
+        "found": false,
+        "hasExpires": false,
+        "expired": false
+      }
+    },
+    {
+      "domain": "hichina.com",
+      "outcome": "unreachable"
+    },
+    {
+      "domain": "w3.org",
+      "outcome": "checked",
+      "blockers": 1,
+      "warnings": 1,
+      "present": [
+        "security.txt",
+        "robots.txt",
+        "change-password"
+      ],
+      "securityTxt": {
+        "found": true,
+        "hasExpires": false,
+        "expired": false
+      }
+    },
+    {
+      "domain": "adsafeprotected.com",
+      "outcome": "checked",
+      "answersAnything": true,
+      "blockers": 6,
+      "warnings": 1,
+      "present": [
+        "robots.txt",
+        "llms.txt",
+        "mta-sts.txt"
+      ],
+      "securityTxt": {
+        "found": false,
+        "hasExpires": false,
+        "expired": false
+      }
+    },
+    {
+      "domain": "nflxso.net",
+      "outcome": "unreachable"
+    },
+    {
+      "domain": "lencr.org",
+      "outcome": "checked",
+      "answersAnything": true,
+      "blockers": 7,
+      "warnings": 3,
+      "present": [],
+      "securityTxt": {
+        "found": false,
+        "hasExpires": false,
+        "expired": false
+      }
+    },
+    {
+      "domain": "bytefcdn-oversea.com",
+      "outcome": "unreachable"
+    },
+    {
+      "domain": "rubiconproject.com",
+      "outcome": "checked",
+      "blockers": 0,
+      "warnings": 2,
+      "present": [
+        "robots.txt",
+        "llms.txt"
+      ],
+      "securityTxt": {
+        "found": false,
+        "hasExpires": false,
+        "expired": false
+      }
+    },
+    {
+      "domain": "creativecommons.org",
+      "outcome": "checked",
+      "blockers": 0,
+      "warnings": 2,
+      "present": [
+        "robots.txt"
+      ],
+      "securityTxt": {
+        "found": false,
+        "hasExpires": false,
+        "expired": false
+      }
+    },
+    {
+      "domain": "medium.com",
+      "outcome": "checked",
+      "blockers": 1,
+      "warnings": 1,
+      "present": [
+        "robots.txt",
+        "apple-app-site-association",
+        "change-password"
+      ],
+      "securityTxt": {
+        "found": false,
+        "hasExpires": false,
+        "expired": false
+      }
+    },
+    {
+      "domain": "cnn.com",
+      "outcome": "checked",
+      "blockers": 0,
+      "warnings": 2,
+      "present": [
+        "robots.txt",
+        "apple-app-site-association",
+        "assetlinks.json"
+      ],
+      "securityTxt": {
+        "found": false,
+        "hasExpires": false,
+        "expired": false
+      }
+    },
+    {
+      "domain": "vungle.com",
+      "outcome": "checked",
+      "blockers": 0,
+      "warnings": 2,
+      "present": [
+        "robots.txt"
+      ],
+      "securityTxt": {
+        "found": false,
+        "hasExpires": false,
+        "expired": false
+      }
+    },
+    {
+      "domain": "duckdns.org",
+      "outcome": "unreachable"
+    },
+    {
+      "domain": "theguardian.com",
+      "outcome": "checked",
+      "blockers": 0,
+      "warnings": 1,
+      "present": [
+        "security.txt",
+        "robots.txt",
+        "apple-app-site-association",
+        "assetlinks.json"
+      ],
+      "securityTxt": {
+        "found": true,
+        "hasExpires": true,
+        "expired": false
+      }
+    },
+    {
+      "domain": "ttdns2.com",
+      "outcome": "unreachable"
+    },
+    {
+      "domain": "oracle.com",
+      "outcome": "checked",
+      "blockers": 1,
+      "warnings": 1,
+      "present": [
+        "robots.txt",
+        "change-password"
+      ],
+      "securityTxt": {
+        "found": false,
+        "hasExpires": false,
+        "expired": false
+      }
+    },
+    {
+      "domain": "taboola.com",
+      "outcome": "checked",
+      "blockers": 0,
+      "warnings": 2,
+      "present": [
+        "robots.txt",
+        "llms.txt"
+      ],
+      "securityTxt": {
+        "found": false,
+        "hasExpires": false,
+        "expired": false
+      }
+    },
+    {
+      "domain": "lsrelayaccess.com",
+      "outcome": "unreachable"
+    },
+    {
+      "domain": "ebay.com",
+      "outcome": "checked",
+      "blockers": 0,
+      "warnings": 2,
+      "present": [
+        "robots.txt",
+        "apple-app-site-association",
+        "assetlinks.json"
+      ],
+      "securityTxt": {
+        "found": false,
+        "hasExpires": false,
+        "expired": false
+      }
+    },
+    {
+      "domain": "shifen.com",
+      "outcome": "unreachable"
+    },
+    {
+      "domain": "ksyuncdn.com",
+      "outcome": "unreachable"
+    },
+    {
+      "domain": "t-online.de",
+      "outcome": "checked",
+      "blockers": 0,
+      "warnings": 2,
+      "present": [
+        "robots.txt",
+        "apple-app-site-association",
+        "assetlinks.json"
+      ],
+      "securityTxt": {
+        "found": false,
+        "hasExpires": false,
+        "expired": false
+      }
+    },
+    {
+      "domain": "doi.org",
+      "outcome": "checked",
+      "blockers": 0,
+      "warnings": 3,
+      "present": [],
+      "securityTxt": {
+        "found": false,
+        "hasExpires": false,
+        "expired": false
+      }
+    },
+    {
+      "domain": "youtube-nocookie.com",
+      "outcome": "unreachable"
+    },
+    {
+      "domain": "bbc.com",
+      "outcome": "checked",
+      "blockers": 0,
+      "warnings": 1,
+      "present": [
+        "security.txt",
+        "robots.txt",
+        "apple-app-site-association",
+        "assetlinks.json",
+        "change-password"
+      ],
+      "securityTxt": {
+        "found": true,
+        "hasExpires": true,
+        "expired": false
+      }
+    },
+    {
+      "domain": "forbes.com",
+      "outcome": "checked",
+      "answersAnything": true,
+      "blockers": 7,
+      "warnings": 3,
+      "present": [
+        "security.txt",
+        "robots.txt"
+      ],
+      "securityTxt": {
+        "found": true,
+        "hasExpires": false,
+        "expired": false
+      }
+    },
+    {
+      "domain": "ailawandorder.com",
+      "outcome": "unreachable"
+    },
+    {
+      "domain": "fastly-edge.com",
+      "outcome": "unreachable"
+    },
+    {
+      "domain": "sciencedirect.com",
+      "outcome": "checked",
+      "blockers": 1,
+      "warnings": 2,
+      "present": [
+        "change-password"
+      ],
+      "securityTxt": {
+        "found": false,
+        "hasExpires": false,
+        "expired": false
+      }
+    },
+    {
+      "domain": "sfx.ms",
+      "outcome": "unreachable"
+    },
+    {
+      "domain": "capcutapi.com",
+      "outcome": "unreachable"
+    },
+    {
+      "domain": "twitch.tv",
+      "outcome": "checked",
+      "answersAnything": true,
+      "blockers": 4,
+      "warnings": 3,
+      "present": [
+        "robots.txt",
+        "apple-app-site-association",
+        "assetlinks.json"
+      ],
+      "securityTxt": {
+        "found": false,
+        "hasExpires": false,
+        "expired": false
+      }
+    },
+    {
+      "domain": "cdngslb.com",
+      "outcome": "unreachable"
+    },
+    {
+      "domain": "gmail.com",
+      "outcome": "checked",
+      "blockers": 0,
+      "warnings": 2,
+      "present": [
+        "robots.txt"
+      ],
+      "securityTxt": {
+        "found": false,
+        "hasExpires": false,
+        "expired": false
+      }
+    },
+    {
+      "domain": "researchgate.net",
+      "outcome": "checked",
+      "blockers": 1,
+      "warnings": 1,
+      "present": [
+        "robots.txt",
+        "apple-app-site-association",
+        "assetlinks.json",
+        "change-password"
+      ],
+      "securityTxt": {
+        "found": false,
+        "hasExpires": false,
+        "expired": false
+      }
+    },
+    {
+      "domain": "akamaized.net",
+      "outcome": "unreachable"
+    },
+    {
+      "domain": "mit.edu",
+      "outcome": "checked",
+      "blockers": 0,
+      "warnings": 2,
+      "present": [
+        "robots.txt"
+      ],
+      "securityTxt": {
+        "found": false,
+        "hasExpires": false,
+        "expired": false
+      }
+    },
+    {
+      "domain": "pages.dev",
+      "outcome": "checked",
+      "answersAnything": true,
+      "blockers": 8,
+      "warnings": 3,
+      "present": [
+        "security.txt"
+      ],
+      "securityTxt": {
+        "found": true,
+        "hasExpires": false,
+        "expired": false
+      }
+    },
+    {
+      "domain": "ozon.ru",
+      "outcome": "checked",
+      "blockers": 4,
+      "warnings": 1,
+      "present": [
+        "security.txt",
+        "apple-app-site-association",
+        "assetlinks.json",
+        "change-password"
+      ],
+      "securityTxt": {
+        "found": true,
+        "hasExpires": false,
+        "expired": false
+      }
+    },
+    {
+      "domain": "yandexcloud.net",
+      "outcome": "unreachable"
+    },
+    {
+      "domain": "miui.com",
+      "outcome": "checked",
+      "blockers": 0,
+      "warnings": 3,
+      "present": [],
+      "securityTxt": {
+        "found": false,
+        "hasExpires": false,
+        "expired": false
+      }
+    },
+    {
+      "domain": "pki.goog",
+      "outcome": "checked",
+      "blockers": 1,
+      "warnings": 1,
+      "present": [
+        "security.txt",
+        "robots.txt"
+      ],
+      "securityTxt": {
+        "found": true,
+        "hasExpires": false,
+        "expired": false
+      }
+    },
+    {
+      "domain": "userapi.com",
+      "outcome": "checked",
+      "blockers": 1,
+      "warnings": 1,
+      "present": [
+        "robots.txt",
+        "apple-app-site-association",
+        "assetlinks.json",
+        "change-password"
+      ],
+      "securityTxt": {
+        "found": false,
+        "hasExpires": false,
+        "expired": false
+      }
+    },
+    {
+      "domain": "ubuntu.com",
+      "outcome": "checked",
+      "blockers": 0,
+      "warnings": 2,
+      "present": [
+        "robots.txt",
+        "llms.txt"
+      ],
+      "securityTxt": {
+        "found": false,
+        "hasExpires": false,
+        "expired": false
+      }
+    },
+    {
+      "domain": "nr-data.net",
+      "outcome": "unreachable"
+    },
+    {
+      "domain": "azureedge.net",
+      "outcome": "unreachable"
+    },
+    {
+      "domain": "bbc.co.uk",
+      "outcome": "checked",
+      "blockers": 0,
+      "warnings": 1,
+      "present": [
+        "security.txt",
+        "robots.txt",
+        "apple-app-site-association",
+        "assetlinks.json",
+        "change-password"
+      ],
+      "securityTxt": {
+        "found": true,
+        "hasExpires": true,
+        "expired": false
+      }
+    },
+    {
+      "domain": "nist.gov",
+      "outcome": "checked",
+      "blockers": 0,
+      "warnings": 2,
+      "present": [
+        "robots.txt"
+      ],
+      "securityTxt": {
+        "found": false,
+        "hasExpires": false,
+        "expired": false
+      }
+    },
+    {
+      "domain": "stripe.com",
+      "outcome": "checked",
+      "blockers": 0,
+      "warnings": 1,
+      "present": [
+        "security.txt",
+        "robots.txt",
+        "llms.txt",
+        "assetlinks.json",
+        "gpc.json"
+      ],
+      "securityTxt": {
+        "found": true,
+        "hasExpires": true,
+        "expired": false
+      }
+    },
+    {
+      "domain": "playstation.net",
+      "outcome": "unreachable"
+    },
+    {
+      "domain": "pubmatic.com",
+      "outcome": "checked",
+      "blockers": 1,
+      "warnings": 4,
+      "present": [
+        "change-password"
+      ],
+      "securityTxt": {
+        "found": false,
+        "hasExpires": false,
+        "expired": false
+      }
+    },
+    {
+      "domain": "cpanel.net",
+      "outcome": "checked",
+      "blockers": 0,
+      "warnings": 1,
+      "present": [
+        "security.txt",
+        "robots.txt"
+      ],
+      "securityTxt": {
+        "found": true,
+        "hasExpires": true,
+        "expired": false
+      }
+    },
+    {
+      "domain": "t.co",
+      "outcome": "checked",
+      "blockers": 0,
+      "warnings": 3,
+      "present": [
+        "robots.txt"
+      ],
+      "securityTxt": {
+        "found": false,
+        "hasExpires": false,
+        "expired": false
+      }
+    },
+    {
+      "domain": "canva.com",
+      "outcome": "checked",
+      "blockers": 2,
+      "warnings": 0,
+      "present": [
+        "security.txt",
+        "robots.txt",
+        "openid-configuration",
+        "apple-app-site-association",
+        "assetlinks.json",
+        "change-password"
+      ],
+      "securityTxt": {
+        "found": true,
+        "hasExpires": false,
+        "expired": false
+      }
+    },
+    {
+      "domain": "wsdvs.com",
+      "outcome": "unreachable"
+    },
+    {
+      "domain": "adsrvr.org",
+      "outcome": "checked",
+      "blockers": 1,
+      "warnings": 1,
+      "present": [
+        "security.txt",
+        "change-password"
+      ],
+      "securityTxt": {
+        "found": true,
+        "hasExpires": true,
+        "expired": false
+      }
+    },
+    {
+      "domain": "rbxcdn.com",
+      "outcome": "unreachable"
+    },
+    {
+      "domain": "meraki.com",
+      "outcome": "unreachable"
+    },
+    {
+      "domain": "imcmdb.net",
+      "outcome": "unreachable"
+    },
+    {
+      "domain": "sourceforge.net",
+      "outcome": "checked",
+      "blockers": 2,
+      "warnings": 2,
+      "present": [
+        "security.txt",
+        "robots.txt",
+        "llms.txt"
+      ],
+      "securityTxt": {
+        "found": true,
+        "hasExpires": false,
+        "expired": false
+      }
+    },
+    {
+      "domain": "comcast.net",
+      "outcome": "checked",
+      "blockers": 1,
+      "warnings": 2,
+      "present": [
+        "change-password"
+      ],
+      "securityTxt": {
+        "found": false,
+        "hasExpires": false,
+        "expired": false
+      }
+    },
+    {
+      "domain": "omtrdc.net",
+      "outcome": "unreachable"
+    },
+    {
+      "domain": "roku.com",
+      "outcome": "checked",
+      "blockers": 1,
+      "warnings": 1,
+      "present": [
+        "security.txt",
+        "robots.txt",
+        "llms.txt",
+        "assetlinks.json",
+        "change-password",
+        "gpc.json"
+      ],
+      "securityTxt": {
+        "found": true,
+        "hasExpires": true,
+        "expired": false
+      }
+    },
+    {
+      "domain": "cisco.com",
+      "outcome": "checked",
+      "blockers": 0,
+      "warnings": 1,
+      "present": [
+        "security.txt",
+        "robots.txt",
+        "llms.txt",
+        "assetlinks.json"
+      ],
+      "securityTxt": {
+        "found": true,
+        "hasExpires": true,
+        "expired": false
+      }
+    },
+    {
+      "domain": "wikimedia.org",
+      "outcome": "checked",
+      "blockers": 0,
+      "warnings": 3,
+      "present": [],
+      "securityTxt": {
+        "found": false,
+        "hasExpires": false,
+        "expired": false
+      }
+    },
+    {
+      "domain": "ripn.net",
+      "outcome": "unreachable"
+    },
+    {
+      "domain": "android.com",
+      "outcome": "checked",
+      "blockers": 0,
+      "warnings": 2,
+      "present": [
+        "robots.txt",
+        "apple-app-site-association",
+        "assetlinks.json"
+      ],
+      "securityTxt": {
+        "found": false,
+        "hasExpires": false,
+        "expired": false
+      }
+    },
+    {
+      "domain": "telegram.org",
+      "outcome": "checked",
+      "blockers": 1,
+      "warnings": 4,
+      "present": [
+        "security.txt",
+        "llms.txt",
+        "apple-app-site-association",
+        "assetlinks.json"
+      ],
+      "securityTxt": {
+        "found": true,
+        "hasExpires": false,
+        "expired": false
+      }
+    },
+    {
+      "domain": "hubspot.com",
+      "outcome": "checked",
+      "blockers": 0,
+      "warnings": 2,
+      "present": [
+        "security.txt",
+        "robots.txt",
+        "llms.txt",
+        "apple-app-site-association",
+        "assetlinks.json"
+      ],
+      "securityTxt": {
+        "found": true,
+        "hasExpires": true,
+        "expired": false
+      }
+    },
+    {
+      "domain": "alidns.com",
+      "outcome": "checked",
+      "answersAnything": true,
+      "blockers": 5,
+      "warnings": 2,
+      "present": [
+        "robots.txt",
+        "llms.txt",
+        "mta-sts.txt"
+      ],
+      "securityTxt": {
+        "found": false,
+        "hasExpires": false,
+        "expired": false
+      }
+    },
+    {
+      "domain": "hcaptcha.com",
+      "outcome": "checked",
+      "blockers": 0,
+      "warnings": 2,
+      "present": [
+        "robots.txt",
+        "llms.txt"
+      ],
+      "securityTxt": {
+        "found": false,
+        "hasExpires": false,
+        "expired": false
+      }
+    },
+    {
+      "domain": "adnxs.com",
+      "outcome": "checked",
+      "blockers": 0,
+      "warnings": 3,
+      "present": [],
+      "securityTxt": {
+        "found": false,
+        "hasExpires": false,
+        "expired": false
+      }
+    },
+    {
+      "domain": "alibabadns.com",
+      "outcome": "unreachable"
+    },
+    {
+      "domain": "scorecardresearch.com",
+      "outcome": "checked",
+      "blockers": 0,
+      "warnings": 3,
+      "present": [],
+      "securityTxt": {
+        "found": false,
+        "hasExpires": false,
+        "expired": false
+      }
+    },
+    {
+      "domain": "booking.com",
+      "outcome": "checked",
+      "blockers": 1,
+      "warnings": 1,
+      "present": [
+        "security.txt",
+        "robots.txt",
+        "apple-app-site-association",
+        "assetlinks.json",
+        "gpc.json"
+      ],
+      "securityTxt": {
+        "found": true,
+        "hasExpires": true,
+        "expired": true,
+        "daysLeft": -261
+      }
+    },
+    {
+      "domain": "imdb.com",
+      "outcome": "checked",
+      "answersAnything": true,
+      "blockers": 4,
+      "warnings": 4,
+      "present": [
+        "robots.txt",
+        "apple-app-site-association",
+        "assetlinks.json"
+      ],
+      "securityTxt": {
+        "found": false,
+        "hasExpires": false,
+        "expired": false
+      }
+    },
+    {
+      "domain": "who.int",
+      "outcome": "checked",
+      "blockers": 0,
+      "warnings": 2,
+      "present": [
+        "robots.txt"
+      ],
+      "securityTxt": {
+        "found": false,
+        "hasExpires": false,
+        "expired": false
+      }
+    },
+    {
+      "domain": "statsigapi.net",
+      "outcome": "checked",
+      "blockers": 0,
+      "warnings": 3,
+      "present": [],
+      "securityTxt": {
+        "found": false,
+        "hasExpires": false,
+        "expired": false
+      }
+    },
+    {
+      "domain": "name-services.com",
+      "outcome": "unreachable"
+    },
+    {
+      "domain": "media-amazon.com",
+      "outcome": "unreachable"
+    },
+    {
+      "domain": "forter.com",
+      "outcome": "checked",
+      "blockers": 0,
+      "warnings": 2,
+      "present": [
+        "robots.txt",
+        "llms.txt",
+        "ucp",
+        "openid-configuration"
+      ],
+      "securityTxt": {
+        "found": false,
+        "hasExpires": false,
+        "expired": false
+      }
+    },
+    {
+      "domain": "wixsite.com",
+      "outcome": "unreachable"
+    },
+    {
+      "domain": "linktr.ee",
+      "outcome": "checked",
+      "blockers": 2,
+      "warnings": 3,
+      "present": [
+        "security.txt",
+        "robots.txt",
+        "llms.txt",
+        "apple-app-site-association",
+        "assetlinks.json"
+      ],
+      "securityTxt": {
+        "found": true,
+        "hasExpires": false,
+        "expired": false
+      }
+    },
+    {
+      "domain": "launchpad.net",
+      "outcome": "checked",
+      "blockers": 0,
+      "warnings": 2,
+      "present": [
+        "robots.txt"
+      ],
+      "securityTxt": {
+        "found": false,
+        "hasExpires": false,
+        "expired": false
+      }
+    },
+    {
+      "domain": "ttvnw.net",
+      "outcome": "unreachable"
+    },
+    {
+      "domain": "spov-msedge.net",
+      "outcome": "unreachable"
+    },
+    {
+      "domain": "facebook.net",
+      "outcome": "unreachable"
+    },
+    {
+      "domain": "amon.tech",
+      "outcome": "unreachable"
+    },
+    {
+      "domain": "ibm.com",
+      "outcome": "checked",
+      "blockers": 0,
+      "warnings": 1,
+      "present": [
+        "security.txt",
+        "robots.txt"
+      ],
+      "securityTxt": {
+        "found": true,
+        "hasExpires": true,
+        "expired": false
+      }
+    },
+    {
+      "domain": "mangosip.ru",
+      "outcome": "unreachable"
+    },
+    {
+      "domain": "aliyuncsslbintl.com",
+      "outcome": "unreachable"
+    },
+    {
+      "domain": "msedge.net",
+      "outcome": "unreachable"
+    },
+    {
+      "domain": "reuters.com",
+      "outcome": "checked",
+      "blockers": 4,
+      "warnings": 0,
+      "present": [
+        "security.txt",
+        "robots.txt",
+        "apple-app-site-association",
+        "assetlinks.json",
+        "change-password"
+      ],
+      "securityTxt": {
+        "found": true,
+        "hasExpires": false,
+        "expired": false
+      }
+    },
+    {
+      "domain": "2mdn.net",
+      "outcome": "unreachable"
+    },
+    {
+      "domain": "shiabank.com",
+      "outcome": "unreachable"
+    },
+    {
+      "domain": "dnsmadeeasy.com",
+      "outcome": "checked",
+      "blockers": 0,
+      "warnings": 3,
+      "present": [],
+      "securityTxt": {
+        "found": false,
+        "hasExpires": false,
+        "expired": false
+      }
+    },
+    {
+      "domain": "appsflyer.com",
+      "outcome": "checked",
+      "blockers": 1,
+      "warnings": 3,
+      "present": [
+        "change-password"
+      ],
+      "securityTxt": {
+        "found": false,
+        "hasExpires": false,
+        "expired": false
+      }
+    },
+    {
+      "domain": "telecid.ru",
+      "outcome": "unreachable"
+    },
+    {
+      "domain": "etsy.com",
+      "outcome": "checked",
+      "blockers": 1,
+      "warnings": 0,
+      "present": [
+        "security.txt",
+        "robots.txt",
+        "apple-app-site-association",
+        "assetlinks.json",
+        "change-password"
+      ],
+      "securityTxt": {
+        "found": true,
+        "hasExpires": true,
+        "expired": false
+      }
+    },
+    {
+      "domain": "springer.com",
+      "outcome": "checked",
+      "answersAnything": true,
+      "blockers": 7,
+      "warnings": 3,
+      "present": [
+        "security.txt",
+        "robots.txt"
+      ],
+      "securityTxt": {
+        "found": true,
+        "hasExpires": false,
+        "expired": false
+      }
+    },
+    {
+      "domain": "telegram.me",
+      "outcome": "checked",
+      "answersAnything": true,
+      "blockers": 5,
+      "warnings": 3,
+      "present": [
+        "apple-app-site-association",
+        "assetlinks.json"
+      ],
+      "securityTxt": {
+        "found": false,
+        "hasExpires": false,
+        "expired": false
+      }
+    },
+    {
+      "domain": "tinyurl.com",
+      "outcome": "checked",
+      "blockers": 1,
+      "warnings": 1,
+      "present": [
+        "robots.txt",
+        "change-password"
+      ],
+      "securityTxt": {
+        "found": false,
+        "hasExpires": false,
+        "expired": false
+      }
+    },
+    {
+      "domain": "drom.ru",
+      "outcome": "checked",
+      "blockers": 0,
+      "warnings": 2,
+      "present": [
+        "robots.txt",
+        "apple-app-site-association",
+        "assetlinks.json"
+      ],
+      "securityTxt": {
+        "found": false,
+        "hasExpires": false,
+        "expired": false
+      }
+    },
+    {
+      "domain": "mzstatic.com",
+      "outcome": "checked",
+      "answersAnything": true,
+      "blockers": 7,
+      "warnings": 3,
+      "present": [],
+      "securityTxt": {
+        "found": false,
+        "hasExpires": false,
+        "expired": false
+      }
+    },
+    {
+      "domain": "salesforce.com",
+      "outcome": "checked",
+      "blockers": 0,
+      "warnings": 2,
+      "present": [
+        "robots.txt",
+        "llms.txt",
+        "apple-app-site-association",
+        "assetlinks.json"
+      ],
+      "securityTxt": {
+        "found": false,
+        "hasExpires": false,
+        "expired": false
+      }
+    },
+    {
+      "domain": "hp.com",
+      "outcome": "checked",
+      "blockers": 1,
+      "warnings": 1,
+      "present": [
+        "security.txt",
+        "robots.txt"
+      ],
+      "securityTxt": {
+        "found": true,
+        "hasExpires": false,
+        "expired": false
+      }
+    },
+    {
+      "domain": "tiktokcdn-us.com",
+      "outcome": "unreachable"
+    },
+    {
+      "domain": "namecheap.com",
+      "outcome": "checked",
+      "blockers": 0,
+      "warnings": 2,
+      "present": [
+        "robots.txt",
+        "openid-configuration",
+        "assetlinks.json"
+      ],
+      "securityTxt": {
+        "found": false,
+        "hasExpires": false,
+        "expired": false
+      }
+    },
+    {
+      "domain": "amplitude.com",
+      "outcome": "checked",
+      "blockers": 0,
+      "warnings": 2,
+      "present": [
+        "security.txt",
+        "robots.txt",
+        "llms.txt"
+      ],
+      "securityTxt": {
+        "found": true,
+        "hasExpires": true,
+        "expired": false
+      }
+    },
+    {
+      "domain": "nature.com",
+      "outcome": "checked",
+      "answersAnything": true,
+      "blockers": 7,
+      "warnings": 2,
+      "present": [
+        "security.txt",
+        "robots.txt"
+      ],
+      "securityTxt": {
+        "found": true,
+        "hasExpires": false,
+        "expired": false
+      }
+    },
+    {
+      "domain": "crpt.ru",
+      "outcome": "checked",
+      "answersAnything": true,
+      "blockers": 7,
+      "warnings": 3,
+      "present": [],
+      "securityTxt": {
+        "found": false,
+        "hasExpires": false,
+        "expired": false
+      }
+    },
+    {
+      "domain": "byteoversea.net",
+      "outcome": "unreachable"
+    },
+    {
+      "domain": "dell.com",
+      "outcome": "checked",
+      "answersAnything": true,
+      "blockers": 6,
+      "warnings": 2,
+      "present": [
+        "security.txt",
+        "robots.txt",
+        "llms.txt"
+      ],
+      "securityTxt": {
+        "found": true,
+        "hasExpires": true,
+        "expired": true,
+        "daysLeft": -155
+      }
+    },
+    {
+      "domain": "inmobi.com",
+      "outcome": "checked",
+      "blockers": 0,
+      "warnings": 2,
+      "present": [
+        "robots.txt"
+      ],
+      "securityTxt": {
+        "found": false,
+        "hasExpires": false,
+        "expired": false
+      }
+    },
+    {
+      "domain": "jsdelivr.net",
+      "outcome": "unreachable"
+    },
+    {
+      "domain": "steampowered.com",
+      "outcome": "checked",
+      "answersAnything": true,
+      "blockers": 5,
+      "warnings": 3,
+      "present": [
+        "security.txt",
+        "robots.txt",
+        "apple-app-site-association",
+        "assetlinks.json"
+      ],
+      "securityTxt": {
+        "found": true,
+        "hasExpires": false,
+        "expired": false
+      }
+    },
+    {
+      "domain": "weibo.com",
+      "outcome": "checked",
+      "answersAnything": true,
+      "blockers": 6,
+      "warnings": 3,
+      "present": [
+        "robots.txt"
+      ],
+      "securityTxt": {
+        "found": false,
+        "hasExpires": false,
+        "expired": false
+      }
+    },
+    {
+      "domain": "autodesk.com",
+      "outcome": "checked",
+      "blockers": 0,
+      "warnings": 3,
+      "present": [],
+      "securityTxt": {
+        "found": false,
+        "hasExpires": false,
+        "expired": false
+      }
+    },
+    {
+      "domain": "www.gov.uk",
+      "outcome": "checked",
+      "blockers": 0,
+      "warnings": 1,
+      "present": [
+        "security.txt",
+        "robots.txt"
+      ],
+      "securityTxt": {
+        "found": true,
+        "hasExpires": true,
+        "expired": false
+      }
+    },
+    {
+      "domain": "clarity.ms",
+      "outcome": "unreachable"
+    },
+    {
+      "domain": "avast.com",
+      "outcome": "checked",
+      "blockers": 2,
+      "warnings": 1,
+      "present": [
+        "security.txt",
+        "robots.txt",
+        "llms.txt",
+        "apple-app-site-association",
+        "assetlinks.json",
+        "change-password"
+      ],
+      "securityTxt": {
+        "found": true,
+        "hasExpires": true,
+        "expired": true,
+        "daysLeft": -261
+      }
+    },
+    {
+      "domain": "ok.ru",
+      "outcome": "checked",
+      "blockers": 1,
+      "warnings": 1,
+      "present": [
+        "security.txt",
+        "robots.txt",
+        "apple-app-site-association",
+        "assetlinks.json",
+        "change-password"
+      ],
+      "securityTxt": {
+        "found": true,
+        "hasExpires": false,
+        "expired": false
+      }
+    },
+    {
+      "domain": "wac-msedge.net",
+      "outcome": "unreachable"
+    },
+    {
+      "domain": "alibaba.com",
+      "outcome": "checked",
+      "blockers": 5,
+      "warnings": 3,
+      "present": [
+        "security.txt",
+        "robots.txt",
+        "llms.txt",
+        "ai.txt",
+        "ucp",
+        "openid-configuration",
+        "apple-app-site-association",
+        "assetlinks.json",
+        "change-password",
+        "mta-sts.txt",
+        "gpc.json",
+        "dnt-policy.txt"
+      ],
+      "securityTxt": {
+        "found": true,
+        "hasExpires": false,
+        "expired": false
+      }
+    },
+    {
+      "domain": "weather.com",
+      "outcome": "checked",
+      "blockers": 1,
+      "warnings": 1,
+      "present": [
+        "security.txt",
+        "robots.txt",
+        "llms.txt",
+        "apple-app-site-association",
+        "assetlinks.json",
+        "gpc.json"
+      ],
+      "securityTxt": {
+        "found": true,
+        "hasExpires": true,
+        "expired": false
+      }
+    },
+    {
+      "domain": "samsungcloud.com",
+      "outcome": "checked",
+      "blockers": 0,
+      "warnings": 2,
+      "present": [
+        "robots.txt"
+      ],
+      "securityTxt": {
+        "found": false,
+        "hasExpires": false,
+        "expired": false
+      }
+    },
+    {
+      "domain": "arubanetworks.com",
+      "outcome": "unreachable"
+    },
+    {
+      "domain": "harvard.edu",
+      "outcome": "checked",
+      "blockers": 0,
+      "warnings": 2,
+      "present": [
+        "robots.txt"
+      ],
+      "securityTxt": {
+        "found": false,
+        "hasExpires": false,
+        "expired": false
+      }
+    },
+    {
+      "domain": "debian.org",
+      "outcome": "checked",
+      "blockers": 0,
+      "warnings": 2,
+      "present": [
+        "security.txt"
+      ],
+      "securityTxt": {
+        "found": true,
+        "hasExpires": true,
+        "expired": false
+      }
+    },
+    {
+      "domain": "wiley.com",
+      "outcome": "checked",
+      "blockers": 1,
+      "warnings": 0,
+      "present": [
+        "security.txt",
+        "robots.txt",
+        "change-password"
+      ],
+      "securityTxt": {
+        "found": true,
+        "hasExpires": true,
+        "expired": false
+      }
+    },
+    {
+      "domain": "ea.com",
+      "outcome": "checked",
+      "blockers": 0,
+      "warnings": 2,
+      "present": [
+        "robots.txt",
+        "apple-app-site-association",
+        "assetlinks.json"
+      ],
+      "securityTxt": {
+        "found": false,
+        "hasExpires": false,
+        "expired": false
+      }
+    },
+    {
+      "domain": "mozilla.com",
+      "outcome": "checked",
+      "blockers": 2,
+      "warnings": 1,
+      "present": [
+        "security.txt",
+        "robots.txt",
+        "apple-app-site-association",
+        "gpc.json"
+      ],
+      "securityTxt": {
+        "found": true,
+        "hasExpires": false,
+        "expired": false
+      }
+    },
+    {
+      "domain": "mtgglobals.com",
+      "outcome": "unreachable"
+    },
+    {
+      "domain": "douyincdn.com",
+      "outcome": "unreachable"
+    },
+    {
+      "domain": "samsungqbe.com",
+      "outcome": "unreachable"
+    },
+    {
+      "domain": "heytapmobile.com",
+      "outcome": "unreachable"
+    },
+    {
+      "domain": "shalltry.com",
+      "outcome": "checked",
+      "blockers": 1,
+      "warnings": 2,
+      "present": [
+        "change-password"
+      ],
+      "securityTxt": {
+        "found": false,
+        "hasExpires": false,
+        "expired": false
+      }
+    },
+    {
+      "domain": "php.net",
+      "outcome": "checked",
+      "blockers": 0,
+      "warnings": 1,
+      "present": [
+        "security.txt",
+        "robots.txt"
+      ],
+      "securityTxt": {
+        "found": true,
+        "hasExpires": true,
+        "expired": false
+      }
+    },
+    {
+      "domain": "datadoghq.com",
+      "outcome": "checked",
+      "blockers": 0,
+      "warnings": 3,
+      "present": [
+        "security.txt",
+        "robots.txt",
+        "llms.txt",
+        "assetlinks.json"
+      ],
+      "securityTxt": {
+        "found": true,
+        "hasExpires": true,
+        "expired": false
+      }
+    },
+    {
+      "domain": "akamaihd.net",
+      "outcome": "unreachable"
+    },
+    {
+      "domain": "aliyun.com",
+      "outcome": "checked",
+      "blockers": 0,
+      "warnings": 4,
+      "present": [
+        "robots.txt"
+      ],
+      "securityTxt": {
+        "found": false,
+        "hasExpires": false,
+        "expired": false
+      }
+    },
+    {
+      "domain": "googleblog.com",
+      "outcome": "checked",
+      "answersAnything": true,
+      "blockers": 8,
+      "warnings": 3,
+      "present": [
+        "security.txt"
+      ],
+      "securityTxt": {
+        "found": true,
+        "hasExpires": false,
+        "expired": false
+      }
+    },
+    {
+      "domain": "amazon.co.uk",
+      "outcome": "checked",
+      "blockers": 1,
+      "warnings": 1,
+      "present": [
+        "security.txt",
+        "robots.txt",
+        "apple-app-site-association",
+        "assetlinks.json"
+      ],
+      "securityTxt": {
+        "found": true,
+        "hasExpires": false,
+        "expired": false
+      }
+    },
+    {
+      "domain": "hostinger.com",
+      "outcome": "checked",
+      "blockers": 0,
+      "warnings": 1,
+      "present": [
+        "security.txt",
+        "robots.txt",
+        "llms.txt"
+      ],
+      "securityTxt": {
+        "found": true,
+        "hasExpires": true,
+        "expired": false
+      }
+    },
+    {
+      "domain": "myshopify.com",
+      "outcome": "checked",
+      "blockers": 0,
+      "warnings": 3,
+      "present": [
+        "apple-app-site-association",
+        "assetlinks.json"
+      ],
+      "securityTxt": {
+        "found": false,
+        "hasExpires": false,
+        "expired": false
+      }
+    },
+    {
+      "domain": "trueconf.net",
+      "outcome": "unreachable"
+    },
+    {
+      "domain": "spaceweb.pro",
+      "outcome": "unreachable"
+    },
+    {
+      "domain": "worldnic.com",
+      "outcome": "unreachable"
+    },
+    {
+      "domain": "twc.com",
+      "outcome": "checked",
+      "blockers": 1,
+      "warnings": 4,
+      "present": [
+        "change-password"
+      ],
+      "securityTxt": {
+        "found": false,
+        "hasExpires": false,
+        "expired": false
+      }
+    },
+    {
+      "domain": "awswaf.com",
+      "outcome": "unreachable"
+    },
+    {
+      "domain": "smartadserver.com",
+      "outcome": "checked",
+      "answersAnything": true,
+      "blockers": 8,
+      "warnings": 3,
+      "present": [
+        "security.txt"
+      ],
+      "securityTxt": {
+        "found": true,
+        "hasExpires": false,
+        "expired": false
+      }
+    },
+    {
+      "domain": "name.com",
+      "outcome": "checked",
+      "blockers": 0,
+      "warnings": 2,
+      "present": [
+        "robots.txt",
+        "llms.txt"
+      ],
+      "securityTxt": {
+        "found": false,
+        "hasExpires": false,
+        "expired": false
+      }
+    },
+    {
+      "domain": "crashlytics.com",
+      "outcome": "checked",
+      "answersAnything": true,
+      "blockers": 7,
+      "warnings": 3,
+      "present": [],
+      "securityTxt": {
+        "found": false,
+        "hasExpires": false,
+        "expired": false
+      }
+    },
+    {
+      "domain": "bilibili.com",
+      "outcome": "checked",
+      "blockers": 0,
+      "warnings": 4,
+      "present": [
+        "apple-app-site-association",
+        "assetlinks.json"
+      ],
+      "securityTxt": {
+        "found": false,
+        "hasExpires": false,
+        "expired": false
+      }
+    },
+    {
+      "domain": "mobile.de",
+      "outcome": "checked",
+      "blockers": 1,
+      "warnings": 0,
+      "present": [
+        "security.txt",
+        "robots.txt",
+        "apple-app-site-association",
+        "assetlinks.json",
+        "change-password"
+      ],
+      "securityTxt": {
+        "found": true,
+        "hasExpires": true,
+        "expired": false
+      }
+    },
+    {
+      "domain": "tbcache.com",
+      "outcome": "unreachable"
+    },
+    {
+      "domain": "gnu.org",
+      "outcome": "checked",
+      "blockers": 0,
+      "warnings": 2,
+      "present": [
+        "robots.txt"
+      ],
+      "securityTxt": {
+        "found": false,
+        "hasExpires": false,
+        "expired": false
+      }
+    },
+    {
+      "domain": "trustpilot.com",
+      "outcome": "checked",
+      "blockers": 0,
+      "warnings": 2,
+      "present": [
+        "security.txt",
+        "robots.txt",
+        "apple-app-site-association",
+        "assetlinks.json"
+      ],
+      "securityTxt": {
+        "found": true,
+        "hasExpires": true,
+        "expired": false
+      }
+    },
+    {
+      "domain": "doubleverify.com",
+      "outcome": "checked",
+      "blockers": 0,
+      "warnings": 2,
+      "present": [
+        "robots.txt"
+      ],
+      "securityTxt": {
+        "found": false,
+        "hasExpires": false,
+        "expired": false
+      }
+    },
+    {
+      "domain": "naver.com",
+      "outcome": "checked",
+      "blockers": 0,
+      "warnings": 2,
+      "present": [
+        "robots.txt",
+        "apple-app-site-association",
+        "assetlinks.json"
+      ],
+      "securityTxt": {
+        "found": false,
+        "hasExpires": false,
+        "expired": false
+      }
+    },
+    {
+      "domain": "inner-active.mobi",
+      "outcome": "unreachable"
+    },
+    {
+      "domain": "slack.com",
+      "outcome": "checked",
+      "blockers": 2,
+      "warnings": 0,
+      "present": [
+        "security.txt",
+        "robots.txt",
+        "llms.txt",
+        "openid-configuration",
+        "apple-app-site-association",
+        "assetlinks.json",
+        "change-password"
+      ],
+      "securityTxt": {
+        "found": true,
+        "hasExpires": false,
+        "expired": false
+      }
+    },
+    {
+      "domain": "checkpoint.com",
+      "outcome": "checked",
+      "answersAnything": true,
+      "blockers": 6,
+      "warnings": 2,
+      "present": [
+        "security.txt",
+        "robots.txt",
+        "llms.txt"
+      ],
+      "securityTxt": {
+        "found": true,
+        "hasExpires": true,
+        "expired": true,
+        "daysLeft": -291
+      }
+    },
+    {
+      "domain": "media.net",
+      "outcome": "checked",
+      "blockers": 0,
+      "warnings": 2,
+      "present": [
+        "robots.txt"
+      ],
+      "securityTxt": {
+        "found": false,
+        "hasExpires": false,
+        "expired": false
+      }
+    },
+    {
+      "domain": "vecdnlb.com",
+      "outcome": "unreachable"
+    },
+    {
+      "domain": "edgcdn.net",
+      "outcome": "unreachable"
+    },
+    {
+      "domain": "licdn.com",
+      "outcome": "unreachable"
+    },
+    {
+      "domain": "opendns.com",
+      "outcome": "checked",
+      "blockers": 0,
+      "warnings": 2,
+      "present": [
+        "robots.txt"
+      ],
+      "securityTxt": {
+        "found": false,
+        "hasExpires": false,
+        "expired": false
+      }
+    },
+    {
+      "domain": "un.org",
+      "outcome": "checked",
+      "blockers": 0,
+      "warnings": 2,
+      "present": [
+        "robots.txt"
+      ],
+      "securityTxt": {
+        "found": false,
+        "hasExpires": false,
+        "expired": false
+      }
+    },
+    {
+      "domain": "selectel.ru",
+      "outcome": "checked",
+      "blockers": 0,
+      "warnings": 2,
+      "present": [
+        "robots.txt",
+        "llms.txt"
+      ],
+      "securityTxt": {
+        "found": false,
+        "hasExpires": false,
+        "expired": false
+      }
+    },
+    {
+      "domain": "casalemedia.com",
+      "outcome": "checked",
+      "answersAnything": true,
+      "blockers": 8,
+      "warnings": 3,
+      "present": [
+        "security.txt"
+      ],
+      "securityTxt": {
+        "found": true,
+        "hasExpires": false,
+        "expired": false
+      }
+    },
+    {
+      "domain": "cdc.gov",
+      "outcome": "checked",
+      "answersAnything": true,
+      "blockers": 7,
+      "warnings": 3,
+      "present": [],
+      "securityTxt": {
+        "found": false,
+        "hasExpires": false,
+        "expired": false
+      }
+    },
+    {
+      "domain": "hostgator.com",
+      "outcome": "checked",
+      "blockers": 1,
+      "warnings": 2,
+      "present": [
+        "change-password"
+      ],
+      "securityTxt": {
+        "found": false,
+        "hasExpires": false,
+        "expired": false
+      }
+    },
+    {
+      "domain": "allawnos.com",
+      "outcome": "unreachable"
+    },
+    {
+      "domain": "tradingview.com",
+      "outcome": "checked",
+      "blockers": 1,
+      "warnings": 0,
+      "present": [
+        "security.txt",
+        "robots.txt",
+        "assetlinks.json",
+        "change-password"
+      ],
+      "securityTxt": {
+        "found": true,
+        "hasExpires": false,
+        "expired": false
+      }
+    },
+    {
+      "domain": "washingtonpost.com",
+      "outcome": "checked",
+      "blockers": 1,
+      "warnings": 2,
+      "present": [
+        "robots.txt",
+        "apple-app-site-association",
+        "assetlinks.json",
+        "change-password",
+        "gpc.json"
+      ],
+      "securityTxt": {
+        "found": false,
+        "hasExpires": false,
+        "expired": false
+      }
+    },
+    {
+      "domain": "weebly.com",
+      "outcome": "checked",
+      "blockers": 0,
+      "warnings": 2,
+      "present": [
+        "robots.txt"
+      ],
+      "securityTxt": {
+        "found": false,
+        "hasExpires": false,
+        "expired": false
+      }
+    },
+    {
+      "domain": "nvidia.com",
+      "outcome": "checked",
+      "blockers": 1,
+      "warnings": 1,
+      "present": [
+        "robots.txt",
+        "llms.txt",
+        "change-password"
+      ],
+      "securityTxt": {
+        "found": false,
+        "hasExpires": false,
+        "expired": false
+      }
+    },
+    {
+      "domain": "zendesk.com",
+      "outcome": "checked",
+      "blockers": 0,
+      "warnings": 1,
+      "present": [
+        "security.txt",
+        "robots.txt",
+        "llms.txt",
+        "apple-app-site-association",
+        "assetlinks.json"
+      ],
+      "securityTxt": {
+        "found": true,
+        "hasExpires": true,
+        "expired": false
+      }
+    },
+    {
+      "domain": "live-video.net",
+      "outcome": "checked",
+      "blockers": 1,
+      "warnings": 2,
+      "present": [
+        "change-password"
+      ],
+      "securityTxt": {
+        "found": false,
+        "hasExpires": false,
+        "expired": false
+      }
+    },
+    {
+      "domain": "dnspod.net",
+      "outcome": "unreachable"
+    },
+    {
+      "domain": "indeed.com",
+      "outcome": "checked",
+      "blockers": 1,
+      "warnings": 1,
+      "present": [
+        "robots.txt",
+        "apple-app-site-association",
+        "change-password"
+      ],
+      "securityTxt": {
+        "found": false,
+        "hasExpires": false,
+        "expired": false
+      }
+    },
+    {
+      "domain": "issuu.com",
+      "outcome": "checked",
+      "blockers": 1,
+      "warnings": 0,
+      "present": [
+        "security.txt",
+        "robots.txt",
+        "apple-app-site-association",
+        "assetlinks.json",
+        "change-password"
+      ],
+      "securityTxt": {
+        "found": true,
+        "hasExpires": false,
+        "expired": false
+      }
+    },
+    {
+      "domain": "wsj.com",
+      "outcome": "checked",
+      "blockers": 1,
+      "warnings": 2,
+      "present": [
+        "robots.txt",
+        "apple-app-site-association",
+        "assetlinks.json",
+        "change-password"
+      ],
+      "securityTxt": {
+        "found": false,
+        "hasExpires": false,
+        "expired": false
+      }
+    },
+    {
+      "domain": "cookiedatabase.org",
+      "outcome": "checked",
+      "blockers": 0,
+      "warnings": 3,
+      "present": [
+        "robots.txt"
+      ],
+      "securityTxt": {
+        "found": false,
+        "hasExpires": false,
+        "expired": false
+      }
+    },
+    {
+      "domain": "samsungcloudsolution.com",
+      "outcome": "unreachable"
+    },
+    {
+      "domain": "bloomberg.com",
+      "outcome": "checked",
+      "blockers": 0,
+      "warnings": 1,
+      "present": [
+        "security.txt",
+        "robots.txt",
+        "openid-configuration",
+        "apple-app-site-association",
+        "assetlinks.json"
+      ],
+      "securityTxt": {
+        "found": true,
+        "hasExpires": true,
+        "expired": false
+      }
+    },
+    {
+      "domain": "calendly.com",
+      "outcome": "checked",
+      "blockers": 0,
+      "warnings": 1,
+      "present": [
+        "security.txt",
+        "robots.txt",
+        "llms.txt",
+        "openid-configuration",
+        "apple-app-site-association",
+        "assetlinks.json"
+      ],
+      "securityTxt": {
+        "found": true,
+        "hasExpires": true,
+        "expired": false
+      }
+    },
+    {
+      "domain": "cdnbuild.net",
+      "outcome": "unreachable"
+    },
+    {
+      "domain": "stanford.edu",
+      "outcome": "checked",
+      "blockers": 1,
+      "warnings": 1,
+      "present": [
+        "robots.txt",
+        "change-password"
+      ],
+      "securityTxt": {
+        "found": false,
+        "hasExpires": false,
+        "expired": false
+      }
+    },
+    {
+      "domain": "tiktokv.us",
+      "outcome": "unreachable"
+    },
+    {
+      "domain": "volcfcdndvs.com",
+      "outcome": "unreachable"
+    },
+    {
+      "domain": "ip-api.com",
+      "outcome": "checked",
+      "answersAnything": true,
+      "blockers": 6,
+      "warnings": 3,
+      "present": [
+        "robots.txt"
+      ],
+      "securityTxt": {
+        "found": false,
+        "hasExpires": false,
+        "expired": false
+      }
+    },
+    {
+      "domain": "gitlab.com",
+      "outcome": "checked",
+      "blockers": 1,
+      "warnings": 0,
+      "present": [
+        "security.txt",
+        "robots.txt",
+        "openid-configuration",
+        "change-password"
+      ],
+      "securityTxt": {
+        "found": true,
+        "hasExpires": true,
+        "expired": false
+      }
+    },
+    {
+      "domain": "virginm.net",
+      "outcome": "unreachable"
+    },
+    {
+      "domain": "mi.com",
+      "outcome": "checked",
+      "blockers": 4,
+      "warnings": 2,
+      "present": [
+        "security.txt",
+        "robots.txt",
+        "llms.txt",
+        "assetlinks.json",
+        "change-password"
+      ],
+      "securityTxt": {
+        "found": true,
+        "hasExpires": false,
+        "expired": false
+      }
+    },
+    {
+      "domain": "plesk.com",
+      "outcome": "checked",
+      "blockers": 0,
+      "warnings": 1,
+      "present": [
+        "security.txt",
+        "robots.txt",
+        "llms.txt"
+      ],
+      "securityTxt": {
+        "found": true,
+        "hasExpires": true,
+        "expired": false
+      }
+    },
+    {
+      "domain": "online-metrix.net",
+      "outcome": "unreachable"
+    },
+    {
+      "domain": "newrelic.com",
+      "outcome": "checked",
+      "blockers": 2,
+      "warnings": 0,
+      "present": [
+        "security.txt",
+        "robots.txt",
+        "llms.txt",
+        "apple-app-site-association",
+        "assetlinks.json",
+        "change-password"
+      ],
+      "securityTxt": {
+        "found": true,
+        "hasExpires": false,
+        "expired": false
+      }
+    },
+    {
+      "domain": "yandex.com",
+      "outcome": "checked",
+      "blockers": 1,
+      "warnings": 1,
+      "present": [
+        "security.txt",
+        "robots.txt",
+        "apple-app-site-association",
+        "assetlinks.json"
+      ],
+      "securityTxt": {
+        "found": true,
+        "hasExpires": false,
+        "expired": false
+      }
+    },
+    {
+      "domain": "paloaltonetworks.com",
+      "outcome": "checked",
+      "blockers": 0,
+      "warnings": 2,
+      "present": [
+        "robots.txt",
+        "llms.txt"
+      ],
+      "securityTxt": {
+        "found": false,
+        "hasExpires": false,
+        "expired": false
+      }
+    },
+    {
+      "domain": "amazontrust.com",
+      "outcome": "unreachable"
+    },
+    {
+      "domain": "amazon.de",
+      "outcome": "checked",
+      "blockers": 0,
+      "warnings": 4,
+      "present": [
+        "apple-app-site-association",
+        "assetlinks.json"
+      ],
+      "securityTxt": {
+        "found": false,
+        "hasExpires": false,
+        "expired": false
+      }
+    },
+    {
+      "domain": "launchdarkly.com",
+      "outcome": "checked",
+      "blockers": 0,
+      "warnings": 2,
+      "present": [
+        "robots.txt"
+      ],
+      "securityTxt": {
+        "found": false,
+        "hasExpires": false,
+        "expired": false
+      }
+    },
+    {
+      "domain": "tp-link.com",
+      "outcome": "checked",
+      "blockers": 2,
+      "warnings": 1,
+      "present": [
+        "security.txt",
+        "robots.txt",
+        "apple-app-site-association",
+        "assetlinks.json"
+      ],
+      "securityTxt": {
+        "found": true,
+        "hasExpires": false,
+        "expired": false
+      }
+    },
+    {
+      "domain": "shopifysvc.com",
+      "outcome": "unreachable"
+    },
+    {
+      "domain": "netangels.ru",
+      "outcome": "checked",
+      "blockers": 0,
+      "warnings": 2,
+      "present": [
+        "robots.txt"
+      ],
+      "securityTxt": {
+        "found": false,
+        "hasExpires": false,
+        "expired": false
+      }
+    },
+    {
+      "domain": "ibyteimg.com",
+      "outcome": "unreachable"
+    },
+    {
+      "domain": "demdex.net",
+      "outcome": "unreachable"
+    },
+    {
+      "domain": "xcal.tv",
+      "outcome": "unreachable"
+    },
+    {
+      "domain": "bsky.app",
+      "outcome": "checked",
+      "blockers": 1,
+      "warnings": 1,
+      "present": [
+        "security.txt",
+        "robots.txt",
+        "apple-app-site-association",
+        "assetlinks.json"
+      ],
+      "securityTxt": {
+        "found": true,
+        "hasExpires": false,
+        "expired": false
+      }
+    },
+    {
+      "domain": "gandi-ns.fr",
+      "outcome": "unreachable"
+    },
+    {
+      "domain": "vivoglobal.com",
+      "outcome": "checked",
+      "blockers": 0,
+      "warnings": 2,
+      "present": [
+        "robots.txt"
+      ],
+      "securityTxt": {
+        "found": false,
+        "hasExpires": false,
+        "expired": false
+      }
+    },
+    {
+      "domain": "espn.com",
+      "outcome": "checked",
+      "blockers": 0,
+      "warnings": 2,
+      "present": [
+        "robots.txt",
+        "apple-app-site-association",
+        "assetlinks.json"
+      ],
+      "securityTxt": {
+        "found": false,
+        "hasExpires": false,
+        "expired": false
+      }
+    },
+    {
+      "domain": "ipify.org",
+      "outcome": "checked",
+      "blockers": 0,
+      "warnings": 2,
+      "present": [
+        "robots.txt"
+      ],
+      "securityTxt": {
+        "found": false,
+        "hasExpires": false,
+        "expired": false
+      }
+    },
+    {
+      "domain": "onelink.me",
+      "outcome": "checked",
+      "answersAnything": true,
+      "blockers": 8,
+      "warnings": 3,
+      "present": [
+        "security.txt"
+      ],
+      "securityTxt": {
+        "found": true,
+        "hasExpires": false,
+        "expired": false
+      }
+    },
+    {
+      "domain": "vkuser.net",
+      "outcome": "unreachable"
+    },
+    {
+      "domain": "rocket-cdn.com",
+      "outcome": "unreachable"
+    },
+    {
+      "domain": "kwai-pro.com",
+      "outcome": "unreachable"
+    },
+    {
+      "domain": "nasa.gov",
+      "outcome": "checked",
+      "blockers": 0,
+      "warnings": 2,
+      "present": [
+        "robots.txt"
+      ],
+      "securityTxt": {
+        "found": false,
+        "hasExpires": false,
+        "expired": false
+      }
+    },
+    {
+      "domain": "aliexpress.com",
+      "outcome": "checked",
+      "answersAnything": true,
+      "blockers": 6,
+      "warnings": 3,
+      "present": [
+        "security.txt",
+        "robots.txt",
+        "assetlinks.json"
+      ],
+      "securityTxt": {
+        "found": true,
+        "hasExpires": false,
+        "expired": false
+      }
+    },
+    {
+      "domain": "quickconnect.to",
+      "outcome": "checked",
+      "blockers": 1,
+      "warnings": 10,
+      "present": [
+        "security.txt",
+        "robots.txt",
+        "llms.txt"
+      ],
+      "securityTxt": {
+        "found": true,
+        "hasExpires": false,
+        "expired": false
+      }
+    },
+    {
+      "domain": "walmart.com",
+      "outcome": "checked",
+      "blockers": 1,
+      "warnings": 1,
+      "present": [
+        "security.txt",
+        "robots.txt",
+        "apple-app-site-association",
+        "assetlinks.json"
+      ],
+      "securityTxt": {
+        "found": true,
+        "hasExpires": false,
+        "expired": false
+      }
+    },
+    {
+      "domain": "nflxvideo.net",
+      "outcome": "unreachable"
+    },
+    {
+      "domain": "wildberries.ru",
+      "outcome": "checked",
+      "answersAnything": true,
+      "blockers": 1,
+      "warnings": 2,
+      "present": [
+        "apple-app-site-association",
+        "assetlinks.json"
+      ],
+      "securityTxt": {
+        "found": false,
+        "hasExpires": false,
+        "expired": false
+      }
+    },
+    {
+      "domain": "globo.com",
+      "outcome": "checked",
+      "blockers": 0,
+      "warnings": 4,
+      "present": [],
+      "securityTxt": {
+        "found": false,
+        "hasExpires": false,
+        "expired": false
+      }
+    },
+    {
+      "domain": "prodregistryv2.org",
+      "outcome": "checked",
+      "blockers": 0,
+      "warnings": 3,
+      "present": [],
+      "securityTxt": {
+        "found": false,
+        "hasExpires": false,
+        "expired": false
+      }
+    },
+    {
+      "domain": "unsplash.com",
+      "outcome": "checked",
+      "blockers": 1,
+      "warnings": 2,
+      "present": [
+        "security.txt",
+        "robots.txt",
+        "apple-app-site-association"
+      ],
+      "securityTxt": {
+        "found": true,
+        "hasExpires": false,
+        "expired": false
+      }
+    },
+    {
+      "domain": "163.com",
+      "outcome": "checked",
+      "answersAnything": true,
+      "blockers": 7,
+      "warnings": 3,
+      "present": [
+        "security.txt",
+        "robots.txt"
+      ],
+      "securityTxt": {
+        "found": true,
+        "hasExpires": false,
+        "expired": false
+      }
+    },
+    {
+      "domain": "heytapdl.com",
+      "outcome": "unreachable"
+    },
+    {
+      "domain": "expireddomains.com",
+      "outcome": "checked",
+      "blockers": 1,
+      "warnings": 2,
+      "present": [
+        "change-password"
+      ],
+      "securityTxt": {
+        "found": false,
+        "hasExpires": false,
+        "expired": false
+      }
+    },
+    {
+      "domain": "ezvizlife.com",
+      "outcome": "unreachable"
+    },
+    {
+      "domain": "line.me",
+      "outcome": "checked",
+      "blockers": 1,
+      "warnings": 1,
+      "present": [
+        "security.txt",
+        "robots.txt",
+        "apple-app-site-association",
+        "assetlinks.json"
+      ],
+      "securityTxt": {
+        "found": true,
+        "hasExpires": false,
+        "expired": false
+      }
+    },
+    {
+      "domain": "brave.com",
+      "outcome": "checked",
+      "blockers": 1,
+      "warnings": 2,
+      "present": [
+        "security.txt",
+        "robots.txt",
+        "assetlinks.json",
+        "gpc.json"
+      ],
+      "securityTxt": {
+        "found": true,
+        "hasExpires": false,
+        "expired": false
+      }
+    },
+    {
+      "domain": "tiktokv.eu",
+      "outcome": "unreachable"
+    },
+    {
+      "domain": "google.cn",
+      "outcome": "checked",
+      "blockers": 0,
+      "warnings": 3,
+      "present": [
+        "security.txt",
+        "assetlinks.json"
+      ],
+      "securityTxt": {
+        "found": true,
+        "hasExpires": true,
+        "expired": false
+      }
+    },
+    {
+      "domain": "dailymotion.com",
+      "outcome": "checked",
+      "blockers": 1,
+      "warnings": 0,
+      "present": [
+        "security.txt",
+        "robots.txt",
+        "llms.txt",
+        "apple-app-site-association",
+        "change-password"
+      ],
+      "securityTxt": {
+        "found": true,
+        "hasExpires": false,
+        "expired": false
+      }
+    },
+    {
+      "domain": "steamcommunity.com",
+      "outcome": "checked",
+      "answersAnything": true,
+      "blockers": 4,
+      "warnings": 3,
+      "present": [
+        "robots.txt",
+        "apple-app-site-association",
+        "assetlinks.json"
+      ],
+      "securityTxt": {
+        "found": false,
+        "hasExpires": false,
+        "expired": false
+      }
+    },
+    {
+      "domain": "amazonalexa.com",
+      "outcome": "checked",
+      "answersAnything": true,
+      "blockers": 8,
+      "warnings": 3,
+      "present": [
+        "security.txt"
+      ],
+      "securityTxt": {
+        "found": true,
+        "hasExpires": false,
+        "expired": false
+      }
+    },
+    {
+      "domain": "supercell.com",
+      "outcome": "checked",
+      "blockers": 0,
+      "warnings": 1,
+      "present": [
+        "security.txt",
+        "robots.txt"
+      ],
+      "securityTxt": {
+        "found": true,
+        "hasExpires": true,
+        "expired": false
+      }
+    },
+    {
+      "domain": "tiktokcdn-eu.com",
+      "outcome": "unreachable"
+    },
+    {
+      "domain": "temu.com",
+      "outcome": "checked",
+      "answersAnything": true,
+      "blockers": 5,
+      "warnings": 3,
+      "present": [
+        "apple-app-site-association",
+        "assetlinks.json"
+      ],
+      "securityTxt": {
+        "found": false,
+        "hasExpires": false,
+        "expired": false
+      }
+    },
+    {
+      "domain": "beian.gov.cn",
+      "outcome": "unreachable"
+    },
+    {
+      "domain": "chinamobile.com",
+      "outcome": "unreachable"
+    },
+    {
+      "domain": "huawei.com",
+      "outcome": "checked",
+      "blockers": 0,
+      "warnings": 3,
+      "present": [
+        "robots.txt"
+      ],
+      "securityTxt": {
+        "found": false,
+        "hasExpires": false,
+        "expired": false
+      }
+    },
+    {
+      "domain": "kaspersky-labs.com",
+      "outcome": "unreachable"
+    },
+    {
+      "domain": "claude.ai",
+      "outcome": "checked",
+      "blockers": 1,
+      "warnings": 3,
+      "present": [
+        "security.txt",
+        "robots.txt",
+        "llms.txt",
+        "apple-app-site-association",
+        "assetlinks.json",
+        "gpc.json"
+      ],
+      "securityTxt": {
+        "found": true,
+        "hasExpires": false,
+        "expired": false
+      }
+    },
+    {
+      "domain": "avcdn.net",
+      "outcome": "unreachable"
+    },
+    {
+      "domain": "pangle.io",
+      "outcome": "unreachable"
+    },
+    {
+      "domain": "taobao.com",
+      "outcome": "checked",
+      "answersAnything": true,
+      "blockers": 6,
+      "warnings": 3,
+      "present": [
+        "robots.txt"
+      ],
+      "securityTxt": {
+        "found": false,
+        "hasExpires": false,
+        "expired": false
+      }
+    },
+    {
+      "domain": "intel.com",
+      "outcome": "checked",
+      "blockers": 0,
+      "warnings": 2,
+      "present": [
+        "security.txt",
+        "robots.txt",
+        "llms.txt",
+        "apple-app-site-association",
+        "assetlinks.json"
+      ],
+      "securityTxt": {
+        "found": true,
+        "hasExpires": true,
+        "expired": false
+      }
+    },
+    {
+      "domain": "kwaipros.com",
+      "outcome": "unreachable"
+    },
+    {
+      "domain": "byteglb.com",
+      "outcome": "unreachable"
+    },
+    {
+      "domain": "dotaplabs.net",
+      "outcome": "unreachable"
+    },
+    {
+      "domain": "go.com",
+      "outcome": "checked",
+      "answersAnything": true,
+      "blockers": 7,
+      "warnings": 3,
+      "present": [
+        "security.txt",
+        "robots.txt"
+      ],
+      "securityTxt": {
+        "found": true,
+        "hasExpires": false,
+        "expired": false
+      }
+    },
+    {
+      "domain": "awsglobalaccelerator.com",
+      "outcome": "unreachable"
+    },
+    {
+      "domain": "dropcatch.com",
+      "outcome": "checked",
+      "answersAnything": true,
+      "blockers": 7,
+      "warnings": 3,
+      "present": [],
+      "securityTxt": {
+        "found": false,
+        "hasExpires": false,
+        "expired": false
+      }
+    },
+    {
+      "domain": "netease.com",
+      "outcome": "unreachable"
+    },
+    {
+      "domain": "wbx2.com",
+      "outcome": "unreachable"
+    },
+    {
+      "domain": "goodreads.com",
+      "outcome": "checked",
+      "blockers": 0,
+      "warnings": 2,
+      "present": [
+        "robots.txt",
+        "openid-configuration",
+        "apple-app-site-association",
+        "assetlinks.json"
+      ],
+      "securityTxt": {
+        "found": false,
+        "hasExpires": false,
+        "expired": false
+      }
+    },
+    {
+      "domain": "ipinfo.io",
+      "outcome": "checked",
+      "blockers": 0,
+      "warnings": 1,
+      "present": [
+        "security.txt",
+        "robots.txt"
+      ],
+      "securityTxt": {
+        "found": true,
+        "hasExpires": true,
+        "expired": false
+      }
+    },
+    {
+      "domain": "substack.com",
+      "outcome": "checked",
+      "blockers": 0,
+      "warnings": 2,
+      "present": [
+        "robots.txt",
+        "apple-app-site-association",
+        "assetlinks.json"
+      ],
+      "securityTxt": {
+        "found": false,
+        "hasExpires": false,
+        "expired": false
+      }
+    },
+    {
+      "domain": "timeweb.ru",
+      "outcome": "checked",
+      "answersAnything": true,
+      "blockers": 7,
+      "warnings": 3,
+      "present": [],
+      "securityTxt": {
+        "found": false,
+        "hasExpires": false,
+        "expired": false
+      }
+    },
+    {
+      "domain": "skyhigh.cloud",
+      "outcome": "checked",
+      "blockers": 3,
+      "warnings": 3,
+      "present": [
+        "security.txt",
+        "robots.txt",
+        "llms.txt",
+        "assetlinks.json"
+      ],
+      "securityTxt": {
+        "found": true,
+        "hasExpires": false,
+        "expired": false
+      }
+    },
+    {
+      "domain": "myqcloud.com",
+      "outcome": "unreachable"
+    },
+    {
+      "domain": "cloudns.net",
+      "outcome": "checked",
+      "blockers": 3,
+      "warnings": 2,
+      "present": [
+        "security.txt",
+        "robots.txt",
+        "llms.txt",
+        "ai.txt",
+        "ucp",
+        "change-password"
+      ],
+      "securityTxt": {
+        "found": true,
+        "hasExpires": false,
+        "expired": false
+      }
+    },
+    {
+      "domain": "yahoo.co.jp",
+      "outcome": "checked",
+      "blockers": 1,
+      "warnings": 2,
+      "present": [
+        "change-password"
+      ],
+      "securityTxt": {
+        "found": false,
+        "hasExpires": false,
+        "expired": false
+      }
+    },
+    {
+      "domain": "enacdn.net",
+      "outcome": "unreachable"
+    },
+    {
+      "domain": "businessinsider.com",
+      "outcome": "checked",
+      "blockers": 0,
+      "warnings": 2,
+      "present": [
+        "robots.txt",
+        "apple-app-site-association",
+        "assetlinks.json"
+      ],
+      "securityTxt": {
+        "found": false,
+        "hasExpires": false,
+        "expired": false
+      }
+    },
+    {
+      "domain": "sina.com.cn",
+      "outcome": "checked",
+      "blockers": 0,
+      "warnings": 4,
+      "present": [],
+      "securityTxt": {
+        "found": false,
+        "hasExpires": false,
+        "expired": false
+      }
+    },
+    {
+      "domain": "gcdn.co",
+      "outcome": "unreachable"
+    },
+    {
+      "domain": "adobe.net",
+      "outcome": "unreachable"
+    },
+    {
+      "domain": "wp.com",
+      "outcome": "checked",
+      "blockers": 1,
+      "warnings": 0,
+      "present": [
+        "security.txt",
+        "robots.txt",
+        "llms.txt",
+        "apple-app-site-association",
+        "assetlinks.json",
+        "change-password"
+      ],
+      "securityTxt": {
+        "found": true,
+        "hasExpires": false,
+        "expired": false
+      }
+    },
+    {
+      "domain": "tencent-cloud.net",
+      "outcome": "unreachable"
+    },
+    {
+      "domain": "pixabay.com",
+      "outcome": "checked",
+      "blockers": 1,
+      "warnings": 1,
+      "present": [
+        "robots.txt",
+        "change-password"
+      ],
+      "securityTxt": {
+        "found": false,
+        "hasExpires": false,
+        "expired": false
+      }
+    },
+    {
+      "domain": "edgecdn.ru",
+      "outcome": "unreachable"
+    },
+    {
+      "domain": "aol.com",
+      "outcome": "checked",
+      "blockers": 0,
+      "warnings": 2,
+      "present": [
+        "security.txt",
+        "robots.txt",
+        "apple-app-site-association",
+        "assetlinks.json"
+      ],
+      "securityTxt": {
+        "found": true,
+        "hasExpires": true,
+        "expired": false
+      }
+    },
+    {
+      "domain": "avsxappcaptiveportal.com",
+      "outcome": "unreachable"
+    },
+    {
+      "domain": "speedtest.net",
+      "outcome": "checked",
+      "blockers": 0,
+      "warnings": 1,
+      "present": [
+        "security.txt",
+        "robots.txt",
+        "apple-app-site-association",
+        "assetlinks.json"
+      ],
+      "securityTxt": {
+        "found": true,
+        "hasExpires": true,
+        "expired": false
+      }
+    },
+    {
+      "domain": "g.page",
+      "outcome": "checked",
+      "blockers": 2,
+      "warnings": 3,
+      "present": [
+        "security.txt",
+        "robots.txt",
+        "llms.txt"
+      ],
+      "securityTxt": {
+        "found": true,
+        "hasExpires": false,
+        "expired": false
+      }
+    },
+    {
+      "domain": "cloudflareinsights.com",
+      "outcome": "checked",
+      "answersAnything": true,
+      "blockers": 7,
+      "warnings": 3,
+      "present": [],
+      "securityTxt": {
+        "found": false,
+        "hasExpires": false,
+        "expired": false
+      }
+    },
+    {
+      "domain": "vercel-dns-016.com",
+      "outcome": "unreachable"
+    },
+    {
+      "domain": "eye4.cn",
+      "outcome": "checked",
+      "blockers": 1,
+      "warnings": 2,
+      "present": [
+        "change-password"
+      ],
+      "securityTxt": {
+        "found": false,
+        "hasExpires": false,
+        "expired": false
+      }
+    },
+    {
+      "domain": "gamepass.com",
+      "outcome": "unreachable"
+    },
+    {
+      "domain": "duolingo.com",
+      "outcome": "checked",
+      "blockers": 1,
+      "warnings": 3,
+      "present": [
+        "security.txt",
+        "robots.txt",
+        "llms.txt",
+        "apple-app-site-association",
+        "assetlinks.json"
+      ],
+      "securityTxt": {
+        "found": true,
+        "hasExpires": false,
+        "expired": false
+      }
+    },
+    {
+      "domain": "mikrotik.com",
+      "outcome": "checked",
+      "blockers": 1,
+      "warnings": 2,
+      "present": [
+        "security.txt",
+        "robots.txt"
+      ],
+      "securityTxt": {
+        "found": true,
+        "hasExpires": false,
+        "expired": false
+      }
+    },
+    {
+      "domain": "bluehost.com",
+      "outcome": "checked",
+      "blockers": 1,
+      "warnings": 2,
+      "present": [
+        "change-password"
+      ],
+      "securityTxt": {
+        "found": false,
+        "hasExpires": false,
+        "expired": false
+      }
+    },
+    {
+      "domain": "nflximg.com",
+      "outcome": "unreachable"
+    },
+    {
+      "domain": "sohu.com",
+      "outcome": "checked",
+      "blockers": 2,
+      "warnings": 6,
+      "present": [
+        "security.txt",
+        "llms.txt",
+        "ai.txt",
+        "mta-sts.txt",
+        "dnt-policy.txt"
+      ],
+      "securityTxt": {
+        "found": true,
+        "hasExpires": false,
+        "expired": false
+      }
+    },
+    {
+      "domain": "arxiv.org",
+      "outcome": "checked",
+      "blockers": 0,
+      "warnings": 2,
+      "present": [
+        "robots.txt"
+      ],
+      "securityTxt": {
+        "found": false,
+        "hasExpires": false,
+        "expired": false
+      }
+    },
+    {
+      "domain": "firetvcaptiveportal.com",
+      "outcome": "unreachable"
+    },
+    {
+      "domain": "dual-s-msedge.net",
+      "outcome": "unreachable"
+    },
+    {
+      "domain": "ack.de",
+      "outcome": "checked",
+      "answersAnything": true,
+      "blockers": 6,
+      "warnings": 3,
+      "present": [
+        "robots.txt"
+      ],
+      "securityTxt": {
+        "found": false,
+        "hasExpires": false,
+        "expired": false
+      }
+    },
+    {
+      "domain": "cnbc.com",
+      "outcome": "checked",
+      "blockers": 0,
+      "warnings": 4,
+      "present": [
+        "apple-app-site-association",
+        "assetlinks.json"
+      ],
+      "securityTxt": {
+        "found": false,
+        "hasExpires": false,
+        "expired": false
+      }
+    },
+    {
+      "domain": "kwai.net",
+      "outcome": "unreachable"
+    },
+    {
+      "domain": "bdydns.com",
+      "outcome": "unreachable"
+    },
+    {
+      "domain": "statista.com",
+      "outcome": "checked",
+      "blockers": 0,
+      "warnings": 2,
+      "present": [
+        "robots.txt"
+      ],
+      "securityTxt": {
+        "found": false,
+        "hasExpires": false,
+        "expired": false
+      }
+    },
+    {
+      "domain": "list-manage.com",
+      "outcome": "unreachable"
+    },
+    {
+      "domain": "addtoany.com",
+      "outcome": "checked",
+      "blockers": 0,
+      "warnings": 2,
+      "present": [
+        "robots.txt"
+      ],
+      "securityTxt": {
+        "found": false,
+        "hasExpires": false,
+        "expired": false
+      }
+    },
+    {
+      "domain": "ietf.org",
+      "outcome": "checked",
+      "blockers": 0,
+      "warnings": 2,
+      "present": [
+        "robots.txt"
+      ],
+      "securityTxt": {
+        "found": false,
+        "hasExpires": false,
+        "expired": false
+      }
+    },
+    {
+      "domain": "okta.com",
+      "outcome": "checked",
+      "blockers": 1,
+      "warnings": 0,
+      "present": [
+        "security.txt",
+        "robots.txt",
+        "llms.txt",
+        "change-password"
+      ],
+      "securityTxt": {
+        "found": true,
+        "hasExpires": true,
+        "expired": false
+      }
+    },
+    {
+      "domain": "nease.net",
+      "outcome": "unreachable"
+    },
+    {
+      "domain": "sc-gw.com",
+      "outcome": "unreachable"
+    },
+    {
+      "domain": "atlassian.net",
+      "outcome": "checked",
+      "answersAnything": true,
+      "blockers": 3,
+      "warnings": 3,
+      "present": [
+        "security.txt",
+        "robots.txt",
+        "apple-app-site-association",
+        "assetlinks.json"
+      ],
+      "securityTxt": {
+        "found": true,
+        "hasExpires": true,
+        "expired": false
+      }
+    },
+    {
+      "domain": "duckduckgo.com",
+      "outcome": "checked",
+      "blockers": 2,
+      "warnings": 2,
+      "present": [
+        "security.txt",
+        "robots.txt",
+        "llms.txt",
+        "assetlinks.json",
+        "change-password",
+        "gpc.json",
+        "dnt-policy.txt"
+      ],
+      "securityTxt": {
+        "found": true,
+        "hasExpires": false,
+        "expired": false
+      }
+    },
+    {
+      "domain": "quora.com",
+      "outcome": "checked",
+      "blockers": 0,
+      "warnings": 2,
+      "present": [
+        "robots.txt",
+        "apple-app-site-association",
+        "assetlinks.json"
+      ],
+      "securityTxt": {
+        "found": false,
+        "hasExpires": false,
+        "expired": false
+      }
+    },
+    {
+      "domain": "adriver.ru",
+      "outcome": "checked",
+      "blockers": 0,
+      "warnings": 6,
+      "present": [],
+      "securityTxt": {
+        "found": false,
+        "hasExpires": false,
+        "expired": false
+      }
+    },
+    {
+      "domain": "mcafee.com",
+      "outcome": "unreachable"
+    },
+    {
+      "domain": "amazon.co.jp",
+      "outcome": "checked",
+      "blockers": 1,
+      "warnings": 1,
+      "present": [
+        "security.txt",
+        "robots.txt",
+        "apple-app-site-association",
+        "assetlinks.json"
+      ],
+      "securityTxt": {
+        "found": true,
+        "hasExpires": false,
+        "expired": false
+      }
+    },
+    {
+      "domain": "markmonitor.com",
+      "outcome": "checked",
+      "blockers": 1,
+      "warnings": 2,
+      "present": [
+        "change-password"
+      ],
+      "securityTxt": {
+        "found": false,
+        "hasExpires": false,
+        "expired": false
+      }
+    },
+    {
+      "domain": "scribd.com",
+      "outcome": "checked",
+      "blockers": 0,
+      "warnings": 2,
+      "present": [
+        "robots.txt",
+        "apple-app-site-association",
+        "assetlinks.json"
+      ],
+      "securityTxt": {
+        "found": false,
+        "hasExpires": false,
+        "expired": false
+      }
+    }
+  ]
+}

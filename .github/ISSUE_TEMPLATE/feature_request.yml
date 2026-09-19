@@ -1,0 +1,26 @@
+name: Feature request
+description: Another file worth checking, or a check worth adding
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: file
+    attributes:
+      label: Which file, and what should be checked about it
+      description: A link to the specification that defines it helps a lot.
+    validations:
+      required: true
+  - type: dropdown
+    id: severity
+    attributes:
+      label: If the file is missing, what is that?
+      options:
+        - A blocker - the site is broken without it
+        - A warning - most sites should have it
+        - A note - only some sites need it
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: Who would act on this finding, and how?
+      description: This tool exists to be acted on, not to lengthen a report.

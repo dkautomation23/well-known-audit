@@ -1,0 +1,39 @@
+{
+  "checkedAt": "2026-09-18T17:13:12.530Z",
+  "population": {
+    "source": "Tranco top 500 sites",
+    "list": "survey/domains-top500.txt"
+  },
+  "method": {
+    "request": "one HTTPS GET per file, four at a time per domain, one domain at a time",
+    "timeoutMs": 5000,
+    "control": "one request per domain for a path that cannot exist; a host answering 200 to it has its unparsed 200s discounted"
+  },
+  "summary": {
+    "total": 500,
+    "checked": 332,
+    "unreachable": 168,
+    "answerAnything": 70,
+    "withBlockers": 185,
+    "securityTxt": {
+      "published": 158,
+      "withoutExpires": 92,
+      "expired": 6,
+      "valid": 60
+    },
+    "filePresence": {
+      "security.txt": 158,
+      "robots.txt": 233,
+      "assetlinks.json": 138,
+      "llms.txt": 70,
+      "openid-configuration": 19,
+      "apple-app-site-association": 127,
+      "change-password": 77,
+      "ai.txt": 4,
+      "ucp": 4,
+      "mta-sts.txt": 6,
+      "gpc.json": 21,
+      "dnt-policy.txt": 4
+    }
+  }
+}

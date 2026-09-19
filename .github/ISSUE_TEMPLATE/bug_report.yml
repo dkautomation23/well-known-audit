@@ -1,0 +1,41 @@
+name: Bug report
+description: A verdict that is wrong, or a run that fails
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Found a way to make the tool fetch an internal address, or eat memory?
+        That is a security report — see SECURITY.md, not this form.
+  - type: input
+    id: version
+    attributes:
+      label: Version
+      placeholder: v0.1.0, or the commit you built from
+    validations:
+      required: true
+  - type: input
+    id: command
+    attributes:
+      label: The exact command you ran
+      placeholder: well-known-audit example.com --json report.json
+    validations:
+      required: true
+  - type: input
+    id: domain
+    attributes:
+      label: The domain, if it is a public one
+      description: Leave blank if it is internal; a saved copy of the file works too.
+  - type: textarea
+    id: expected
+    attributes:
+      label: What it reported, and what it should have reported
+    validations:
+      required: true
+  - type: input
+    id: platform
+    attributes:
+      label: Node version and operating system
+      placeholder: Node 22.9, Windows 11
+    validations:
+      required: true

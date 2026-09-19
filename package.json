@@ -1,0 +1,52 @@
+{
+  "name": "well-known-audit",
+  "version": "0.1.0",
+  "description": "Checks every file a site publishes at its root and under /.well-known/ - security.txt, robots.txt, llms.txt, apple-app-site-association and more - and reports what is missing, broken or expired.",
+  "keywords": [
+    "well-known",
+    "security.txt",
+    "rfc9116",
+    "robots.txt",
+    "llms.txt",
+    "apple-app-site-association",
+    "assetlinks",
+    "audit",
+    "cli"
+  ],
+  "homepage": "https://github.com/dkautomation23/well-known-audit#readme",
+  "bugs": {
+    "url": "https://github.com/dkautomation23/well-known-audit/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dkautomation23/well-known-audit.git"
+  },
+  "license": "MIT",
+  "author": "Dmytro Galko",
+  "type": "module",
+  "bin": {
+    "well-known-audit": "dist/src/main.js"
+  },
+  "files": [
+    "dist/src/**/*.js",
+    "dist/src/**/*.d.ts",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "build": "tsc",
+    "test": "npm run build && node --test \"dist/test/**/*.test.js\"",
+    "start": "node dist/src/main.js",
+    "prepublishOnly": "npm test"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "typescript": "^5.7.0"
+  }
+}

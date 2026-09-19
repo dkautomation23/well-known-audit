@@ -1,0 +1,37 @@
+name: Release
+
+on:
+  push:
+    tags: ["v*"]
+  workflow_dispatch:
+
+# Publishing the package is a separate, manual decision; this job only proves the
+# tag builds and attaches the compiled output to the release.
+permissions:
+  contents: write
+  id-token: write      # sign the provenance
+  attestations: write  # record it against the repository
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4
+        with:
+          node-version: "22.x"
+          cache: npm
+      - run: npm ci
+      - run: npm run build
+      - run: node --test "dist/test/**/*.test.js"
+      - name: Pack
+        run: npm pack --pack-destination .
+      - name: Attest that this artefact came from this workflow
+        uses: actions/attest-build-provenance@4d101475d8b20a2381f78447822ac1eab6504dd8 # v4.2.2
+        with:
+          subject-path: "*.tgz"
+      - name: Attach the tarball to the release
+        uses: softprops/action-gh-release@3bb12739c298aeb8a4eeaf626c5b8d85266b0e65 # v2
+        with:
+          files: "*.tgz"
+          generate_release_notes: true

@@ -1,0 +1,36 @@
+domain,outcome,blockers,warnings,security_txt,security_txt_expires,security_txt_expired,days_left,files_present
+dynatrace.com,checked,0,2,yes,yes,no,,security.txt robots.txt llms.txt
+ivi.ru,checked,1,2,yes,yes,yes,-375,security.txt robots.txt
+impervadns.net,unreachable,,,,,,,
+npr.org,checked,0,2,no,,,,robots.txt apple-app-site-association assetlinks.json
+shein.com,checked,0,2,no,,,,robots.txt llms.txt apple-app-site-association assetlinks.json
+mediatek.com,checked,5,5,no,,,,ai.txt ucp openid-configuration apple-app-site-association assetlinks.json change-password mta-sts.txt gpc.json dnt-policy.txt
+docker.com,checked,1,1,yes,yes,no,,security.txt robots.txt change-password
+run.app,checked,0,3,no,,,,
+libp2p.direct,unreachable,,,,,,,
+stackoverflow.com,checked,1,2,no,,,,apple-app-site-association change-password
+eventbrite.com,checked,1,1,no,,,,robots.txt apple-app-site-association assetlinks.json change-password
+behance.net,checked,0,2,no,,,,robots.txt apple-app-site-association assetlinks.json
+google.de,checked,0,2,yes,yes,no,,security.txt robots.txt assetlinks.json
+foxnews.com,checked,0,2,no,,,,robots.txt llms.txt apple-app-site-association assetlinks.json
+gosuslugi.ru,unreachable,,,,,,,
+ampproject.org,checked,0,3,no,,,,apple-app-site-association assetlinks.json
+indiatimes.com,checked,0,3,yes,yes,no,,security.txt robots.txt apple-app-site-association assetlinks.json
+amzn.to,checked,5,3,yes,no,no,,security.txt robots.txt llms.txt ai.txt ucp openid-configuration apple-app-site-association assetlinks.json change-password mta-sts.txt gpc.json dnt-policy.txt
+mysql.com,checked,1,2,no,,,,change-password
+exp-tas.com,unreachable,,,,,,,
+ngenix.net,checked,1,2,no,,,,change-password
+ipv4only.arpa,unreachable,,,,,,,
+amazon.co.za,checked,0,4,no,,,,apple-app-site-association assetlinks.json
+tplinkcloud.com,checked,0,2,no,,,,robots.txt
+discord.media,checked,1,2,no,,,,change-password
+fandom.com,checked,1,2,no,,,,change-password
+adobedtm.com,unreachable,,,,,,,
+ft.com,checked,0,1,yes,yes,no,,security.txt robots.txt apple-app-site-association assetlinks.json
+squarespacedns.com,unreachable,,,,,,,
+trendmicro.com,checked,2,1,yes,no,no,,security.txt robots.txt llms.txt change-password
+elasticbeanstalk.com,unreachable,,,,,,,
+slideshare.net,checked,2,3,yes,no,no,,security.txt robots.txt llms.txt
+icloud-content.com,checked,5,5,no,,,,ai.txt ucp openid-configuration apple-app-site-association assetlinks.json change-password mta-sts.txt gpc.json dnt-policy.txt
+ui-dns.com,unreachable,,,,,,,
+capcut.com,checked,0,2,no,,,,robots.txt llms.txt assetlinks.json gpc.json
