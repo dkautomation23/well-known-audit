@@ -1,6 +1,6 @@
 {
   "name": "well-known-audit",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Checks every file a site publishes at its root and under /.well-known/ - security.txt, robots.txt, llms.txt, apple-app-site-association and more - and reports what is missing, broken or expired.",
   "keywords": [
     "well-known",
