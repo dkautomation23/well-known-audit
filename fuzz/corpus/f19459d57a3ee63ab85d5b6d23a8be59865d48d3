@@ -1,6 +1,0 @@
-User-agent: *
-Disallow: /admin
-Allow: /ablic
-User-agent:
-Disallow: /
-Sitemap: hte.p

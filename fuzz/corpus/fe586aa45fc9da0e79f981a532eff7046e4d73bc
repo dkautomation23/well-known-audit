@@ -1,6 +1,0 @@
-User-agent: *
-Disallow: /admin
-Allow: /admin/public
-User-agent: GPTBot
-Disallow: /
-Sitemap: https://ple.p.xml

@@ -183,12 +183,14 @@ the run.
 
 ```bash
 npm run build
-npx jazzer fuzz/parse.fuzz.js fuzz/corpus --sync -- -max_total_time=150
+npx jazzer fuzz/parse.fuzz.js fuzz/seeds --sync -- -max_total_time=150
 ```
 
 A local run on 21 September 2026: **1,376,673 executions in 151 seconds, no
-crash**, corpus grown from the five seed files to 153 inputs at 89 edges of
-coverage. ClusterFuzzLite re-runs it on every pull request against the code that
+crash**, corpus grown from the five seed files in [`fuzz/seeds/`](fuzz/seeds/) to 153
+inputs at 89 edges of coverage. The grown corpus stays out of the repository:
+it is machine-generated mutations, and ClusterFuzzLite keeps its own between
+runs. ClusterFuzzLite re-runs it on every pull request against the code that
 changed, with the config in [`.clusterfuzzlite/`](.clusterfuzzlite/).
 
 Seed files are real: a `security.txt`, a `robots.txt` with a named AI crawler, an

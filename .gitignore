@@ -6,3 +6,7 @@ dist/
 crash-*
 leak-*
 timeout-*
+# The fuzzer's working corpus: 200+ machine-generated mutations that mean
+# nothing to a reader. The five hand-written seeds live in fuzz/seeds/, and
+# ClusterFuzzLite keeps its own corpus between runs.
+fuzz/corpus/
