@@ -39,6 +39,23 @@ file, saying what is missing, broken or expired.
   --json FILE     write the findings as JSON
   --timeout MS    per request, default 10000
   --quiet         write the file, print nothing
+  --expires-within N
+                  fail while there is still time: a security.txt that expires
+                  within N days counts as a blocker. Without it an unexpired
+                  file is valid however soon it lapses, which is what RFC 9116
+                  says and useless in a scheduled run.
+
+Run it weekly rather than once. Expires lapses on a date, silently, and the
+site that publishes the file is the last to find out:
+
+  # .github/workflows/security-txt.yml
+  on:
+    schedule: [{ cron: "0 7 * * 1" }]
+  jobs:
+    check:
+      runs-on: ubuntu-latest
+      steps:
+        - run: npx well-known-audit example.com --only security.txt --expires-within 30
 
 Exit codes: 0 no blockers, 1 at least one blocker, 2 the domain answered
 nothing at all.
@@ -98,7 +115,7 @@ function parseCsvResults(csv: string): DomainResult[] {
   const results: DomainResult[] = [];
   for (const line of csv.split(/\r?\n/).slice(1)) {
     if (!line.trim()) continue;
-    const [domain, outcome, blockers, warnings, security, expires, expired, days, present, readable] =
+    const [domain, outcome, blockers, warnings, security, expires, expired, days, present, readable, expiresAt] =
       line.split(",");
     if (!domain || outcome !== "checked") {
       if (domain) results.push({ domain, outcome: "unreachable" });
@@ -122,6 +139,7 @@ function parseCsvResults(csv: string): DomainResult[] {
               hasExpires: expires === "yes",
               expired: expired === "yes",
               daysLeft: days ? Number(days) : undefined,
+              expiresAt: expiresAt ? expiresAt : undefined,
             },
     });
   }
@@ -160,6 +178,19 @@ export async function run(
       return 2;
     }
     selectedTargets = TARGETS.filter((target) => ids.includes(target.id));
+  }
+
+  const expiresRaw = args.flags.get("expires-within");
+  let expiresWithinDays: number | undefined;
+  if (expiresRaw !== undefined) {
+    expiresWithinDays = Number(expiresRaw);
+    if (!Number.isFinite(expiresWithinDays) || expiresWithinDays < 0) {
+      out(`--expires-within must be a number of days, got "${expiresRaw}"\n`);
+      return 2;
+    }
+  } else if (args.bools.has("expires-within")) {
+    out("--expires-within needs a number of days, for example --expires-within 30\n");
+    return 2;
   }
 
   const timeoutRaw = args.flags.get("timeout");
@@ -202,6 +233,7 @@ export async function run(
     const fresh = await auditMany(http, pending, {
       targets: selectedTargets,
       timeoutMs: timeout,
+      expiresWithinDays,
       onResult: (result, done, total) => {
         if (csvPath) appendFileSync(csvPath, `${toCsvRow(result)}\n`, "utf8");
         if (quiet) return;
@@ -257,7 +289,7 @@ export async function run(
 
   const now = Date.now();
   const results: TargetResult[] = selectedTargets.map((target) =>
-    evaluateTarget(target, outcomesByTarget.get(target.id)!, now),
+    evaluateTarget(target, outcomesByTarget.get(target.id)!, now, { expiresWithinDays }),
   );
 
   const context: Context = { domain: args.target!, checkedAt: new Date(now).toISOString(), timeoutMs: timeout };

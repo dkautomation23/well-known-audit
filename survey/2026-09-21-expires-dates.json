@@ -1,0 +1,1047 @@
+{
+  "checkedAt": "2026-09-21T14:28:35.770Z",
+  "summary": {
+    "total": 60,
+    "checked": 60,
+    "unreachable": 0,
+    "answerAnything": 3,
+    "withBlockers": 0,
+    "securityTxt": {
+      "published": 60,
+      "withoutExpires": 0,
+      "expired": 0,
+      "valid": 60,
+      "expiringIn30": 8,
+      "expiringIn90": 10,
+      "unreadable": 0
+    },
+    "filePresence": {
+      "security.txt": 60
+    }
+  },
+  "results": [
+    {
+      "domain": "google.com",
+      "outcome": "checked",
+      "blockers": 0,
+      "warnings": 1,
+      "present": [
+        "security.txt"
+      ],
+      "securityTxt": {
+        "found": true,
+        "parsed": true,
+        "hasExpires": true,
+        "expired": false,
+        "daysLeft": 1287,
+        "expiresAt": "2030-04-01T00:00:00.000Z"
+      }
+    },
+    {
+      "domain": "facebook.com",
+      "outcome": "checked",
+      "blockers": 0,
+      "warnings": 0,
+      "present": [
+        "security.txt"
+      ],
+      "securityTxt": {
+        "found": true,
+        "parsed": true,
+        "hasExpires": true,
+        "expired": false,
+        "daysLeft": 30,
+        "expiresAt": "2026-10-21T14:25:17.000Z"
+      }
+    },
+    {
+      "domain": "microsoft.com",
+      "outcome": "checked",
+      "blockers": 0,
+      "warnings": 0,
+      "present": [
+        "security.txt"
+      ],
+      "securityTxt": {
+        "found": true,
+        "parsed": true,
+        "hasExpires": true,
+        "expired": false,
+        "daysLeft": 2,
+        "expiresAt": "2026-09-23T16:00:00.000Z"
+      }
+    },
+    {
+      "domain": "amazonaws.com",
+      "outcome": "checked",
+      "blockers": 0,
+      "warnings": 0,
+      "present": [
+        "security.txt"
+      ],
+      "securityTxt": {
+        "found": true,
+        "parsed": true,
+        "hasExpires": true,
+        "expired": false,
+        "daysLeft": 3,
+        "expiresAt": "2026-09-24T16:25:03.000Z"
+      }
+    },
+    {
+      "domain": "apple.com",
+      "outcome": "checked",
+      "blockers": 0,
+      "warnings": 0,
+      "present": [
+        "security.txt"
+      ],
+      "securityTxt": {
+        "found": true,
+        "parsed": true,
+        "hasExpires": true,
+        "expired": false,
+        "daysLeft": 272,
+        "expiresAt": "2027-06-21T01:00:00.000Z"
+      }
+    },
+    {
+      "domain": "github.com",
+      "outcome": "checked",
+      "blockers": 0,
+      "warnings": 0,
+      "present": [
+        "security.txt"
+      ],
+      "securityTxt": {
+        "found": true,
+        "parsed": true,
+        "hasExpires": true,
+        "expired": false,
+        "daysLeft": 30,
+        "expiresAt": "2026-10-21T14:25:25.000Z"
+      }
+    },
+    {
+      "domain": "wikipedia.org",
+      "outcome": "checked",
+      "blockers": 0,
+      "warnings": 1,
+      "present": [
+        "security.txt"
+      ],
+      "securityTxt": {
+        "found": true,
+        "parsed": true,
+        "hasExpires": true,
+        "expired": false,
+        "daysLeft": 922,
+        "expiresAt": "2029-03-31T09:00:00.000Z"
+      }
+    },
+    {
+      "domain": "whatsapp.net",
+      "outcome": "checked",
+      "blockers": 0,
+      "warnings": 0,
+      "present": [
+        "security.txt"
+      ],
+      "securityTxt": {
+        "found": true,
+        "parsed": true,
+        "hasExpires": true,
+        "expired": false,
+        "daysLeft": 30,
+        "expiresAt": "2026-10-21T14:25:32.000Z"
+      }
+    },
+    {
+      "domain": "doubleclick.net",
+      "outcome": "checked",
+      "blockers": 0,
+      "warnings": 1,
+      "present": [
+        "security.txt"
+      ],
+      "securityTxt": {
+        "found": true,
+        "parsed": true,
+        "hasExpires": true,
+        "expired": false,
+        "daysLeft": 1287,
+        "expiresAt": "2030-04-01T00:00:00.000Z"
+      }
+    },
+    {
+      "domain": "netflix.com",
+      "outcome": "checked",
+      "answersAnything": true,
+      "blockers": 0,
+      "warnings": 0,
+      "present": [
+        "security.txt"
+      ],
+      "securityTxt": {
+        "found": true,
+        "parsed": true,
+        "hasExpires": true,
+        "expired": false,
+        "daysLeft": 102,
+        "expiresAt": "2027-01-01T06:00:00.000Z"
+      }
+    },
+    {
+      "domain": "wordpress.org",
+      "outcome": "checked",
+      "blockers": 0,
+      "warnings": 0,
+      "present": [
+        "security.txt"
+      ],
+      "securityTxt": {
+        "found": true,
+        "parsed": true,
+        "hasExpires": true,
+        "expired": false,
+        "daysLeft": 282,
+        "expiresAt": "2027-06-30T15:00:00.000Z"
+      }
+    },
+    {
+      "domain": "whatsapp.com",
+      "outcome": "checked",
+      "blockers": 0,
+      "warnings": 0,
+      "present": [
+        "security.txt"
+      ],
+      "securityTxt": {
+        "found": true,
+        "parsed": true,
+        "hasExpires": true,
+        "expired": false,
+        "daysLeft": 30,
+        "expiresAt": "2026-10-21T14:25:36.000Z"
+      }
+    },
+    {
+      "domain": "yahoo.com",
+      "outcome": "checked",
+      "blockers": 0,
+      "warnings": 0,
+      "present": [
+        "security.txt"
+      ],
+      "securityTxt": {
+        "found": true,
+        "parsed": true,
+        "hasExpires": true,
+        "expired": false,
+        "daysLeft": 101,
+        "expiresAt": "2026-12-31T12:00:00.000Z"
+      }
+    },
+    {
+      "domain": "adobe.com",
+      "outcome": "checked",
+      "blockers": 0,
+      "warnings": 1,
+      "present": [
+        "security.txt"
+      ],
+      "securityTxt": {
+        "found": true,
+        "parsed": true,
+        "hasExpires": true,
+        "expired": false,
+        "daysLeft": 311,
+        "expiresAt": "2027-07-30T01:00:00.000Z"
+      }
+    },
+    {
+      "domain": "ntp.org",
+      "outcome": "checked",
+      "blockers": 0,
+      "warnings": 1,
+      "present": [
+        "security.txt"
+      ],
+      "securityTxt": {
+        "found": true,
+        "parsed": true,
+        "hasExpires": true,
+        "expired": false,
+        "daysLeft": 1198,
+        "expiresAt": "2030-01-01T06:01:00.000Z"
+      }
+    },
+    {
+      "domain": "myfritz.net",
+      "outcome": "checked",
+      "answersAnything": true,
+      "blockers": 0,
+      "warnings": 0,
+      "present": [
+        "security.txt"
+      ],
+      "securityTxt": {
+        "found": true,
+        "parsed": true,
+        "hasExpires": true,
+        "expired": false,
+        "daysLeft": 132,
+        "expiresAt": "2027-01-31T22:00:00.000Z"
+      }
+    },
+    {
+      "domain": "zoom.us",
+      "outcome": "checked",
+      "blockers": 0,
+      "warnings": 1,
+      "present": [
+        "security.txt"
+      ],
+      "securityTxt": {
+        "found": true,
+        "parsed": true,
+        "hasExpires": true,
+        "expired": false,
+        "daysLeft": 1196,
+        "expiresAt": "2029-12-31T00:00:00.000Z"
+      }
+    },
+    {
+      "domain": "opera.com",
+      "outcome": "checked",
+      "blockers": 0,
+      "warnings": 0,
+      "present": [
+        "security.txt"
+      ],
+      "securityTxt": {
+        "found": true,
+        "parsed": true,
+        "hasExpires": true,
+        "expired": false,
+        "daysLeft": 207,
+        "expiresAt": "2027-04-17T00:00:00.000Z"
+      }
+    },
+    {
+      "domain": "f5.com",
+      "outcome": "checked",
+      "blockers": 0,
+      "warnings": 0,
+      "present": [
+        "security.txt"
+      ],
+      "securityTxt": {
+        "found": true,
+        "parsed": true,
+        "hasExpires": true,
+        "expired": false,
+        "daysLeft": 344,
+        "expiresAt": "2027-08-31T23:59:59.000Z"
+      }
+    },
+    {
+      "domain": "achmea.nl",
+      "outcome": "checked",
+      "blockers": 0,
+      "warnings": 0,
+      "present": [
+        "security.txt"
+      ],
+      "securityTxt": {
+        "found": true,
+        "parsed": true,
+        "hasExpires": true,
+        "expired": false,
+        "daysLeft": 9,
+        "expiresAt": "2026-10-01T00:00:00.000Z"
+      }
+    },
+    {
+      "domain": "reddit.com",
+      "outcome": "checked",
+      "blockers": 0,
+      "warnings": 0,
+      "present": [
+        "security.txt"
+      ],
+      "securityTxt": {
+        "found": true,
+        "parsed": true,
+        "hasExpires": true,
+        "expired": false,
+        "daysLeft": 106,
+        "expiresAt": "2027-01-05T23:00:00.000Z"
+      }
+    },
+    {
+      "domain": "criteo.com",
+      "outcome": "checked",
+      "blockers": 0,
+      "warnings": 2,
+      "present": [
+        "security.txt"
+      ],
+      "securityTxt": {
+        "found": true,
+        "parsed": true,
+        "hasExpires": true,
+        "expired": false,
+        "daysLeft": 1288,
+        "expiresAt": "2030-04-01T10:00:00.000Z"
+      }
+    },
+    {
+      "domain": "apache.org",
+      "outcome": "checked",
+      "blockers": 0,
+      "warnings": 0,
+      "present": [
+        "security.txt"
+      ],
+      "securityTxt": {
+        "found": true,
+        "parsed": true,
+        "hasExpires": true,
+        "expired": false,
+        "daysLeft": 320,
+        "expiresAt": "2027-08-07T08:21:50.000Z"
+      }
+    },
+    {
+      "domain": "epicgames.com",
+      "outcome": "checked",
+      "blockers": 0,
+      "warnings": 0,
+      "present": [
+        "security.txt"
+      ],
+      "securityTxt": {
+        "found": true,
+        "parsed": true,
+        "hasExpires": true,
+        "expired": false,
+        "daysLeft": 262,
+        "expiresAt": "2027-06-10T12:00:00.000Z"
+      }
+    },
+    {
+      "domain": "discord.com",
+      "outcome": "checked",
+      "blockers": 0,
+      "warnings": 1,
+      "present": [
+        "security.txt"
+      ],
+      "securityTxt": {
+        "found": true,
+        "parsed": true,
+        "hasExpires": true,
+        "expired": false,
+        "daysLeft": 1056,
+        "expiresAt": "2029-08-12T13:37:00.000Z"
+      }
+    },
+    {
+      "domain": "soundcloud.com",
+      "outcome": "checked",
+      "blockers": 0,
+      "warnings": 0,
+      "present": [
+        "security.txt"
+      ],
+      "securityTxt": {
+        "found": true,
+        "parsed": true,
+        "hasExpires": true,
+        "expired": false,
+        "daysLeft": 171,
+        "expiresAt": "2027-03-12T00:00:00.000Z"
+      }
+    },
+    {
+      "domain": "theguardian.com",
+      "outcome": "checked",
+      "blockers": 0,
+      "warnings": 0,
+      "present": [
+        "security.txt"
+      ],
+      "securityTxt": {
+        "found": true,
+        "parsed": true,
+        "hasExpires": true,
+        "expired": false,
+        "daysLeft": 252,
+        "expiresAt": "2027-05-31T08:00:00.000Z"
+      }
+    },
+    {
+      "domain": "bbc.com",
+      "outcome": "checked",
+      "blockers": 0,
+      "warnings": 1,
+      "present": [
+        "security.txt"
+      ],
+      "securityTxt": {
+        "found": true,
+        "parsed": true,
+        "hasExpires": true,
+        "expired": false,
+        "daysLeft": 4138,
+        "expiresAt": "2038-01-19T03:14:07.000Z"
+      }
+    },
+    {
+      "domain": "bbc.co.uk",
+      "outcome": "checked",
+      "blockers": 0,
+      "warnings": 1,
+      "present": [
+        "security.txt"
+      ],
+      "securityTxt": {
+        "found": true,
+        "parsed": true,
+        "hasExpires": true,
+        "expired": false,
+        "daysLeft": 4138,
+        "expiresAt": "2038-01-19T03:14:07.000Z"
+      }
+    },
+    {
+      "domain": "stripe.com",
+      "outcome": "checked",
+      "blockers": 0,
+      "warnings": 0,
+      "present": [
+        "security.txt"
+      ],
+      "securityTxt": {
+        "found": true,
+        "parsed": true,
+        "hasExpires": true,
+        "expired": false,
+        "daysLeft": 101,
+        "expiresAt": "2026-12-31T23:59:00.000Z"
+      }
+    },
+    {
+      "domain": "cpanel.net",
+      "outcome": "checked",
+      "blockers": 0,
+      "warnings": 0,
+      "present": [
+        "security.txt"
+      ],
+      "securityTxt": {
+        "found": true,
+        "parsed": true,
+        "hasExpires": true,
+        "expired": false,
+        "daysLeft": 102,
+        "expiresAt": "2027-01-01T11:59:00.000Z"
+      }
+    },
+    {
+      "domain": "adsrvr.org",
+      "outcome": "checked",
+      "blockers": 0,
+      "warnings": 0,
+      "present": [
+        "security.txt"
+      ],
+      "securityTxt": {
+        "found": true,
+        "parsed": true,
+        "hasExpires": true,
+        "expired": false,
+        "daysLeft": 101,
+        "expiresAt": "2026-12-31T20:59:00.000Z"
+      }
+    },
+    {
+      "domain": "roku.com",
+      "outcome": "checked",
+      "blockers": 0,
+      "warnings": 1,
+      "present": [
+        "security.txt"
+      ],
+      "securityTxt": {
+        "found": true,
+        "parsed": true,
+        "hasExpires": true,
+        "expired": false,
+        "daysLeft": 286,
+        "expiresAt": "2027-07-04T21:00:00.000Z"
+      }
+    },
+    {
+      "domain": "cisco.com",
+      "outcome": "checked",
+      "blockers": 0,
+      "warnings": 0,
+      "present": [
+        "security.txt"
+      ],
+      "securityTxt": {
+        "found": true,
+        "parsed": true,
+        "hasExpires": true,
+        "expired": false,
+        "daysLeft": 101,
+        "expiresAt": "2027-01-01T00:00:00.000Z"
+      }
+    },
+    {
+      "domain": "hubspot.com",
+      "outcome": "checked",
+      "blockers": 0,
+      "warnings": 1,
+      "present": [
+        "security.txt"
+      ],
+      "securityTxt": {
+        "found": true,
+        "parsed": true,
+        "hasExpires": true,
+        "expired": false,
+        "daysLeft": 2809,
+        "expiresAt": "2034-06-01T00:00:00.000Z"
+      }
+    },
+    {
+      "domain": "ibm.com",
+      "outcome": "checked",
+      "blockers": 0,
+      "warnings": 0,
+      "present": [
+        "security.txt"
+      ],
+      "securityTxt": {
+        "found": true,
+        "parsed": true,
+        "hasExpires": true,
+        "expired": false,
+        "daysLeft": 29,
+        "expiresAt": "2026-10-21T00:00:00.000Z"
+      }
+    },
+    {
+      "domain": "etsy.com",
+      "outcome": "checked",
+      "blockers": 0,
+      "warnings": 0,
+      "present": [
+        "security.txt"
+      ],
+      "securityTxt": {
+        "found": true,
+        "parsed": true,
+        "hasExpires": true,
+        "expired": false,
+        "daysLeft": 222,
+        "expiresAt": "2027-05-01T04:00:00.000Z"
+      }
+    },
+    {
+      "domain": "amplitude.com",
+      "outcome": "checked",
+      "blockers": 0,
+      "warnings": 1,
+      "present": [
+        "security.txt"
+      ],
+      "securityTxt": {
+        "found": true,
+        "parsed": true,
+        "hasExpires": true,
+        "expired": false,
+        "daysLeft": 832,
+        "expiresAt": "2028-12-31T23:59:00.000Z"
+      }
+    },
+    {
+      "domain": "www.gov.uk",
+      "outcome": "checked",
+      "blockers": 0,
+      "warnings": 0,
+      "present": [
+        "security.txt"
+      ],
+      "securityTxt": {
+        "found": true,
+        "parsed": true,
+        "hasExpires": true,
+        "expired": false,
+        "daysLeft": 90,
+        "expiresAt": "2026-12-21T02:12:07.000Z"
+      }
+    },
+    {
+      "domain": "weather.com",
+      "outcome": "checked",
+      "blockers": 0,
+      "warnings": 0,
+      "present": [
+        "security.txt"
+      ],
+      "securityTxt": {
+        "found": true,
+        "parsed": true,
+        "hasExpires": true,
+        "expired": false,
+        "daysLeft": 101,
+        "expiresAt": "2026-12-31T16:00:00.000Z"
+      }
+    },
+    {
+      "domain": "debian.org",
+      "outcome": "checked",
+      "blockers": 0,
+      "warnings": 0,
+      "present": [
+        "security.txt"
+      ],
+      "securityTxt": {
+        "found": true,
+        "parsed": true,
+        "hasExpires": true,
+        "expired": false,
+        "daysLeft": 101,
+        "expiresAt": "2026-12-31T22:59:00.000Z"
+      }
+    },
+    {
+      "domain": "wiley.com",
+      "outcome": "checked",
+      "blockers": 0,
+      "warnings": 0,
+      "present": [
+        "security.txt"
+      ],
+      "securityTxt": {
+        "found": true,
+        "parsed": true,
+        "hasExpires": true,
+        "expired": false,
+        "daysLeft": 101,
+        "expiresAt": "2027-01-01T00:00:00.000Z"
+      }
+    },
+    {
+      "domain": "php.net",
+      "outcome": "checked",
+      "blockers": 0,
+      "warnings": 0,
+      "present": [
+        "security.txt"
+      ],
+      "securityTxt": {
+        "found": true,
+        "parsed": true,
+        "hasExpires": true,
+        "expired": false,
+        "daysLeft": 68,
+        "expiresAt": "2026-11-28T11:59:59.999Z"
+      }
+    },
+    {
+      "domain": "datadoghq.com",
+      "outcome": "checked",
+      "blockers": 0,
+      "warnings": 2,
+      "present": [
+        "security.txt"
+      ],
+      "securityTxt": {
+        "found": true,
+        "parsed": true,
+        "hasExpires": true,
+        "expired": false,
+        "daysLeft": 1197,
+        "expiresAt": "2029-12-31T23:00:00.000Z"
+      }
+    },
+    {
+      "domain": "hostinger.com",
+      "outcome": "checked",
+      "blockers": 0,
+      "warnings": 0,
+      "present": [
+        "security.txt"
+      ],
+      "securityTxt": {
+        "found": true,
+        "parsed": true,
+        "hasExpires": true,
+        "expired": false,
+        "daysLeft": 122,
+        "expiresAt": "2027-01-21T23:01:00.000Z"
+      }
+    },
+    {
+      "domain": "mobile.de",
+      "outcome": "checked",
+      "blockers": 0,
+      "warnings": 0,
+      "present": [
+        "security.txt"
+      ],
+      "securityTxt": {
+        "found": true,
+        "parsed": true,
+        "hasExpires": true,
+        "expired": false,
+        "daysLeft": 101,
+        "expiresAt": "2027-01-01T00:00:00.000Z"
+      }
+    },
+    {
+      "domain": "trustpilot.com",
+      "outcome": "checked",
+      "blockers": 0,
+      "warnings": 0,
+      "present": [
+        "security.txt"
+      ],
+      "securityTxt": {
+        "found": true,
+        "parsed": true,
+        "hasExpires": true,
+        "expired": false,
+        "daysLeft": 191,
+        "expiresAt": "2027-04-01T00:00:00.000Z"
+      }
+    },
+    {
+      "domain": "zendesk.com",
+      "outcome": "checked",
+      "blockers": 0,
+      "warnings": 0,
+      "present": [
+        "security.txt"
+      ],
+      "securityTxt": {
+        "found": true,
+        "parsed": true,
+        "hasExpires": true,
+        "expired": false,
+        "daysLeft": 206,
+        "expiresAt": "2027-04-16T00:00:00.000Z"
+      }
+    },
+    {
+      "domain": "bloomberg.com",
+      "outcome": "checked",
+      "blockers": 0,
+      "warnings": 0,
+      "present": [
+        "security.txt"
+      ],
+      "securityTxt": {
+        "found": true,
+        "parsed": true,
+        "hasExpires": true,
+        "expired": false,
+        "daysLeft": 282,
+        "expiresAt": "2027-07-01T00:00:00.000Z"
+      }
+    },
+    {
+      "domain": "calendly.com",
+      "outcome": "checked",
+      "blockers": 0,
+      "warnings": 0,
+      "present": [
+        "security.txt"
+      ],
+      "securityTxt": {
+        "found": true,
+        "parsed": true,
+        "hasExpires": true,
+        "expired": false,
+        "daysLeft": 200,
+        "expiresAt": "2027-04-10T00:00:00.000Z"
+      }
+    },
+    {
+      "domain": "gitlab.com",
+      "outcome": "checked",
+      "blockers": 0,
+      "warnings": 0,
+      "present": [
+        "security.txt"
+      ],
+      "securityTxt": {
+        "found": true,
+        "parsed": true,
+        "hasExpires": true,
+        "expired": false,
+        "daysLeft": 132,
+        "expiresAt": "2027-01-31T05:00:00.000Z"
+      }
+    },
+    {
+      "domain": "plesk.com",
+      "outcome": "checked",
+      "blockers": 0,
+      "warnings": 0,
+      "present": [
+        "security.txt"
+      ],
+      "securityTxt": {
+        "found": true,
+        "parsed": true,
+        "hasExpires": true,
+        "expired": false,
+        "daysLeft": 102,
+        "expiresAt": "2027-01-01T11:59:00.000Z"
+      }
+    },
+    {
+      "domain": "google.cn",
+      "outcome": "checked",
+      "blockers": 0,
+      "warnings": 1,
+      "present": [
+        "security.txt"
+      ],
+      "securityTxt": {
+        "found": true,
+        "parsed": true,
+        "hasExpires": true,
+        "expired": false,
+        "daysLeft": 1287,
+        "expiresAt": "2030-04-01T00:00:00.000Z"
+      }
+    },
+    {
+      "domain": "supercell.com",
+      "outcome": "checked",
+      "blockers": 0,
+      "warnings": 0,
+      "present": [
+        "security.txt"
+      ],
+      "securityTxt": {
+        "found": true,
+        "parsed": true,
+        "hasExpires": true,
+        "expired": false,
+        "daysLeft": 100,
+        "expiresAt": "2026-12-30T22:00:00.000Z"
+      }
+    },
+    {
+      "domain": "intel.com",
+      "outcome": "checked",
+      "blockers": 0,
+      "warnings": 1,
+      "present": [
+        "security.txt"
+      ],
+      "securityTxt": {
+        "found": true,
+        "parsed": true,
+        "hasExpires": true,
+        "expired": false,
+        "daysLeft": 385,
+        "expiresAt": "2027-10-11T19:30:00.000Z"
+      }
+    },
+    {
+      "domain": "ipinfo.io",
+      "outcome": "checked",
+      "blockers": 0,
+      "warnings": 0,
+      "present": [
+        "security.txt"
+      ],
+      "securityTxt": {
+        "found": true,
+        "parsed": true,
+        "hasExpires": true,
+        "expired": false,
+        "daysLeft": 333,
+        "expiresAt": "2027-08-21T00:00:00.000Z"
+      }
+    },
+    {
+      "domain": "aol.com",
+      "outcome": "checked",
+      "blockers": 0,
+      "warnings": 1,
+      "present": [
+        "security.txt"
+      ],
+      "securityTxt": {
+        "found": true,
+        "parsed": true,
+        "hasExpires": true,
+        "expired": false,
+        "daysLeft": 467,
+        "expiresAt": "2028-01-02T00:00:00.000Z"
+      }
+    },
+    {
+      "domain": "speedtest.net",
+      "outcome": "checked",
+      "blockers": 0,
+      "warnings": 0,
+      "present": [
+        "security.txt"
+      ],
+      "securityTxt": {
+        "found": true,
+        "parsed": true,
+        "hasExpires": true,
+        "expired": false,
+        "daysLeft": 102,
+        "expiresAt": "2027-01-01T07:00:00.000Z"
+      }
+    },
+    {
+      "domain": "okta.com",
+      "outcome": "checked",
+      "blockers": 0,
+      "warnings": 0,
+      "present": [
+        "security.txt"
+      ],
+      "securityTxt": {
+        "found": true,
+        "parsed": true,
+        "hasExpires": true,
+        "expired": false,
+        "daysLeft": 102,
+        "expiresAt": "2027-01-01T08:00:00.000Z"
+      }
+    },
+    {
+      "domain": "atlassian.net",
+      "outcome": "checked",
+      "answersAnything": true,
+      "blockers": 0,
+      "warnings": 0,
+      "present": [
+        "security.txt"
+      ],
+      "securityTxt": {
+        "found": true,
+        "parsed": true,
+        "hasExpires": true,
+        "expired": false,
+        "daysLeft": 135,
+        "expiresAt": "2027-02-04T00:00:00.000Z"
+      }
+    }
+  ]
+}

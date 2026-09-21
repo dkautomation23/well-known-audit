@@ -1,11 +1,11 @@
-# Сайты открытых проектов, исходники которых лежат в публичных репозиториях.
+# Sites of open projects whose sources sit in public repositories.
 #
-# Смысл списка: если тут что-то сломано, чинится это патчем, а не письмом в
-# поддержку. Отобраны проекты с живым сообществом и сайтом, который собирается
-# из репозитория — то есть такие, где правка в один файл проходит обычным путём
-# через pull request.
+# Why this list: when something here is broken, it is fixed with a patch rather
+# than a support ticket. Chosen for a living community and a site built from the
+# repository - the kind where a one-file correction goes the ordinary way,
+# through a pull request.
 #
-# Собрано: 2026-09-19.
+# Collected: 2026-09-19.
 nodejs.org
 python.org
 rust-lang.org

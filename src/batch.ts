@@ -38,7 +38,15 @@ export interface DomainResult {
     parsed: boolean;
     hasExpires: boolean;
     expired: boolean;
+    /**
+     * Days until the Expires date; negative once it has passed. Filled for
+     * every file with a date that parses, not only for expired ones - the
+     * question a survey cannot answer without it is how many files are about
+     * to lapse.
+     */
     daysLeft?: number;
+    /** The Expires date in ISO form, so a re-run can be compared to this one. */
+    expiresAt?: string;
   };
 }
 
@@ -48,6 +56,8 @@ export interface BatchOptions {
   concurrency?: number;
   pauseMs?: number;
   timeoutMs?: number;
+  /** Passed through to the checks: see EvalOptions.expiresWithinDays. */
+  expiresWithinDays?: number;
   onResult?: (result: DomainResult, done: number, total: number) => void;
 }
 
@@ -128,8 +138,13 @@ function securityTxtSummary(
     found && parsed && !has("security-txt-no-expires") && !has("security-txt-multiple-expires")
     && !has("security-txt-expires-unparseable");
 
-  const days = /expired (\d+) day/.exec(target.findings.find((f) => f.id === "security-txt-expired")?.title ?? "");
-  return { found, parsed, hasExpires, expired, daysLeft: days ? -Number(days[1]) : undefined };
+  return {
+    found,
+    parsed,
+    hasExpires,
+    expired,
+    ...(target.expiry ? { daysLeft: target.expiry.daysLeft, expiresAt: target.expiry.iso } : {}),
+  };
 }
 
 /**
@@ -171,7 +186,11 @@ export async function auditDomain(
   });
 
   const now = Date.now();
-  const results = targets.map((target) => evaluateTarget(target, byTarget.get(target.id)!, now));
+  const results = targets.map((target) =>
+    evaluateTarget(target, byTarget.get(target.id)!, now, {
+      expiresWithinDays: options.expiresWithinDays,
+    }),
+  );
   const counts = countByLevel(allFindings(results));
 
   // When a host answers 200 to anything, only a file whose contents were
@@ -221,9 +240,10 @@ const CSV_COLUMNS = [
   "security_txt_expired",
   "days_left",
   "files_present",
-  // Appended last on purpose: a CSV written before this column existed still
-  // parses, and a reader that does not know the column simply ignores it.
+  // Appended last on purpose: a CSV written before these columns existed
+  // still parses, and a reader that does not know them simply ignores them.
   "security_txt_readable",
+  "security_txt_expires_at",
 ] as const;
 
 function csvCell(value: unknown): string {
@@ -248,6 +268,7 @@ export function toCsvRow(result: DomainResult): string {
     security?.daysLeft ?? "",
     result.present?.join(" ") ?? "",
     security?.found ? (security.parsed ? "yes" : "no") : "",
+    security?.expiresAt ?? "",
   ]
     .map(csvCell)
     .join(",");
@@ -281,6 +302,14 @@ export interface Summary {
     withoutExpires: number;
     expired: number;
     valid: number;
+    /**
+     * Valid today and lapsing inside the next 30 and 90 days. These are the
+     * numbers a one-off survey cannot report, and the reason it has to be
+     * repeated: every file counted as valid has a date on which it stops
+     * being valid.
+     */
+    expiringIn30: number;
+    expiringIn90: number;
     /** Served something at the path, but it does not read as a security.txt. */
     unreadable: number;
   };
@@ -293,7 +322,10 @@ export function summarise(results: DomainResult[]): Summary {
   let unreachable = 0;
   let withBlockers = 0;
   let answerAnything = 0;
-  const securityTxt = { published: 0, withoutExpires: 0, expired: 0, valid: 0, unreadable: 0 };
+  const securityTxt = {
+    published: 0, withoutExpires: 0, expired: 0, valid: 0,
+    expiringIn30: 0, expiringIn90: 0, unreadable: 0,
+  };
 
   for (const result of results) {
     if (result.outcome === "unreachable") {
@@ -317,7 +349,14 @@ export function summarise(results: DomainResult[]): Summary {
     securityTxt.published += 1;
     if (!security.hasExpires) securityTxt.withoutExpires += 1;
     else if (security.expired) securityTxt.expired += 1;
-    else securityTxt.valid += 1;
+    else {
+      securityTxt.valid += 1;
+      const left = security.daysLeft;
+      if (left !== undefined) {
+        if (left <= 30) securityTxt.expiringIn30 += 1;
+        if (left <= 90) securityTxt.expiringIn90 += 1;
+      }
+    }
   }
 
   return { total: results.length, checked, unreachable, answerAnything, withBlockers, securityTxt, filePresence };
@@ -352,6 +391,10 @@ export function renderSummary(summary: Summary): string {
     lines.push(`  valid today                   ${s.valid}  (${percent(s.valid, s.published)})`);
     lines.push(`  expired                       ${s.expired}  (${percent(s.expired, s.published)})`);
     lines.push(`  no Expires field at all       ${s.withoutExpires}  (${percent(s.withoutExpires, s.published)})`);
+    if (s.valid > 0) {
+      lines.push(`  of those valid, lapse in 30d  ${s.expiringIn30}  (${percent(s.expiringIn30, s.valid)})`);
+      lines.push(`  of those valid, lapse in 90d  ${s.expiringIn90}  (${percent(s.expiringIn90, s.valid)})`);
+    }
     lines.push("");
   }
 
