@@ -52,6 +52,30 @@ export interface TargetResult {
   urls: string[];
   summary: string;
   findings: Finding[];
+  /**
+   * The Expires date, when the file has exactly one that parses. Present
+   * whether or not it has passed: `daysLeft` is negative for an expired file.
+   * A caller that wants to warn before the date needs the date itself, which
+   * is why this is a field rather than text inside a finding.
+   */
+  expiry?: Expiry;
+}
+
+export interface Expiry {
+  /** As published, so a report can quote the line the site actually serves. */
+  raw: string;
+  iso: string;
+  daysLeft: number;
+}
+
+export interface EvalOptions {
+  /**
+   * Treat a file that expires within this many days as a blocker. Absent, an
+   * unexpired file is valid however soon it lapses - which is what RFC 9116
+   * says and what a one-off audit should report. A scheduled run wants the
+   * opposite, and that is the whole point of the option.
+   */
+  expiresWithinDays?: number;
 }
 
 function reachedOk(outcome: FetchOutcome): boolean {
@@ -105,7 +129,8 @@ function evaluateSecurityTxt(
   def: TargetDef,
   outcomes: FetchOutcome[],
   now: number,
-): { summary: string; findings: Finding[] } {
+  options: EvalOptions = {},
+): { summary: string; findings: Finding[]; expiry?: Expiry } {
   const wk = outcomes[0]!;
   const root = outcomes[1]!;
   const wkOk = reachedOk(wk);
@@ -159,6 +184,7 @@ function evaluateSecurityTxt(
   }
 
   let expirySummary = "";
+  let expiry: Expiry | undefined;
   if (fields.expiresValues.length === 0) {
     findings.push({
       id: "security-txt-no-expires",
@@ -186,6 +212,7 @@ function evaluateSecurityTxt(
       });
     } else {
       const days = daysBetween(now, parsed);
+      expiry = { raw, iso: new Date(parsed).toISOString(), daysLeft: days };
       if (days < 0) {
         findings.push({
           id: "security-txt-expired",
@@ -202,6 +229,17 @@ function evaluateSecurityTxt(
             level: "warning",
             title: `Expires is ${days} days out, more than a year`,
             detail: "RFC 9116 recommends refreshing the file at least yearly so it does not go stale unnoticed.",
+          });
+        }
+        const threshold = options.expiresWithinDays;
+        if (threshold !== undefined && days <= threshold) {
+          findings.push({
+            id: "security-txt-expires-soon",
+            level: "blocker",
+            title: `expires in ${days} day(s)`,
+            detail: `Expires: ${raw}. Past that date RFC 9116 treats the file as invalid, `
+              + `and nothing on the site announces it.`,
+            fix: "Publish a later Expires date now, while the file is still valid.",
           });
         }
         expirySummary = `expires in ${days}d`;
@@ -251,7 +289,7 @@ function evaluateSecurityTxt(
 
   const hasBlocker = findings.some((finding) => finding.level === "blocker");
   const summary = hasBlocker ? expirySummary || "invalid" : `valid${expirySummary ? `, ${expirySummary}` : ""}`;
-  return { summary, findings };
+  return { summary, findings, expiry };
 }
 
 // --- robots.txt --------------------------------------------------------------
@@ -710,10 +748,11 @@ function evaluateByKind(
   def: TargetDef,
   outcomes: FetchOutcome[],
   now: number,
-): { summary: string; findings: Finding[] } {
+  options: EvalOptions,
+): { summary: string; findings: Finding[]; expiry?: Expiry } {
   switch (def.id) {
     case "security.txt":
-      return evaluateSecurityTxt(def, outcomes, now);
+      return evaluateSecurityTxt(def, outcomes, now, options);
     case "robots.txt":
       return evaluateRobotsTxt(def, outcomes);
     case "llms.txt":
@@ -743,9 +782,21 @@ function evaluateByKind(
   }
 }
 
-export function evaluateTarget(def: TargetDef, outcomes: FetchOutcome[], now: number = Date.now()): TargetResult {
-  const { summary, findings } = evaluateByKind(def, outcomes, now);
-  return { id: def.id, label: def.label, urls: outcomes.map((outcome) => outcome.url), summary, findings };
+export function evaluateTarget(
+  def: TargetDef,
+  outcomes: FetchOutcome[],
+  now: number = Date.now(),
+  options: EvalOptions = {},
+): TargetResult {
+  const { summary, findings, expiry } = evaluateByKind(def, outcomes, now, options);
+  return {
+    id: def.id,
+    label: def.label,
+    urls: outcomes.map((outcome) => outcome.url),
+    summary,
+    findings,
+    ...(expiry ? { expiry } : {}),
+  };
 }
 
 export function allFindings(results: TargetResult[]): Finding[] {

@@ -264,6 +264,78 @@ describe("evaluating security.txt", () => {
     assert.equal(has(result.findings, "security-txt-multiple-preferred-languages")?.level, "blocker");
   });
 
+  it("the parsed Expires date comes back on the result, not only as prose", () => {
+    const body = `Contact: mailto:a@x.example
+Expires: ${iso(45 * DAY)}
+`;
+    const result = evaluateTarget(def, [outcome(wkUrl, { body }), outcome(rootUrl, { status: 404 })], NOW);
+    assert.equal(result.expiry?.daysLeft, 45);
+    assert.equal(result.expiry?.iso, new Date(NOW + 45 * DAY).toISOString());
+  });
+
+  it("an expired file reports negative days left, not only a title", () => {
+    const body = `Contact: mailto:a@x.example
+Expires: ${iso(-10 * DAY)}
+`;
+    const result = evaluateTarget(def, [outcome(wkUrl, { body }), outcome(rootUrl, { status: 404 })], NOW);
+    assert.equal(result.expiry?.daysLeft, -10);
+  });
+
+  it("without a threshold, a file expiring tomorrow is still valid", () => {
+    const body = `Contact: mailto:a@x.example
+Expires: ${iso(DAY)}
+`;
+    const result = evaluateTarget(def, [outcome(wkUrl, { body }), outcome(rootUrl, { status: 404 })], NOW);
+    assert.equal(countByLevel(result.findings).blocker, 0, "RFC 9116 says valid until the date");
+    assert.equal(has(result.findings, "security-txt-expires-soon"), undefined);
+  });
+
+  it("with a threshold, a file inside it is a blocker while there is still time", () => {
+    const body = `Contact: mailto:a@x.example
+Expires: ${iso(20 * DAY)}
+`;
+    const result = evaluateTarget(
+      def,
+      [outcome(wkUrl, { body }), outcome(rootUrl, { status: 404 })],
+      NOW,
+      { expiresWithinDays: 30 },
+    );
+    const finding = has(result.findings, "security-txt-expires-soon");
+    assert.equal(finding?.level, "blocker");
+    assert.match(finding!.title, /expires in 20 day\(s\)/);
+  });
+
+  it("a threshold does not fire outside itself", () => {
+    const body = `Contact: mailto:a@x.example
+Expires: ${iso(40 * DAY)}
+`;
+    const result = evaluateTarget(
+      def,
+      [outcome(wkUrl, { body }), outcome(rootUrl, { status: 404 })],
+      NOW,
+      { expiresWithinDays: 30 },
+    );
+    assert.equal(countByLevel(result.findings).blocker, 0);
+  });
+
+  it("an already expired file is one blocker, not two", () => {
+    const body = `Contact: mailto:a@x.example
+Expires: ${iso(-5 * DAY)}
+`;
+    const result = evaluateTarget(
+      def,
+      [outcome(wkUrl, { body }), outcome(rootUrl, { status: 404 })],
+      NOW,
+      { expiresWithinDays: 30 },
+    );
+    assert.equal(has(result.findings, "security-txt-expired")?.level, "blocker");
+    assert.equal(
+      has(result.findings, "security-txt-expires-soon"),
+      undefined,
+      "a file that has already lapsed is not a file about to lapse",
+    );
+  });
+
   it("an Expires more than a year out is a warning", () => {
     const body = `Contact: mailto:a@x.example\nExpires: ${iso(400 * DAY)}\n`;
     const result = evaluateTarget(def, [outcome(wkUrl, { body }), outcome(rootUrl, { status: 404 })], NOW);
@@ -1035,17 +1107,36 @@ describe("auditing a list of sites", () => {
   it("writes CSV a spreadsheet can open", () => {
     const csv = toCsv([
       { domain: "a.example", outcome: "checked", blockers: 1, warnings: 2, present: ["security.txt", "robots.txt"],
-        securityTxt: { found: true, parsed: true, hasExpires: true, expired: true, daysLeft: -12 } },
+        securityTxt: { found: true, parsed: true, hasExpires: true, expired: true, daysLeft: -12,
+          expiresAt: "2026-09-06T00:00:00.000Z" } },
       { domain: "b.example", outcome: "unreachable" },
     ]);
     const rows = csv.trimEnd().split("\n");
     assert.equal(
       rows[0],
       "domain,outcome,blockers,warnings,security_txt,security_txt_expires,security_txt_expired," +
-        "days_left,files_present,security_txt_readable",
+        "days_left,files_present,security_txt_readable,security_txt_expires_at",
     );
-    assert.equal(rows[1], "a.example,checked,1,2,yes,yes,yes,-12,security.txt robots.txt,yes");
-    assert.equal(rows[2], "b.example,unreachable,,,,,,,,");
+    assert.equal(
+      rows[1],
+      "a.example,checked,1,2,yes,yes,yes,-12,security.txt robots.txt,yes,2026-09-06T00:00:00.000Z",
+    );
+    assert.equal(rows[2], "b.example,unreachable,,,,,,,,,");
+  });
+
+  it("counts how many valid files lapse inside 30 and 90 days", () => {
+    const valid = (daysLeft: number): DomainResult => ({
+      domain: `d${daysLeft}.example`,
+      outcome: "checked",
+      blockers: 0,
+      warnings: 0,
+      present: ["security.txt"],
+      securityTxt: { found: true, parsed: true, hasExpires: true, expired: false, daysLeft },
+    });
+    const totals = summariseBatch([valid(5), valid(60), valid(200)]);
+    assert.equal(totals.securityTxt.valid, 3);
+    assert.equal(totals.securityTxt.expiringIn30, 1);
+    assert.equal(totals.securityTxt.expiringIn90, 2, "the 30-day one counts in 90 as well");
   });
 
   it("a site that answers nothing does not fail the whole survey", () => {

@@ -1,0 +1,68 @@
+# The top-500 domains that served a security.txt with an unexpired Expires
+# field on 2026-09-18.
+#
+# They exist to answer what that survey could not: the run stored whether the
+# field was present, never when it fell due. Re-running only these domains puts
+# a date on every file the survey had called simply "valid".
+#
+# Collected: 2026-09-21 from survey/2026-09-18-top500.csv.
+google.com
+facebook.com
+microsoft.com
+amazonaws.com
+apple.com
+github.com
+wikipedia.org
+whatsapp.net
+doubleclick.net
+netflix.com
+wordpress.org
+whatsapp.com
+yahoo.com
+adobe.com
+ntp.org
+myfritz.net
+zoom.us
+opera.com
+f5.com
+achmea.nl
+reddit.com
+criteo.com
+apache.org
+epicgames.com
+discord.com
+soundcloud.com
+theguardian.com
+bbc.com
+bbc.co.uk
+stripe.com
+cpanel.net
+adsrvr.org
+roku.com
+cisco.com
+hubspot.com
+ibm.com
+etsy.com
+amplitude.com
+www.gov.uk
+weather.com
+debian.org
+wiley.com
+php.net
+datadoghq.com
+hostinger.com
+mobile.de
+trustpilot.com
+zendesk.com
+bloomberg.com
+calendly.com
+gitlab.com
+plesk.com
+google.cn
+supercell.com
+intel.com
+ipinfo.io
+aol.com
+speedtest.net
+okta.com
+atlassian.net

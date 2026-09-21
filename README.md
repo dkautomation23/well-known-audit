@@ -147,6 +147,26 @@ is there but does not do the one thing it is for.
 - run: npx well-known-audit yourdomain.com
 ```
 
+Run it on a schedule, not once. Every one of these files is fine until a date
+nobody is watching, and `Expires` is the clearest case: past that date RFC 9116
+treats the file as invalid, and nothing on the site says so. `--expires-within`
+turns the date into a build failure while there is still time to act:
+
+```yaml
+on:
+  schedule: [{ cron: "0 7 * * 1" }]
+jobs:
+  security-txt:
+    runs-on: ubuntu-latest
+    steps:
+      - run: npx well-known-audit yourdomain.com --only security.txt --expires-within 30
+```
+
+Without the flag an unexpired file is valid however soon it lapses, which is
+what the RFC says and is useless in a weekly run. With it, a file inside the
+window is a blocker. On 21 September 2026 that was the difference between
+exit 0 and exit 1 on `microsoft.com`, whose file expired two days later.
+
 Exit code is `1` when there is a blocker, `0` when there is not, `2` when the
 domain answered nothing at all — DNS failure, connection refused, or every
 request timing out. A `404` on an individual file is not a `2`; that is a
@@ -275,6 +295,37 @@ $ well-known-audit --batch survey/domains-top500.txt --csv results.csv
 
 Spot-checked by hand with `curl` against four of the flagged sites before
 publishing, because a number like that is only worth having if it is right.
+
+### "Valid today" hides the date it stops being valid
+
+The table above counts 60 valid files. Valid *on 18 September* — the survey
+stored whether an `Expires` field was there, never when it fell due, so it
+could not say which of those 60 were days from lapsing. Re-run on
+**21 September 2026** with the date recorded, the same 60 domains say this:
+
+| of the 60 valid files | files | |
+|---|---|---|
+| Lapse within 30 days | 8 | 13% |
+| Lapse within 90 days | 10 | 17% |
+
+| Domain | `Expires` | days left |
+|---|---|---|
+| microsoft.com | 2026-09-23 | **2** |
+| amazonaws.com | 2026-09-24 | **3** |
+| achmea.nl | 2026-10-01 | 9 |
+| ibm.com | 2026-10-21 | 29 |
+| facebook.com, github.com, whatsapp.net, whatsapp.com | 2026-10-21 | 30 |
+
+Nothing here says those sites will let the date pass — a file with 30 days on
+it is a file being maintained. What it says is that a single audit cannot tell
+the difference between a maintained file and one about to lapse, and that the
+six already-expired files in the table above were all, at some earlier survey,
+"valid today". Raw re-run in
+[`survey/2026-09-21-expires-dates.csv`](survey/2026-09-21-expires-dates.csv):
+
+```console
+$ well-known-audit --batch survey/domains-expires-top500.txt --only security.txt     --csv survey/2026-09-21-expires-dates.csv
+```
 
 ## Does a published llms.txt actually work?
 
