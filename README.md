@@ -13,7 +13,7 @@ npx well-known-audit yourdomain.com
 ```
 
 No runtime dependencies, no API key, no account. TypeScript, Node's own test
-runner, 106 tests.
+runner, 117 tests.
 
 Every published version is built and published by the workflow in this
 repository, never from a laptop, and carries a provenance statement recorded in
