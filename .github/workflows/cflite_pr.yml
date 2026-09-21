@@ -14,7 +14,10 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        sanitizer: [address]
+        # JavaScript supports only `none`: OSS-Fuzz says ASan and UBSan are
+        # not available for this language, and `none` is its default.
+        # https://google.github.io/oss-fuzz/getting-started/new-project-guide/javascript-lang/
+        sanitizer: [none]
     steps:
       - name: Build the fuzzer
         id: build
