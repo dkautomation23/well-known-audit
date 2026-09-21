@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /admin
+Allow: /aic
+User-agent:
+Disallow: /
+Sitemap: hte.p

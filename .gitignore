@@ -1,3 +1,8 @@
 node_modules/
 dist/
 *.tgz
+# libFuzzer writes a reproducer next to the target when it finds something;
+# the finding belongs in a test, not in the repository as a binary blob.
+crash-*
+leak-*
+timeout-*

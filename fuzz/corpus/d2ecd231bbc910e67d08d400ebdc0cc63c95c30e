@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /admin
+Allow: /admin/public
+User-agent:
+Disallow: /
+Sitemap: hte.p.xml

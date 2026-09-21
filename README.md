@@ -172,6 +172,29 @@ domain answered nothing at all — DNS failure, connection refused, or every
 request timing out. A `404` on an individual file is not a `2`; that is a
 normal, common answer and is reported as a missing file instead.
 
+## Fuzzed, because the input is always someone else's
+
+Every parser here is handed a file written by a stranger, on a host nobody
+controls, over the network. The test suite covers the cases I thought of;
+[`fuzz/parse.fuzz.js`](fuzz/parse.fuzz.js) covers the ones I did not. It asserts
+the property that actually matters for a survey of five hundred domains: the
+parser **returns** rather than throws, because an exception at domain forty ends
+the run.
+
+```bash
+npm run build
+npx jazzer fuzz/parse.fuzz.js fuzz/corpus --sync -- -max_total_time=150
+```
+
+A local run on 21 September 2026: **1,376,673 executions in 151 seconds, no
+crash**, corpus grown from the five seed files to 153 inputs at 89 edges of
+coverage. ClusterFuzzLite re-runs it on every pull request against the code that
+changed, with the config in [`.clusterfuzzlite/`](.clusterfuzzlite/).
+
+Seed files are real: a `security.txt`, a `robots.txt` with a named AI crawler, an
+`mta-sts.txt`, an `llms.txt` and an `assetlinks.json`. Starting from valid input
+reaches the interesting states far sooner than starting from random bytes.
+
 ## Safety
 
 This tool requests paths on a domain someone else typed in, and follows

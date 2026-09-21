@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /admin
+Allow: /admipublic
+User-agent:
+Disallow: /
+Sitemap: hte.p

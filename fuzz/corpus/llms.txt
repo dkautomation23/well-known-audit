@@ -1,0 +1,7 @@
+# Example
+
+> A short description.
+
+## Docs
+- [Getting started](https://example.com/start): how to begin
+- [API](https://example.com/api)
