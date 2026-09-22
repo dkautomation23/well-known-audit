@@ -191,8 +191,10 @@ A local run on 21 September 2026: **1,376,673 executions in 151 seconds, no
 crash**, corpus grown from the five seed files in [`fuzz/seeds/`](fuzz/seeds/) to 153
 inputs at 89 edges of coverage. The grown corpus stays out of the repository:
 it is machine-generated mutations, and ClusterFuzzLite keeps its own between
-runs. ClusterFuzzLite re-runs it on every pull request against the code that
-changed, with the config in [`.clusterfuzzlite/`](.clusterfuzzlite/).
+runs. Runs for sixty seconds in CI on every push, in the ordinary test workflow.
+Not through ClusterFuzzLite: it supports c, c++, go, rust, python, jvm and
+swift, and this is JavaScript. Two commits went into arguing with its
+sanitizer setting before anyone checked whether the language was on the list.
 
 Seed files are real: a `security.txt`, a `robots.txt` with a named AI crawler, an
 `mta-sts.txt`, an `llms.txt` and an `assetlinks.json`. Starting from valid input

@@ -28,3 +28,16 @@ jobs:
         run: npm run build
       - name: Test
         run: node --test "dist/test/**/*.test.js"
+
+      # Fuzzing runs here rather than through ClusterFuzzLite, which supports
+      # c, c++, go, rust, python, jvm and swift - not JavaScript. Two commits
+      # went into arguing with its sanitizer setting before anyone checked
+      # whether the language was on the list at all.
+      #
+      # Sixty seconds is not a fuzzing campaign. It is enough to catch the
+      # target failing to build and the obvious regression, on every push,
+      # which is more than a workflow that can never pass.
+      - name: Fuzz the parsers for a minute
+        run: |
+          mkdir -p fuzz/corpus
+          npx jazzer fuzz/parse.fuzz.js fuzz/corpus fuzz/seeds --sync -- -max_total_time=60
