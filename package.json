@@ -47,7 +47,7 @@
   },
   "devDependencies": {
     "@jazzer.js/core": "^4.0.0",
-    "@types/node": "^22.10.0",
+    "@types/node": "^26.6.2",
     "typescript": "^5.7.0"
   }
 }
